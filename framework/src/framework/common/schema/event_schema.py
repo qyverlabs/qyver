@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,17 +16,17 @@
 from beartype.typing import Sequence, cast
 from typing_extensions import Self, override
 
-from superlinked.framework.common.schema.event_schema_object import (
+from qyver.framework.common.schema.event_schema_object import (
     CreatedAtField,
     EventSchemaObject,
 )
-from superlinked.framework.common.schema.schema import T
-from superlinked.framework.common.schema.schema_factory import SchemaFactory
-from superlinked.framework.common.schema.schema_field_descriptor import (
+from qyver.framework.common.schema.schema import T
+from qyver.framework.common.schema.schema_factory import SchemaFactory
+from qyver.framework.common.schema.schema_field_descriptor import (
     SchemaFieldDescriptor,
 )
-from superlinked.framework.common.schema.schema_object import SchemaField
-from superlinked.framework.common.schema.schema_type import SchemaType
+from qyver.framework.common.schema.schema_object import SchemaField
+from qyver.framework.common.schema.schema_type import SchemaType
 
 # Exclude from documentation.
 __pdoc__ = {}

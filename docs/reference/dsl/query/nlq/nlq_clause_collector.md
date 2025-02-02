@@ -1,10 +1,10 @@
-Module superlinked.framework.dsl.query.nlq.nlq_clause_collector
+Module qyver.framework.dsl.query.nlq.nlq_clause_collector
 ===============================================================
 
 Classes
 -------
 
-`NLQClauseCollector(query_clauses: Sequence[superlinked.framework.dsl.query.query_clause.QueryClause])`
+`NLQClauseCollector(query_clauses: Sequence[qyver.framework.dsl.query.query_clause.QueryClause])`
 :   
 
     ### Instance variables
@@ -12,7 +12,7 @@ Classes
     `all_params_have_value_set: bool`
     :
 
-    `clauses: Sequence[superlinked.framework.dsl.query.query_clause.QueryClause]`
+    `clauses: Sequence[qyver.framework.dsl.query.query_clause.QueryClause]`
     :
 
     ### Methods

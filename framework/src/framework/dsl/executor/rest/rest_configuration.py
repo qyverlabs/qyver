@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,9 +16,9 @@ from dataclasses import dataclass
 
 from pydantic import model_validator
 
-from superlinked.framework.common.util.immutable_model import ImmutableBaseModel
-from superlinked.framework.dsl.executor.rest.rest_descriptor import RestDescriptor
-from superlinked.framework.dsl.query.query_descriptor import QueryDescriptor
+from qyver.framework.common.util.immutable_model import ImmutableBaseModel
+from qyver.framework.dsl.executor.rest.rest_descriptor import RestDescriptor
+from qyver.framework.dsl.query.query_descriptor import QueryDescriptor
 
 
 class RestEndpointConfiguration(ImmutableBaseModel):

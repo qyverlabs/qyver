@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,24 +15,24 @@
 
 from beartype.typing import Sequence
 
-from superlinked.framework.blob.blob_handler import BlobHandler
-from superlinked.framework.common.dag.context import ExecutionContext
-from superlinked.framework.common.settings import Settings
-from superlinked.framework.dsl.app.online.online_app import OnlineApp
-from superlinked.framework.dsl.executor.rest.rest_configuration import (
+from qyver.framework.blob.blob_handler import BlobHandler
+from qyver.framework.common.dag.context import ExecutionContext
+from qyver.framework.common.settings import Settings
+from qyver.framework.dsl.app.online.online_app import OnlineApp
+from qyver.framework.dsl.executor.rest.rest_configuration import (
     RestEndpointConfiguration,
     RestQuery,
 )
-from superlinked.framework.dsl.executor.rest.rest_handler import RestHandler
-from superlinked.framework.dsl.index.index import Index
-from superlinked.framework.dsl.query.query_result_converter.serializable_query_result_converter import (
+from qyver.framework.dsl.executor.rest.rest_handler import RestHandler
+from qyver.framework.dsl.index.index import Index
+from qyver.framework.dsl.query.query_result_converter.serializable_query_result_converter import (
     SerializableQueryResultConverter,
 )
-from superlinked.framework.dsl.source.data_loader_source import DataLoaderSource
-from superlinked.framework.dsl.source.rest_source import RestSource
-from superlinked.framework.dsl.storage.vector_database import VectorDatabase
-from superlinked.framework.queue.interface.queue import Queue
-from superlinked.framework.queue.interface.queue_message import MessageBody
+from qyver.framework.dsl.source.data_loader_source import DataLoaderSource
+from qyver.framework.dsl.source.rest_source import RestSource
+from qyver.framework.dsl.storage.vector_database import VectorDatabase
+from qyver.framework.queue.interface.queue import Queue
+from qyver.framework.queue.interface.queue_message import MessageBody
 
 
 class RestApp(OnlineApp[RestSource | DataLoaderSource]):

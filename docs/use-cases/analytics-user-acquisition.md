@@ -1,5 +1,5 @@
 ---
-description: Learn about fundamental concepts of Superlinked.
+description: Learn about fundamental concepts of qyver.
 icon: chart-line
 ---
 
@@ -22,5 +22,5 @@ To understand the embeddings we will
 
 ### Follow along in this Colab
 
-{% embed url="https://colab.research.google.com/github/superlinked/superlinked/blob/main/notebook/analytics_user_acquisition.ipynb" %}
+{% embed url="https://colab.research.google.com/github/qyver/qyver/blob/main/notebook/analytics_user_acquisition.ipynb" %}
 {% endembed %}

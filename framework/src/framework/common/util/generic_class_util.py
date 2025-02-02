@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@ import inspect
 
 from beartype.typing import Any, Sequence, cast, get_args, get_origin
 
-from superlinked.framework.common.schema.general_type import T
+from qyver.framework.common.schema.general_type import T
 
 
 class GenericClassUtil:

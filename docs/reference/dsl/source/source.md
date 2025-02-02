@@ -1,4 +1,4 @@
-Module superlinked.framework.dsl.source.source
+Module qyver.framework.dsl.source.source
 ==============================================
 
 Classes
@@ -15,6 +15,6 @@ Classes
 
     ### Descendants
 
-    * superlinked.framework.dsl.source.data_loader_source.DataLoaderSource
-    * superlinked.framework.dsl.source.in_memory_source.InMemorySource
-    * superlinked.framework.dsl.source.rest_source.RestSource
+    * qyver.framework.dsl.source.data_loader_source.DataLoaderSource
+    * qyver.framework.dsl.source.in_memory_source.InMemorySource
+    * qyver.framework.dsl.source.rest_source.RestSource

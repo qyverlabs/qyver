@@ -1,4 +1,4 @@
-Module superlinked.framework.common.parser.data_parser
+Module qyver.framework.common.parser.data_parser
 ======================================================
 
 Classes
@@ -31,8 +31,8 @@ Classes
 
     ### Descendants
 
-    * superlinked.framework.common.parser.dataframe_parser.DataFrameParser
-    * superlinked.framework.common.parser.json_parser.JsonParser
+    * qyver.framework.common.parser.dataframe_parser.DataFrameParser
+    * qyver.framework.common.parser.json_parser.JsonParser
 
     ### Instance variables
 
@@ -56,7 +56,7 @@ Classes
     `set_allow_bytes_input(self, value: bool) ‑> None`
     :
 
-    `unmarshal(self, data: SourceTypeT) ‑> list[superlinked.framework.common.parser.parsed_schema.ParsedSchema]`
+    `unmarshal(self, data: SourceTypeT) ‑> list[qyver.framework.common.parser.parsed_schema.ParsedSchema]`
     :   Get the source data and parse it to the desired Schema with the defined mapping.
         
         Args:

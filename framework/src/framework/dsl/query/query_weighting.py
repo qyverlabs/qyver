@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,13 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from superlinked.framework.common.dag.concatenation_node import ConcatenationNode
-from superlinked.framework.common.dag.context import SPACE_WEIGHT_PARAM_NAME
-from superlinked.framework.common.dag.dag import Dag
-from superlinked.framework.common.dag.node import Node
-from superlinked.framework.common.exception import InvalidSchemaException
-from superlinked.framework.common.schema.event_schema_object import EventSchemaObject
-from superlinked.framework.common.schema.schema_object import SchemaObject
+from qyver.framework.common.dag.concatenation_node import ConcatenationNode
+from qyver.framework.common.dag.context import SPACE_WEIGHT_PARAM_NAME
+from qyver.framework.common.dag.dag import Dag
+from qyver.framework.common.dag.node import Node
+from qyver.framework.common.exception import InvalidSchemaException
+from qyver.framework.common.schema.event_schema_object import EventSchemaObject
+from qyver.framework.common.schema.schema_object import SchemaObject
 
 # Exclude from documentation.
 __pdoc__ = {}

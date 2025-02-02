@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,9 +16,9 @@ from abc import ABC, abstractmethod
 
 from beartype.typing import Sequence
 
-from superlinked.framework.common.exception import ValidationException
-from superlinked.framework.common.storage.index_config import IndexConfig
-from superlinked.framework.common.storage.search_index.search_algorithm import (
+from qyver.framework.common.exception import ValidationException
+from qyver.framework.common.storage.index_config import IndexConfig
+from qyver.framework.common.storage.search_index.search_algorithm import (
     SearchAlgorithm,
 )
 

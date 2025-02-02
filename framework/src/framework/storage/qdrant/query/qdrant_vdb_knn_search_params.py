@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,8 +18,8 @@ from dataclasses import dataclass
 
 from beartype.typing import Sequence
 
-from superlinked.framework.common.storage.field.field import Field
-from superlinked.framework.common.storage.query.vdb_knn_search_params import (
+from qyver.framework.common.storage.field.field import Field
+from qyver.framework.common.storage.query.vdb_knn_search_params import (
     VDBKNNSearchParams,
 )
 

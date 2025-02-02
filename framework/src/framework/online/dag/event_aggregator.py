@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,18 +19,18 @@ from datetime import timedelta
 
 from beartype.typing import Sequence
 
-from superlinked.framework.common.dag.context import ExecutionContext
-from superlinked.framework.common.dag.effect_modifier import EffectModifier
-from superlinked.framework.common.data_types import Vector
-from superlinked.framework.common.interface.weighted import Weighted
-from superlinked.framework.common.space.config.normalization.normalization_config import (
+from qyver.framework.common.dag.context import ExecutionContext
+from qyver.framework.common.dag.effect_modifier import EffectModifier
+from qyver.framework.common.data_types import Vector
+from qyver.framework.common.interface.weighted import Weighted
+from qyver.framework.common.space.config.normalization.normalization_config import (
     NoNormConfig,
 )
-from superlinked.framework.common.space.config.transformation_config import (
+from qyver.framework.common.space.config.transformation_config import (
     TransformationConfig,
 )
-from superlinked.framework.common.space.normalization.normalization import L1Norm
-from superlinked.framework.common.transform.transformation_factory import (
+from qyver.framework.common.space.normalization.normalization import L1Norm
+from qyver.framework.common.transform.transformation_factory import (
     TransformationFactory,
 )
 

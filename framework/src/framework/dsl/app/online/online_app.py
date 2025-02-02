@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,29 +15,29 @@
 
 from beartype.typing import Generic, Sequence
 
-from superlinked.framework.blob.blob_handler import BlobHandler
-from superlinked.framework.blob.blob_handler_subscriber import BlobHandlerSubscriber
-from superlinked.framework.common.dag.context import ExecutionContext
-from superlinked.framework.common.settings import Settings
-from superlinked.framework.common.storage_manager.storage_manager import StorageManager
-from superlinked.framework.common.util.type_validator import TypeValidator
-from superlinked.framework.dsl.app.app import App
-from superlinked.framework.dsl.index.index import Index
-from superlinked.framework.dsl.query.query_mixin import QueryMixin
-from superlinked.framework.dsl.query.query_result_converter.default_query_result_converter import (
+from qyver.framework.blob.blob_handler import BlobHandler
+from qyver.framework.blob.blob_handler_subscriber import BlobHandlerSubscriber
+from qyver.framework.common.dag.context import ExecutionContext
+from qyver.framework.common.settings import Settings
+from qyver.framework.common.storage_manager.storage_manager import StorageManager
+from qyver.framework.common.util.type_validator import TypeValidator
+from qyver.framework.dsl.app.app import App
+from qyver.framework.dsl.index.index import Index
+from qyver.framework.dsl.query.query_mixin import QueryMixin
+from qyver.framework.dsl.query.query_result_converter.default_query_result_converter import (
     DefaultQueryResultConverter,
 )
-from superlinked.framework.dsl.query.query_result_converter.query_result_converter import (
+from qyver.framework.dsl.query.query_result_converter.query_result_converter import (
     QueryResultConverter,
 )
-from superlinked.framework.dsl.storage.vector_database import VectorDatabase
-from superlinked.framework.online.online_dag_evaluator import OnlineDagEvaluator
-from superlinked.framework.online.source.online_data_processor import (
+from qyver.framework.dsl.storage.vector_database import VectorDatabase
+from qyver.framework.online.online_dag_evaluator import OnlineDagEvaluator
+from qyver.framework.online.source.online_data_processor import (
     OnlineDataProcessor,
 )
-from superlinked.framework.online.source.types import OnlineSourceT
-from superlinked.framework.queue.interface.queue import Queue
-from superlinked.framework.queue.interface.queue_subscriber import QueueSubscriber
+from qyver.framework.online.source.types import OnlineSourceT
+from qyver.framework.queue.interface.queue import Queue
+from qyver.framework.queue.interface.queue_subscriber import QueueSubscriber
 
 
 @TypeValidator.wrap

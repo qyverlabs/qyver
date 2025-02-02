@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,13 +15,13 @@
 
 try:
     # altair dependency is optional
-    from superlinked.evaluation.charts.recency_plotter import RecencyPlotter
+    from qyver.evaluation.charts.recency_plotter import RecencyPlotter
 except ImportError:
     pass
 
 try:
     # pymongo dependency is optional
-    from superlinked.framework.dsl.storage.mongo_db_vector_database import (
+    from qyver.framework.dsl.storage.mongo_db_vector_database import (
         MongoDBVectorDatabase,
     )
 except ImportError:
@@ -29,7 +29,7 @@ except ImportError:
 
 try:
     # qdrant dependency is optional
-    from superlinked.framework.dsl.storage.qdrant_vector_database import (
+    from qyver.framework.dsl.storage.qdrant_vector_database import (
         QdrantVectorDatabase,
     )
 except ImportError:
@@ -37,27 +37,27 @@ except ImportError:
 
 try:
     # redis dependency is optional
-    from superlinked.framework.dsl.storage.redis_vector_database import (
+    from qyver.framework.dsl.storage.redis_vector_database import (
         RedisVectorDatabase,
     )
 except ImportError:
     pass
-from superlinked.evaluation.pandas_converter import PandasConverter
-from superlinked.evaluation.vector_sampler import VectorSampler
-from superlinked.framework.blob.blob_handler_factory import BlobHandlerConfig
-from superlinked.framework.common.dag.context import CONTEXT_COMMON, CONTEXT_COMMON_NOW
-from superlinked.framework.common.dag.period_time import PeriodTime
-from superlinked.framework.common.nlq.open_ai import OpenAIClientConfig
-from superlinked.framework.common.parser.dataframe_parser import DataFrameParser
-from superlinked.framework.common.parser.json_parser import JsonParser
-from superlinked.framework.common.schema.event_schema import EventSchema, event_schema
-from superlinked.framework.common.schema.event_schema_object import (
+from qyver.evaluation.pandas_converter import PandasConverter
+from qyver.evaluation.vector_sampler import VectorSampler
+from qyver.framework.blob.blob_handler_factory import BlobHandlerConfig
+from qyver.framework.common.dag.context import CONTEXT_COMMON, CONTEXT_COMMON_NOW
+from qyver.framework.common.dag.period_time import PeriodTime
+from qyver.framework.common.nlq.open_ai import OpenAIClientConfig
+from qyver.framework.common.parser.dataframe_parser import DataFrameParser
+from qyver.framework.common.parser.json_parser import JsonParser
+from qyver.framework.common.schema.event_schema import EventSchema, event_schema
+from qyver.framework.common.schema.event_schema_object import (
     CreatedAtField,
     SchemaReference,
 )
-from superlinked.framework.common.schema.id_schema_object import IdField
-from superlinked.framework.common.schema.schema import Schema, schema
-from superlinked.framework.common.schema.schema_object import (
+from qyver.framework.common.schema.id_schema_object import IdField
+from qyver.framework.common.schema.schema import Schema, schema
+from qyver.framework.common.schema.schema_object import (
     Blob,
     Float,
     FloatList,
@@ -66,52 +66,52 @@ from superlinked.framework.common.schema.schema_object import (
     StringList,
     Timestamp,
 )
-from superlinked.framework.common.space.config.embedding.image_embedding_config import (
+from qyver.framework.common.space.config.embedding.image_embedding_config import (
     ModelHandler,
 )
-from superlinked.framework.common.space.config.embedding.number_embedding_config import (
+from qyver.framework.common.space.config.embedding.number_embedding_config import (
     LinearScale,
     LogarithmicScale,
     Mode,
 )
-from superlinked.framework.common.util.interactive_util import get_altair_renderer
-from superlinked.framework.dsl.app.interactive.interactive_app import InteractiveApp
-from superlinked.framework.dsl.executor.in_memory.in_memory_executor import (
+from qyver.framework.common.util.interactive_util import get_altair_renderer
+from qyver.framework.dsl.app.interactive.interactive_app import InteractiveApp
+from qyver.framework.dsl.executor.in_memory.in_memory_executor import (
     InMemoryApp,
     InMemoryExecutor,
 )
-from superlinked.framework.dsl.executor.interactive.interactive_executor import (
+from qyver.framework.dsl.executor.interactive.interactive_executor import (
     InteractiveExecutor,
 )
-from superlinked.framework.dsl.executor.rest.rest_configuration import RestQuery
-from superlinked.framework.dsl.executor.rest.rest_descriptor import RestDescriptor
-from superlinked.framework.dsl.executor.rest.rest_executor import RestExecutor
-from superlinked.framework.dsl.index.effect import Effect
-from superlinked.framework.dsl.index.index import Index
-from superlinked.framework.dsl.query.param import Param
-from superlinked.framework.dsl.query.query import Query
-from superlinked.framework.dsl.query.result import QueryResult
-from superlinked.framework.dsl.registry.superlinked_registry import SuperlinkedRegistry
-from superlinked.framework.dsl.source.data_loader_source import (
+from qyver.framework.dsl.executor.rest.rest_configuration import RestQuery
+from qyver.framework.dsl.executor.rest.rest_descriptor import RestDescriptor
+from qyver.framework.dsl.executor.rest.rest_executor import RestExecutor
+from qyver.framework.dsl.index.effect import Effect
+from qyver.framework.dsl.index.index import Index
+from qyver.framework.dsl.query.param import Param
+from qyver.framework.dsl.query.query import Query
+from qyver.framework.dsl.query.result import QueryResult
+from qyver.framework.dsl.registry.qyver_registry import qyverRegistry
+from qyver.framework.dsl.source.data_loader_source import (
     DataFormat,
     DataLoaderConfig,
     DataLoaderSource,
 )
-from superlinked.framework.dsl.source.in_memory_source import InMemorySource
-from superlinked.framework.dsl.source.interactive_source import InteractiveSource
-from superlinked.framework.dsl.source.rest_source import RestSource
-from superlinked.framework.dsl.space.categorical_similarity_space import (
+from qyver.framework.dsl.source.in_memory_source import InMemorySource
+from qyver.framework.dsl.source.interactive_source import InteractiveSource
+from qyver.framework.dsl.source.rest_source import RestSource
+from qyver.framework.dsl.space.categorical_similarity_space import (
     CategoricalSimilaritySpace,
 )
-from superlinked.framework.dsl.space.custom_space import CustomSpace
-from superlinked.framework.dsl.space.image_space import ImageSpace
-from superlinked.framework.dsl.space.number_space import NumberSpace
-from superlinked.framework.dsl.space.recency_space import RecencySpace
-from superlinked.framework.dsl.space.text_similarity_space import (
+from qyver.framework.dsl.space.custom_space import CustomSpace
+from qyver.framework.dsl.space.image_space import ImageSpace
+from qyver.framework.dsl.space.number_space import NumberSpace
+from qyver.framework.dsl.space.recency_space import RecencySpace
+from qyver.framework.dsl.space.text_similarity_space import (
     TextSimilaritySpace,
     chunk,
 )
-from superlinked.framework.dsl.storage.in_memory_vector_database import (
+from qyver.framework.dsl.storage.in_memory_vector_database import (
     InMemoryVectorDatabase,
 )
 
@@ -195,12 +195,12 @@ __all__ = [
     "LinearScale",
     "LogarithmicScale",
     # misc
-    "SuperlinkedRegistry",
+    "qyverRegistry",
     "BlobHandlerConfig",
 ]
 
-from superlinked.framework.common.superlinked_logging import (
-    SuperlinkedLoggerConfigurator,
+from qyver.framework.common.qyver_logging import (
+    qyverLoggerConfigurator,
 )
 
-SuperlinkedLoggerConfigurator.configure_default_logger()
+qyverLoggerConfigurator.configure_default_logger()

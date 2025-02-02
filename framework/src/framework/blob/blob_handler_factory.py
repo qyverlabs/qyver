@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,9 +17,9 @@ from dataclasses import dataclass
 import structlog
 from beartype.typing import Any, cast
 
-from superlinked.framework.blob.blob_handler import BlobHandler
-from superlinked.framework.common.settings import Settings
-from superlinked.framework.common.util.class_helper import ClassHelper
+from qyver.framework.blob.blob_handler import BlobHandler
+from qyver.framework.common.settings import Settings
+from qyver.framework.common.util.class_helper import ClassHelper
 
 logger = structlog.getLogger()
 

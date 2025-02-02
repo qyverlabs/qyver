@@ -1,10 +1,10 @@
-Module superlinked.framework.common.schema.schema
+Module qyver.framework.common.schema.schema
 =================================================
 
 Functions
 ---------
 
-`schema(cls: type[T]) ‑> type[~T] | type[superlinked.framework.common.schema.id_schema_object.IdSchemaObject]`
+`schema(cls: type[T]) ‑> type[~T] | type[qyver.framework.common.schema.id_schema_object.IdSchemaObject]`
 :   Use this decorator to annotate your class as a schema
     that can be used to represent your structured data.
     

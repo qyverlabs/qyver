@@ -1,4 +1,4 @@
-Module superlinked.framework.dsl.query.nlq_param_evaluator
+Module qyver.framework.dsl.query.nlq_param_evaluator
 ==========================================================
 
 Classes

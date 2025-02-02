@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -25,9 +25,9 @@ from PIL.Image import Image
 from torchvision.transforms.transforms import Compose  # type:ignore[import-untyped]
 from typing_extensions import override
 
-from superlinked.framework.common.dag.context import ExecutionContext
-from superlinked.framework.common.space.embedding.model_manager import ModelManager
-from superlinked.framework.common.util.gpu_embedding_util import GpuEmbeddingUtil
+from qyver.framework.common.dag.context import ExecutionContext
+from qyver.framework.common.space.embedding.model_manager import ModelManager
+from qyver.framework.common.util.gpu_embedding_util import GpuEmbeddingUtil
 
 
 class OpenClipManager(ModelManager):

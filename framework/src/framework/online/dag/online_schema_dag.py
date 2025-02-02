@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,21 +14,21 @@
 
 from beartype.typing import Sequence, cast
 
-from superlinked.framework.common.dag.context import ExecutionContext
-from superlinked.framework.common.dag.exception import (
+from qyver.framework.common.dag.context import ExecutionContext
+from qyver.framework.common.dag.exception import (
     LeafNodeCountException,
     LeafNodeTypeException,
     MultipleRootSchemaException,
 )
-from superlinked.framework.common.dag.schema_field_node import SchemaFieldNode
-from superlinked.framework.common.data_types import Vector
-from superlinked.framework.common.parser.parsed_schema import ParsedSchema
-from superlinked.framework.common.schema.exception import SchemaMismatchException
-from superlinked.framework.common.schema.schema_object import SchemaObject
-from superlinked.framework.online.dag.evaluation_result import EvaluationResult
-from superlinked.framework.online.dag.online_index_node import OnlineIndexNode
-from superlinked.framework.online.dag.online_node import OnlineNode
-from superlinked.framework.online.dag.online_schema_field_node import (
+from qyver.framework.common.dag.schema_field_node import SchemaFieldNode
+from qyver.framework.common.data_types import Vector
+from qyver.framework.common.parser.parsed_schema import ParsedSchema
+from qyver.framework.common.schema.exception import SchemaMismatchException
+from qyver.framework.common.schema.schema_object import SchemaObject
+from qyver.framework.online.dag.evaluation_result import EvaluationResult
+from qyver.framework.online.dag.online_index_node import OnlineIndexNode
+from qyver.framework.online.dag.online_node import OnlineNode
+from qyver.framework.online.dag.online_schema_field_node import (
     OnlineSchemaFieldNode,
 )
 

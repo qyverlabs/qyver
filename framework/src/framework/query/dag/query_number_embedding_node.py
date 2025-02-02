@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,22 +17,22 @@ from __future__ import annotations
 from beartype.typing import Mapping, Sequence, cast
 from typing_extensions import override
 
-from superlinked.framework.common.dag.context import ExecutionContext
-from superlinked.framework.common.dag.number_embedding_node import NumberEmbeddingNode
-from superlinked.framework.common.data_types import Vector
-from superlinked.framework.common.interface.weighted import Weighted
-from superlinked.framework.common.space.config.embedding.number_embedding_config import (
+from qyver.framework.common.dag.context import ExecutionContext
+from qyver.framework.common.dag.number_embedding_node import NumberEmbeddingNode
+from qyver.framework.common.data_types import Vector
+from qyver.framework.common.interface.weighted import Weighted
+from qyver.framework.common.space.config.embedding.number_embedding_config import (
     Mode,
     NumberEmbeddingConfig,
 )
-from superlinked.framework.query.dag.query_embedding_orphan_node import (
+from qyver.framework.query.dag.query_embedding_orphan_node import (
     QueryEmbeddingOrphanNode,
 )
-from superlinked.framework.query.dag.query_evaluation_data_types import (
+from qyver.framework.query.dag.query_evaluation_data_types import (
     QueryEvaluationResult,
 )
-from superlinked.framework.query.dag.query_node import QueryNode
-from superlinked.framework.query.query_node_input import QueryNodeInput
+from qyver.framework.query.dag.query_node import QueryNode
+from qyver.framework.query.query_node_input import QueryNodeInput
 
 
 class QueryNumberEmbeddingNode(QueryEmbeddingOrphanNode[float, NumberEmbeddingNode, float]):

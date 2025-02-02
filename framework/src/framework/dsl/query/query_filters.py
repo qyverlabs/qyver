@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,15 +17,15 @@ from functools import reduce
 
 from beartype.typing import Mapping, Sequence, cast
 
-from superlinked.framework.common.dag.schema_field_node import SchemaFieldNode
-from superlinked.framework.common.exception import QueryException
-from superlinked.framework.dsl.query.predicate.binary_op import BinaryOp
-from superlinked.framework.dsl.query.predicate.binary_predicate import (
+from qyver.framework.common.dag.schema_field_node import SchemaFieldNode
+from qyver.framework.common.exception import QueryException
+from qyver.framework.dsl.query.predicate.binary_op import BinaryOp
+from qyver.framework.dsl.query.predicate.binary_predicate import (
     EvaluatedBinaryPredicate,
     LooksLikePredicate,
     SimilarPredicate,
 )
-from superlinked.framework.dsl.space.space import Space
+from qyver.framework.dsl.space.space import Space
 
 # Exclude from documentation.
 __pdoc__ = {}

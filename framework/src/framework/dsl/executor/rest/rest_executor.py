@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,26 +16,26 @@ from __future__ import annotations
 
 from beartype.typing import Any, Mapping, Sequence
 
-from superlinked.framework.blob.blob_handler_factory import (
+from qyver.framework.blob.blob_handler_factory import (
     BlobHandlerConfig,
     BlobHandlerFactory,
 )
-from superlinked.framework.common.dag.context import (
+from qyver.framework.common.dag.context import (
     ContextValue,
     ExecutionContext,
     ExecutionEnvironment,
 )
-from superlinked.framework.dsl.app.rest.rest_app import RestApp
-from superlinked.framework.dsl.executor.executor import Executor
-from superlinked.framework.dsl.executor.rest.rest_configuration import (
+from qyver.framework.dsl.app.rest.rest_app import RestApp
+from qyver.framework.dsl.executor.executor import Executor
+from qyver.framework.dsl.executor.rest.rest_configuration import (
     RestEndpointConfiguration,
     RestQuery,
 )
-from superlinked.framework.dsl.index.index import Index
-from superlinked.framework.dsl.source.data_loader_source import DataLoaderSource
-from superlinked.framework.dsl.source.rest_source import RestSource
-from superlinked.framework.dsl.storage.vector_database import VectorDatabase
-from superlinked.framework.queue.queue_factory import QueueFactory
+from qyver.framework.dsl.index.index import Index
+from qyver.framework.dsl.source.data_loader_source import DataLoaderSource
+from qyver.framework.dsl.source.rest_source import RestSource
+from qyver.framework.dsl.storage.vector_database import VectorDatabase
+from qyver.framework.queue.queue_factory import QueueFactory
 
 
 class RestExecutor(Executor[RestSource | DataLoaderSource]):

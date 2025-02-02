@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,13 +15,13 @@
 from beartype.typing import Generic, Sequence
 from typing_extensions import override
 
-from superlinked.framework.common.dag.context import ExecutionContext
-from superlinked.framework.common.interface.weighted import Weighted
-from superlinked.framework.common.space.aggregation.aggregation import Aggregation
-from superlinked.framework.common.space.config.aggregation.aggregation_config import (
+from qyver.framework.common.dag.context import ExecutionContext
+from qyver.framework.common.interface.weighted import Weighted
+from qyver.framework.common.space.aggregation.aggregation import Aggregation
+from qyver.framework.common.space.config.aggregation.aggregation_config import (
     AggregationInputT,
 )
-from superlinked.framework.common.transform.transform import Step
+from qyver.framework.common.transform.transform import Step
 
 
 class AggregationStep(

@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,15 +18,15 @@ import numpy as np
 from beartype.typing import cast
 from typing_extensions import TypeVar, override
 
-from superlinked.framework.common.dag.context import ExecutionContext
-from superlinked.framework.common.data_types import Vector
-from superlinked.framework.common.embedding.embedding import Embedding
-from superlinked.framework.common.space.config.number_embedding_config import (
+from qyver.framework.common.dag.context import ExecutionContext
+from qyver.framework.common.data_types import Vector
+from qyver.framework.common.embedding.embedding import Embedding
+from qyver.framework.common.space.config.number_embedding_config import (
     LogarithmicScale,
     Mode,
     NumberEmbeddingConfig,
 )
-from superlinked.framework.common.space.normalization import NoNorm, Normalization
+from qyver.framework.common.space.normalization import NoNorm, Normalization
 
 NumberT = TypeVar("NumberT", int, float)
 

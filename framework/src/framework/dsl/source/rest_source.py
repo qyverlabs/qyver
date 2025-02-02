@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,11 +15,11 @@
 from beartype.typing import Any, Generic, cast
 from pydantic.alias_generators import to_snake
 
-from superlinked.framework.common.parser.data_parser import DataParser
-from superlinked.framework.common.parser.json_parser import JsonParser
-from superlinked.framework.common.schema.id_schema_object import IdSchemaObjectT
-from superlinked.framework.dsl.executor.rest.rest_descriptor import RestDescriptor
-from superlinked.framework.online.source.online_source import OnlineSource
+from qyver.framework.common.parser.data_parser import DataParser
+from qyver.framework.common.parser.json_parser import JsonParser
+from qyver.framework.common.schema.id_schema_object import IdSchemaObjectT
+from qyver.framework.dsl.executor.rest.rest_descriptor import RestDescriptor
+from qyver.framework.online.source.online_source import OnlineSource
 
 
 class RestSource(OnlineSource[IdSchemaObjectT, dict[str, Any]], Generic[IdSchemaObjectT]):

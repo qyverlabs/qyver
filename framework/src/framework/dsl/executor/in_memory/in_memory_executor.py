@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,14 +17,14 @@ from __future__ import annotations
 import structlog
 from beartype.typing import Mapping, Sequence
 
-from superlinked.framework.common.dag.context import ContextValue
-from superlinked.framework.dsl.app.in_memory.in_memory_app import InMemoryApp
-from superlinked.framework.dsl.executor.interactive.interactive_executor import (
+from qyver.framework.common.dag.context import ContextValue
+from qyver.framework.dsl.app.in_memory.in_memory_app import InMemoryApp
+from qyver.framework.dsl.executor.interactive.interactive_executor import (
     InteractiveExecutor,
 )
-from superlinked.framework.dsl.index.index import Index
-from superlinked.framework.dsl.source.in_memory_source import InMemorySource
-from superlinked.framework.dsl.storage.in_memory_vector_database import (
+from qyver.framework.dsl.index.index import Index
+from qyver.framework.dsl.source.in_memory_source import InMemorySource
+from qyver.framework.dsl.storage.in_memory_vector_database import (
     InMemoryVectorDatabase,
 )
 

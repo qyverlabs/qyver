@@ -1,4 +1,4 @@
-Module superlinked.framework.dsl.query.query_clause
+Module qyver.framework.dsl.query.query_clause
 ===================================================
 
 Classes
@@ -9,9 +9,9 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.dsl.query.query_clause.QueryClause
+    * qyver.framework.dsl.query.query_clause.QueryClause
     * typing.Generic
-    * superlinked.framework.common.interface.has_annotation.HasAnnotation
+    * qyver.framework.common.interface.has_annotation.HasAnnotation
     * abc.ABC
 
     ### Class variables
@@ -19,10 +19,10 @@ Classes
     `group_key: int | None`
     :
 
-    `op: superlinked.framework.common.interface.comparison_operation_type.ComparisonOperationType`
+    `op: qyver.framework.common.interface.comparison_operation_type.ComparisonOperationType`
     :
 
-    `operand: superlinked.framework.common.schema.schema_object.SchemaField`
+    `operand: qyver.framework.common.schema.schema_object.SchemaField`
     :
 
     ### Instance variables
@@ -35,7 +35,7 @@ Classes
 
     ### Methods
 
-    `evaluate(self) ‑> superlinked.framework.common.interface.comparison_operand.ComparisonOperation[superlinked.framework.common.schema.schema_object.SchemaField] | None`
+    `evaluate(self) ‑> qyver.framework.common.interface.comparison_operand.ComparisonOperation[qyver.framework.common.schema.schema_object.SchemaField] | None`
     :
 
     `get_default_value_param_name(self) ‑> str`
@@ -46,7 +46,7 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.dsl.query.query_clause.QueryClause
+    * qyver.framework.dsl.query.query_clause.QueryClause
     * typing.Generic
 
     ### Methods
@@ -65,15 +65,15 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.dsl.query.query_clause.WeightedQueryClause
-    * superlinked.framework.dsl.query.query_clause.QueryClause
+    * qyver.framework.dsl.query.query_clause.WeightedQueryClause
+    * qyver.framework.dsl.query.query_clause.QueryClause
     * typing.Generic
-    * superlinked.framework.common.interface.has_annotation.HasAnnotation
+    * qyver.framework.common.interface.has_annotation.HasAnnotation
     * abc.ABC
 
     ### Class variables
 
-    `schema_field: superlinked.framework.common.schema.schema_object.SchemaField`
+    `schema_field: qyver.framework.common.schema.schema_object.SchemaField`
     :
 
     ### Instance variables
@@ -86,7 +86,7 @@ Classes
 
     ### Methods
 
-    `evaluate(self) ‑> superlinked.framework.dsl.query.predicate.binary_predicate.EvaluatedBinaryPredicate[superlinked.framework.dsl.query.predicate.binary_predicate.LooksLikePredicate] | None`
+    `evaluate(self) ‑> qyver.framework.dsl.query.predicate.binary_predicate.EvaluatedBinaryPredicate[qyver.framework.dsl.query.predicate.binary_predicate.LooksLikePredicate] | None`
     :
 
     `get_default_value_param_name(self) ‑> str`
@@ -100,12 +100,12 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.dsl.query.query_clause.QueryClause
+    * qyver.framework.dsl.query.query_clause.QueryClause
     * typing.Generic
 
     ### Class variables
 
-    `client_config: superlinked.framework.common.nlq.open_ai.OpenAIClientConfig`
+    `client_config: qyver.framework.common.nlq.open_ai.OpenAIClientConfig`
     :
 
     ### Methods
@@ -121,7 +121,7 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.dsl.query.query_clause.QueryClause
+    * qyver.framework.dsl.query.query_clause.QueryClause
     * typing.Generic
 
     ### Methods
@@ -137,7 +137,7 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.dsl.query.query_clause.QueryClause
+    * qyver.framework.dsl.query.query_clause.QueryClause
     * typing.Generic
 
     ### Methods
@@ -157,24 +157,24 @@ Classes
 
     ### Descendants
 
-    * superlinked.framework.dsl.query.query_clause.HardFilterClause
-    * superlinked.framework.dsl.query.query_clause.LimitClause
-    * superlinked.framework.dsl.query.query_clause.NLQClause
-    * superlinked.framework.dsl.query.query_clause.NLQSystemPromptClause
-    * superlinked.framework.dsl.query.query_clause.OverriddenNowClause
-    * superlinked.framework.dsl.query.query_clause.RadiusClause
-    * superlinked.framework.dsl.query.query_clause.SelectClause
-    * superlinked.framework.dsl.query.query_clause.SpaceWeightClause
-    * superlinked.framework.dsl.query.query_clause.WeightedQueryClause
+    * qyver.framework.dsl.query.query_clause.HardFilterClause
+    * qyver.framework.dsl.query.query_clause.LimitClause
+    * qyver.framework.dsl.query.query_clause.NLQClause
+    * qyver.framework.dsl.query.query_clause.NLQSystemPromptClause
+    * qyver.framework.dsl.query.query_clause.OverriddenNowClause
+    * qyver.framework.dsl.query.query_clause.RadiusClause
+    * qyver.framework.dsl.query.query_clause.SelectClause
+    * qyver.framework.dsl.query.query_clause.SpaceWeightClause
+    * qyver.framework.dsl.query.query_clause.WeightedQueryClause
 
     ### Class variables
 
-    `value_param: superlinked.framework.dsl.query.param.Param | superlinked.framework.common.interface.evaluated.Evaluated[superlinked.framework.dsl.query.param.Param]`
+    `value_param: qyver.framework.dsl.query.param.Param | qyver.framework.common.interface.evaluated.Evaluated[qyver.framework.dsl.query.param.Param]`
     :
 
     ### Static methods
 
-    `get_param(param: Param | Evaluated[Param]) ‑> superlinked.framework.dsl.query.param.Param`
+    `get_param(param: Param | Evaluated[Param]) ‑> qyver.framework.dsl.query.param.Param`
     :
 
     `get_param_value(param: Param | Evaluated[Param]) ‑> collections.abc.Sequence[str] | collections.abc.Sequence[float] | PIL.Image.Image | str | int | float | bool | None | tuple[str | None, str | None]`
@@ -205,7 +205,7 @@ Classes
     `get_default_value_param_name(self) ‑> str`
     :
 
-    `get_value(self) ‑> float | int | str | superlinked.framework.common.data_types.Vector | list[float] | list[str] | superlinked.framework.common.schema.blob_information.BlobInformation | None`
+    `get_value(self) ‑> float | int | str | qyver.framework.common.data_types.Vector | list[float] | list[str] | qyver.framework.common.schema.blob_information.BlobInformation | None`
     :
 
 `RadiusClause(value_param: Param | Evaluated[Param])`
@@ -213,7 +213,7 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.dsl.query.query_clause.QueryClause
+    * qyver.framework.dsl.query.query_clause.QueryClause
     * typing.Generic
 
     ### Methods
@@ -232,7 +232,7 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.dsl.query.query_clause.QueryClause
+    * qyver.framework.dsl.query.query_clause.QueryClause
     * typing.Generic
 
     ### Methods
@@ -251,15 +251,15 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.dsl.query.query_clause.WeightedQueryClause
-    * superlinked.framework.dsl.query.query_clause.QueryClause
+    * qyver.framework.dsl.query.query_clause.WeightedQueryClause
+    * qyver.framework.dsl.query.query_clause.QueryClause
     * typing.Generic
-    * superlinked.framework.common.interface.has_annotation.HasAnnotation
+    * qyver.framework.common.interface.has_annotation.HasAnnotation
     * abc.ABC
 
     ### Class variables
 
-    `field_set: superlinked.framework.dsl.space.space_field_set.SpaceFieldSet`
+    `field_set: qyver.framework.dsl.space.space_field_set.SpaceFieldSet`
     :
 
     ### Instance variables
@@ -275,7 +275,7 @@ Classes
 
     ### Methods
 
-    `evaluate(self) ‑> tuple[superlinked.framework.dsl.space.space.Space, superlinked.framework.common.interface.weighted.Weighted[float | int | str | superlinked.framework.common.data_types.Vector | list[float] | list[str] | superlinked.framework.common.schema.blob_information.BlobInformation]] | None`
+    `evaluate(self) ‑> tuple[qyver.framework.dsl.space.space.Space, qyver.framework.common.interface.weighted.Weighted[float | int | str | qyver.framework.common.data_types.Vector | list[float] | list[str] | qyver.framework.common.schema.blob_information.BlobInformation]] | None`
     :
 
     `get_allowed_values(self, param: Param | Evaluated[Param]) ‑> set[collections.abc.Sequence[str] | collections.abc.Sequence[float] | PIL.Image.Image | str | int | float | bool | None | tuple[str | None, str | None]]`
@@ -292,14 +292,14 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.dsl.query.query_clause.QueryClause
+    * qyver.framework.dsl.query.query_clause.QueryClause
     * typing.Generic
-    * superlinked.framework.common.interface.has_annotation.HasAnnotation
+    * qyver.framework.common.interface.has_annotation.HasAnnotation
     * abc.ABC
 
     ### Class variables
 
-    `space: superlinked.framework.dsl.space.space.Space`
+    `space: qyver.framework.dsl.space.space.Space`
     :
 
     ### Instance variables
@@ -312,7 +312,7 @@ Classes
 
     ### Methods
 
-    `evaluate(self) ‑> tuple[superlinked.framework.dsl.space.space.Space, float]`
+    `evaluate(self) ‑> tuple[qyver.framework.dsl.space.space.Space, float]`
     :
 
     `get_default_value_param_name(self) ‑> str`
@@ -326,17 +326,17 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.dsl.query.query_clause.QueryClause
+    * qyver.framework.dsl.query.query_clause.QueryClause
     * typing.Generic
 
     ### Descendants
 
-    * superlinked.framework.dsl.query.query_clause.LooksLikeFilterClause
-    * superlinked.framework.dsl.query.query_clause.SimilarFilterClause
+    * qyver.framework.dsl.query.query_clause.LooksLikeFilterClause
+    * qyver.framework.dsl.query.query_clause.SimilarFilterClause
 
     ### Class variables
 
-    `weight_param: superlinked.framework.dsl.query.param.Param | superlinked.framework.common.interface.evaluated.Evaluated[superlinked.framework.dsl.query.param.Param]`
+    `weight_param: qyver.framework.dsl.query.param.Param | qyver.framework.common.interface.evaluated.Evaluated[qyver.framework.dsl.query.param.Param]`
     :
 
     ### Instance variables

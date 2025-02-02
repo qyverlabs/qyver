@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,27 +16,27 @@ from abc import ABC, abstractmethod
 
 from beartype.typing import Any, Sequence
 
-from superlinked.framework.common.calculation.distance_metric import DistanceMetric
-from superlinked.framework.common.const import constants
-from superlinked.framework.common.exception import InitializationException
-from superlinked.framework.common.settings import Settings
-from superlinked.framework.common.storage.entity.entity import Entity
-from superlinked.framework.common.storage.entity.entity_data import EntityData
-from superlinked.framework.common.storage.index_config import IndexConfig
-from superlinked.framework.common.storage.query.vdb_knn_search_params import (
+from qyver.framework.common.calculation.distance_metric import DistanceMetric
+from qyver.framework.common.const import constants
+from qyver.framework.common.exception import InitializationException
+from qyver.framework.common.settings import Settings
+from qyver.framework.common.storage.entity.entity import Entity
+from qyver.framework.common.storage.entity.entity_data import EntityData
+from qyver.framework.common.storage.index_config import IndexConfig
+from qyver.framework.common.storage.query.vdb_knn_search_params import (
     VDBKNNSearchParams,
 )
-from superlinked.framework.common.storage.result_entity_data import ResultEntityData
-from superlinked.framework.common.storage.search_index.manager.search_index_manager import (
+from qyver.framework.common.storage.result_entity_data import ResultEntityData
+from qyver.framework.common.storage.search_index.manager.search_index_manager import (
     SearchIndexManager,
 )
-from superlinked.framework.common.storage.search_index.search_algorithm import (
+from qyver.framework.common.storage.search_index.search_algorithm import (
     SearchAlgorithm,
 )
-from superlinked.framework.common.storage.search_index.vector_component_precision import (
+from qyver.framework.common.storage.search_index.vector_component_precision import (
     VectorComponentPrecision,
 )
-from superlinked.framework.storage.in_memory.object_serializer import ObjectSerializer
+from qyver.framework.storage.in_memory.object_serializer import ObjectSerializer
 
 
 class VDBConnector(ABC):

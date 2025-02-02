@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,27 +14,27 @@
 
 import logging
 
-from superlinked.framework.common.logging import PACKAGE_NAME, LoggerConfigurator
-from superlinked.framework.common.settings import Settings
+from qyver.framework.common.logging import PACKAGE_NAME, LoggerConfigurator
+from qyver.framework.common.settings import Settings
 
 
-class SuperlinkedLoggerConfigurator:
+class qyverLoggerConfigurator:
     @staticmethod
     def configure_default_logger() -> None:
         settings = Settings()
-        if settings.SUPERLINKED_LOG_LEVEL:
-            logging.getLogger(PACKAGE_NAME).setLevel(settings.SUPERLINKED_LOG_LEVEL)
+        if settings.qyver_LOG_LEVEL:
+            logging.getLogger(PACKAGE_NAME).setLevel(settings.qyver_LOG_LEVEL)
         LoggerConfigurator.configure_default_logger(
-            LoggerConfigurator._get_common_processors(settings.SUPERLINKED_EXPOSE_PII)
+            LoggerConfigurator._get_common_processors(settings.qyver_EXPOSE_PII)
         )
 
     @staticmethod
     def configure_structlog_logger() -> None:
         settings = Settings()
-        if settings.SUPERLINKED_LOG_LEVEL:
-            logging.getLogger(PACKAGE_NAME).setLevel(settings.SUPERLINKED_LOG_LEVEL)
+        if settings.qyver_LOG_LEVEL:
+            logging.getLogger(PACKAGE_NAME).setLevel(settings.qyver_LOG_LEVEL)
         LoggerConfigurator.configure_structlog_logger(
-            settings.SUPERLINKED_LOG_FILE_PATH,
-            expose_pii=settings.SUPERLINKED_EXPOSE_PII,
-            log_as_json=settings.SUPERLINKED_LOG_AS_JSON,
+            settings.qyver_LOG_FILE_PATH,
+            expose_pii=settings.qyver_EXPOSE_PII,
+            log_as_json=settings.qyver_LOG_AS_JSON,
         )

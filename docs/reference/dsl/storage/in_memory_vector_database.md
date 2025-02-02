@@ -1,4 +1,4 @@
-Module superlinked.framework.dsl.storage.in_memory_vector_database
+Module qyver.framework.dsl.storage.in_memory_vector_database
 ==================================================================
 
 Classes
@@ -19,6 +19,6 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.dsl.storage.vector_database.VectorDatabase
+    * qyver.framework.dsl.storage.vector_database.VectorDatabase
     * abc.ABC
     * typing.Generic

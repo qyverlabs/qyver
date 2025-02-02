@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,9 +18,9 @@ from importlib import resources as imp_resources
 from beartype.typing import Sequence
 from jinja2 import Environment
 
-from superlinked.framework.dsl.query.nlq.nlq_clause_collector import NLQClauseCollector
-from superlinked.framework.dsl.query.nlq.param_filler import templates
-from superlinked.framework.dsl.query.query_clause import (
+from qyver.framework.dsl.query.nlq.nlq_clause_collector import NLQClauseCollector
+from qyver.framework.dsl.query.nlq.param_filler import templates
+from qyver.framework.dsl.query.query_clause import (
     HardFilterClause,
     LooksLikeFilterClause,
     SimilarFilterClause,

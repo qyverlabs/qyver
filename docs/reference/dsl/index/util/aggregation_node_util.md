@@ -1,4 +1,4 @@
-Module superlinked.framework.dsl.index.util.aggregation_node_util
+Module qyver.framework.dsl.index.util.aggregation_node_util
 =================================================================
 
 Classes
@@ -9,5 +9,5 @@ Classes
 
     ### Static methods
 
-    `init_aggregation_node(aggregation_effect_group: superlinked.framework.dsl.index.util.aggregation_effect_group.AggregationEffectGroup[~AggregationInputT, ~EmbeddingInputT], effect_modifier: superlinked.framework.common.dag.effect_modifier.EffectModifier) ‑> superlinked.framework.common.dag.aggregation_node.AggregationNode[~AggregationInputT, ~EmbeddingInputT]`
+    `init_aggregation_node(aggregation_effect_group: qyver.framework.dsl.index.util.aggregation_effect_group.AggregationEffectGroup[~AggregationInputT, ~EmbeddingInputT], effect_modifier: qyver.framework.common.dag.effect_modifier.EffectModifier) ‑> qyver.framework.common.dag.aggregation_node.AggregationNode[~AggregationInputT, ~EmbeddingInputT]`
     :

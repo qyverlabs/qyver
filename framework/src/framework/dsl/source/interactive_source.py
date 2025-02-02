@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,16 +17,16 @@ from __future__ import annotations
 from beartype.typing import Generic, Sequence, cast
 from typing_extensions import override
 
-from superlinked.framework.common.exception import InitializationException
-from superlinked.framework.common.parser.data_parser import DataParser
-from superlinked.framework.common.parser.json_parser import JsonParser
-from superlinked.framework.common.schema.id_schema_object import (
+from qyver.framework.common.exception import InitializationException
+from qyver.framework.common.parser.data_parser import DataParser
+from qyver.framework.common.parser.json_parser import JsonParser
+from qyver.framework.common.schema.id_schema_object import (
     IdSchemaObject,
     IdSchemaObjectT,
 )
-from superlinked.framework.common.source.types import SourceTypeT
-from superlinked.framework.common.util.type_validator import TypeValidator
-from superlinked.framework.online.source.online_source import OnlineSource
+from qyver.framework.common.source.types import SourceTypeT
+from qyver.framework.common.util.type_validator import TypeValidator
+from qyver.framework.online.source.online_source import OnlineSource
 
 
 class InteractiveSource(OnlineSource[IdSchemaObjectT, SourceTypeT], Generic[IdSchemaObjectT, SourceTypeT]):

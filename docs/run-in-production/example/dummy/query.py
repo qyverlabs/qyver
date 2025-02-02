@@ -1,4 +1,4 @@
-from superlinked import framework as sl
+from qyver import framework as sl
 
 from .index import index, text_space, your_schema
 

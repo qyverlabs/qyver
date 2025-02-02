@@ -1,4 +1,4 @@
-Module superlinked.framework.dsl.space.has_space_field_set
+Module qyver.framework.dsl.space.has_space_field_set
 ==========================================================
 
 Classes
@@ -14,13 +14,13 @@ Classes
 
     ### Descendants
 
-    * superlinked.framework.dsl.space.categorical_similarity_space.CategoricalSimilaritySpace
-    * superlinked.framework.dsl.space.custom_space.CustomSpace
-    * superlinked.framework.dsl.space.number_space.NumberSpace
-    * superlinked.framework.dsl.space.recency_space.RecencySpace
-    * superlinked.framework.dsl.space.text_similarity_space.TextSimilaritySpace
+    * qyver.framework.dsl.space.categorical_similarity_space.CategoricalSimilaritySpace
+    * qyver.framework.dsl.space.custom_space.CustomSpace
+    * qyver.framework.dsl.space.number_space.NumberSpace
+    * qyver.framework.dsl.space.recency_space.RecencySpace
+    * qyver.framework.dsl.space.text_similarity_space.TextSimilaritySpace
 
     ### Instance variables
 
-    `space_field_set: superlinked.framework.dsl.space.space_field_set.SpaceFieldSet`
+    `space_field_set: qyver.framework.dsl.space.space_field_set.SpaceFieldSet`
     :

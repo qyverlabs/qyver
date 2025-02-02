@@ -1,5 +1,5 @@
 ---
-description: Learn about fundamental concepts of Superlinked.
+description: Learn about fundamental concepts of qyver.
 icon: brackets-square
 ---
 
@@ -18,6 +18,6 @@ In order to do that, we have past campaign data at our disposal. In this use cas
 
 ### Follow along in this Colab
 
-{% embed url="https://colab.research.google.com/github/superlinked/superlinked/blob/main/notebook/analytics_keyword_expansion_ads.ipynb" %}
+{% embed url="https://colab.research.google.com/github/qyver/qyver/blob/main/notebook/analytics_keyword_expansion_ads.ipynb" %}
 {% endembed %}
 

@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,35 +15,35 @@
 
 from typing_extensions import override
 
-from superlinked.framework.common.dag.constant_node import ConstantNode
-from superlinked.framework.common.dag.embedding_node import EmbeddingNode
-from superlinked.framework.common.dag.number_embedding_node import NumberEmbeddingNode
-from superlinked.framework.common.dag.schema_field_node import SchemaFieldNode
-from superlinked.framework.common.schema.schema_object import Number, SchemaObject
-from superlinked.framework.common.space.config.aggregation.aggregation_config import (
+from qyver.framework.common.dag.constant_node import ConstantNode
+from qyver.framework.common.dag.embedding_node import EmbeddingNode
+from qyver.framework.common.dag.number_embedding_node import NumberEmbeddingNode
+from qyver.framework.common.dag.schema_field_node import SchemaFieldNode
+from qyver.framework.common.schema.schema_object import Number, SchemaObject
+from qyver.framework.common.space.config.aggregation.aggregation_config import (
     AggregationConfig,
     AvgAggregationConfig,
     MaxAggregationConfig,
     MinAggregationConfig,
 )
-from superlinked.framework.common.space.config.embedding.number_embedding_config import (
+from qyver.framework.common.space.config.embedding.number_embedding_config import (
     LinearScale,
     Mode,
     NumberEmbeddingConfig,
     Scale,
 )
-from superlinked.framework.common.space.config.normalization.normalization_config import (
+from qyver.framework.common.space.config.normalization.normalization_config import (
     NoNormConfig,
 )
-from superlinked.framework.common.space.config.transformation_config import (
+from qyver.framework.common.space.config.transformation_config import (
     TransformationConfig,
 )
-from superlinked.framework.common.util.lazy_property import lazy_property
-from superlinked.framework.dsl.space.exception import NoDefaultNodeException
-from superlinked.framework.dsl.space.has_space_field_set import HasSpaceFieldSet
-from superlinked.framework.dsl.space.input_aggregation_mode import InputAggregationMode
-from superlinked.framework.dsl.space.space import Space
-from superlinked.framework.dsl.space.space_field_set import SpaceFieldSet
+from qyver.framework.common.util.lazy_property import lazy_property
+from qyver.framework.dsl.space.exception import NoDefaultNodeException
+from qyver.framework.dsl.space.has_space_field_set import HasSpaceFieldSet
+from qyver.framework.dsl.space.input_aggregation_mode import InputAggregationMode
+from qyver.framework.dsl.space.space import Space
+from qyver.framework.dsl.space.space_field_set import SpaceFieldSet
 
 
 class NumberSpace(Space[float, float], HasSpaceFieldSet):

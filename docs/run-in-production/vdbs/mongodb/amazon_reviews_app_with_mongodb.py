@@ -1,4 +1,4 @@
-from superlinked import framework as sl
+from qyver import framework as sl
 
 openai_config = sl.OpenAIClientConfig(api_key="YOUR_OPENAI_API_KEY", model="gpt-4o")
 
@@ -31,7 +31,7 @@ naive_query = (
     .limit(sl.Param("limit"))
     .with_natural_query(sl.Param("natural_query"), openai_config)
 )
-superlinked_query = (
+qyver_query = (
     sl.Query(
         advanced_index,
         weights={
@@ -49,7 +49,7 @@ superlinked_query = (
 
 review_source: sl.RestSource = sl.RestSource(review)
 review_data_loader = sl.DataLoaderConfig(
-    "https://storage.googleapis.com/superlinked-sample-datasets/amazon_dataset_ext_1000.jsonl",
+    "https://storage.googleapis.com/qyver-sample-datasets/amazon_dataset_ext_1000.jsonl",
     sl.DataFormat.JSON,
     pandas_read_kwargs={"lines": True, "chunksize": 100},
 )
@@ -67,9 +67,9 @@ executor = sl.RestExecutor(
     indices=[naive_index, advanced_index],
     queries=[
         sl.RestQuery(sl.RestDescriptor("naive_query"), naive_query),
-        sl.RestQuery(sl.RestDescriptor("superlinked_query"), superlinked_query),
+        sl.RestQuery(sl.RestDescriptor("qyver_query"), qyver_query),
     ],
     vector_database=mongo_db_vector_database,
 )
 
-sl.SuperlinkedRegistry.register(executor)
+sl.qyverRegistry.register(executor)

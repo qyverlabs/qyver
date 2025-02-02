@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,14 +15,14 @@
 from beartype.typing import Sequence, TypeVar
 from furl import furl
 
-from superlinked.framework.dsl.executor.exception import DuplicateEndpointException
-from superlinked.framework.dsl.executor.rest.rest_configuration import (
+from qyver.framework.dsl.executor.exception import DuplicateEndpointException
+from qyver.framework.dsl.executor.rest.rest_configuration import (
     RestEndpointConfiguration,
     RestQuery,
 )
-from superlinked.framework.dsl.query.query_mixin import QueryMixin
-from superlinked.framework.dsl.query.result import QueryResult
-from superlinked.framework.dsl.source.rest_source import RestSource
+from qyver.framework.dsl.query.query_mixin import QueryMixin
+from qyver.framework.dsl.query.result import QueryResult
+from qyver.framework.dsl.source.rest_source import RestSource
 
 REST = TypeVar("REST", RestSource, RestQuery)
 

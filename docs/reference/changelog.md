@@ -1,5 +1,5 @@
 ---
-description: Superlinked through time.
+description: qyver through time.
 icon: clock-rotate-left
 ---
 
@@ -13,7 +13,7 @@ icon: clock-rotate-left
 
 
 ### Added
-- **Simplified Superlinked Imports**: Users can now import Superlinked using a single import statement `import superlinked as sl`, eliminating the need to remember the import path of each object.
+- **Simplified qyver Imports**: Users can now import qyver using a single import statement `import qyver as sl`, eliminating the need to remember the import path of each object.
 - **Support for OpenCLIP Models**: Added support for OpenCLIP models in image embeddings, extending the supported models to include OpenCLIP and sentence-transformers supported vision encoders.
 
 ### Fixed
@@ -74,7 +74,7 @@ icon: clock-rotate-left
 
 ### Added
 - **NLQ support for IN and NOT_IN operators**: Added support for NLQ to translate natural language to IN and NOT_IN operators.
-- **Logging for superlinked components**: Logging was added for unified debugging and observability, led by Krisztian.
+- **Logging for qyver components**: Logging was added for unified debugging and observability, led by Krisztian.
 - **Basic caching for text-embeddings**: Implemented caching for 10k items to handle repeating inputs efficiently.
 
 

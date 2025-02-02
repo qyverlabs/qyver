@@ -1,4 +1,4 @@
-Module superlinked.framework.dsl.space.input_aggregation_mode
+Module qyver.framework.dsl.space.input_aggregation_mode
 =============================================================
 
 Classes

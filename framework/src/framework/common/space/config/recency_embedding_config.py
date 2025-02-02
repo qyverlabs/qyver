@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,8 +19,8 @@ import structlog
 from beartype.typing import Sequence
 from typing_extensions import override
 
-from superlinked.framework.common.dag.period_time import PeriodTime
-from superlinked.framework.common.space.config.embedding_config import EmbeddingConfig
+from qyver.framework.common.dag.period_time import PeriodTime
+from qyver.framework.common.space.config.embedding_config import EmbeddingConfig
 
 logger = structlog.getLogger()
 
@@ -59,8 +59,8 @@ class RecencyEmbeddingConfig(EmbeddingConfig):
                 "Negative weight was supplied for some period_time_param. This can lead to very strange "
                 "recency score curves. Use with caution. \n"
                 "To better understand your recency scores use RecencyPlotter."
-                "It can be imported from `superlinked.evaluation.charts.recency_plotter`. \n"
-                "Check an example notebook at: https://github.com/superlinked/superlinked/blob/main"
+                "It can be imported from `qyver.evaluation.charts.recency_plotter`. \n"
+                "Check an example notebook at: https://github.com/qyver/qyver/blob/main"
                 "/notebook/combining_recency_and_relevance.ipynb. "
             )
         if self.time_period_hour_offset >= timedelta(hours=24):

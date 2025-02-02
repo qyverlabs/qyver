@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,23 +17,23 @@ from __future__ import annotations
 from beartype.typing import Any, Iterable, Sequence, cast
 from typing_extensions import Self
 
-from superlinked.framework.common.interface.comparison_operand import (
+from qyver.framework.common.interface.comparison_operand import (
     ComparisonOperand,
     ComparisonOperation,
 )
-from superlinked.framework.common.interface.comparison_operation_type import (
+from qyver.framework.common.interface.comparison_operation_type import (
     ITERABLE_COMPARISON_OPERATION_TYPES,
     ComparisonOperationType,
 )
-from superlinked.framework.common.storage.field.field import Field
-from superlinked.framework.common.storage.field.field_data import FieldData
-from superlinked.framework.common.storage.query.vdb_filter import VDBFilter
-from superlinked.framework.common.util.type_validator import TypeValidator
-from superlinked.framework.storage.mongo.mongo_field_encoder import (
+from qyver.framework.common.storage.field.field import Field
+from qyver.framework.common.storage.field.field_data import FieldData
+from qyver.framework.common.storage.query.vdb_filter import VDBFilter
+from qyver.framework.common.util.type_validator import TypeValidator
+from qyver.framework.storage.mongo.mongo_field_encoder import (
     MongoEncodedTypes,
     MongoFieldEncoder,
 )
-from superlinked.framework.storage.mongo.query.mongo_vdb_knn_search_params import (
+from qyver.framework.storage.mongo.query.mongo_vdb_knn_search_params import (
     MongoVDBKNNSearchParams,
 )
 

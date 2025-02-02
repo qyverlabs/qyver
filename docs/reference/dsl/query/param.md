@@ -1,4 +1,4 @@
-Module superlinked.framework.dsl.query.param
+Module qyver.framework.dsl.query.param
 ============================================
 
 Classes
@@ -29,13 +29,13 @@ Classes
 
     ### Static methods
 
-    `init_default(default: ParamInputType | None = None) ‑> superlinked.framework.dsl.query.param.Param`
+    `init_default(default: ParamInputType | None = None) ‑> qyver.framework.dsl.query.param.Param`
     :
 
-    `init_evaluated(value: Any) ‑> superlinked.framework.common.interface.evaluated.Evaluated[superlinked.framework.dsl.query.param.Param]`
+    `init_evaluated(value: Any) ‑> qyver.framework.common.interface.evaluated.Evaluated[qyver.framework.dsl.query.param.Param]`
     :
 
     ### Methods
 
-    `to_evaluated(self, value: Any) ‑> superlinked.framework.common.interface.evaluated.Evaluated[superlinked.framework.dsl.query.param.Param]`
+    `to_evaluated(self, value: Any) ‑> qyver.framework.common.interface.evaluated.Evaluated[qyver.framework.dsl.query.param.Param]`
     :

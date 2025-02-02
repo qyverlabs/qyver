@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,29 +16,29 @@ import redis
 from beartype.typing import Any, Sequence
 from typing_extensions import override
 
-from superlinked.framework.common.storage.entity.entity import Entity
-from superlinked.framework.common.storage.entity.entity_data import EntityData
-from superlinked.framework.common.storage.entity.entity_id import EntityId
-from superlinked.framework.common.storage.field.field import Field
-from superlinked.framework.common.storage.field.field_data import FieldData
-from superlinked.framework.common.storage.query.vdb_knn_search_params import (
+from qyver.framework.common.storage.entity.entity import Entity
+from qyver.framework.common.storage.entity.entity_data import EntityData
+from qyver.framework.common.storage.entity.entity_id import EntityId
+from qyver.framework.common.storage.field.field import Field
+from qyver.framework.common.storage.field.field_data import FieldData
+from qyver.framework.common.storage.query.vdb_knn_search_params import (
     VDBKNNSearchParams,
 )
-from superlinked.framework.common.storage.result_entity_data import ResultEntityData
-from superlinked.framework.common.storage.search_index.manager.search_index_manager import (
+from qyver.framework.common.storage.result_entity_data import ResultEntityData
+from qyver.framework.common.storage.search_index.manager.search_index_manager import (
     SearchIndexManager,
 )
-from superlinked.framework.common.storage.vdb_connector import VDBConnector
-from superlinked.framework.storage.common.vdb_settings import VDBSettings
-from superlinked.framework.storage.redis.query.redis_query_builder import (
+from qyver.framework.common.storage.vdb_connector import VDBConnector
+from qyver.framework.storage.common.vdb_settings import VDBSettings
+from qyver.framework.storage.redis.query.redis_query_builder import (
     VECTOR_DISTANCE_ALIAS,
 )
-from superlinked.framework.storage.redis.redis_connection_params import (
+from qyver.framework.storage.redis.redis_connection_params import (
     RedisConnectionParams,
 )
-from superlinked.framework.storage.redis.redis_field_encoder import RedisFieldEncoder
-from superlinked.framework.storage.redis.redis_search import RedisSearch
-from superlinked.framework.storage.redis.redis_search_index_manager import (
+from qyver.framework.storage.redis.redis_field_encoder import RedisFieldEncoder
+from qyver.framework.storage.redis.redis_search import RedisSearch
+from qyver.framework.storage.redis.redis_search_index_manager import (
     RedisSearchIndexManager,
 )
 

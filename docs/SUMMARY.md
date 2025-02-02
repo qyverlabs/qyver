@@ -1,12 +1,12 @@
 # Table of contents
 * [Welcome](README.md)
 ## Getting Started
-* [Why Superlinked?](getting-started/why-superlinked.md)
-* [Setup Superlinked](getting-started/installation.md)
+* [Why qyver?](getting-started/why-qyver.md)
+* [Setup qyver](getting-started/installation.md)
 * [Basic Building Blocks](getting-started/basic-building-blocks.md)
 ## Run in Production
 * [Overview](run-in-production/overview.md)
-* [Setup Superlinked Server](run-in-production/setup/index.md)
+* [Setup qyver Server](run-in-production/setup/index.md)
   * [Configuring your app](run-in-production/setup/configuring-your-app.md)
   * [Interacting with app via API](run-in-production/setup/interacting-with-app-via-api.md)
 * [Supported Vector Databases](run-in-production/vdbs/index.md)
@@ -49,7 +49,7 @@
     * [Online](reference/dsl/app/online/index.md)
       * [Online App](reference/dsl/app/online/online_app.md)
   * [Registry](reference/dsl/registry/index.md)
-    * [Superlinked Registry](reference/dsl/registry/superlinked_registry.md)
+    * [qyver Registry](reference/dsl/registry/qyver_registry.md)
     * [Exception](reference/dsl/registry/exception.md)
   * [Source](reference/dsl/source/index.md)
     * [Types](reference/dsl/source/types.md)
@@ -157,8 +157,8 @@
 ## Help & FAQ
 * [Logging](help-and-faq/logging.md)
 * [Support](help-and-faq/support.md)
-* [Discussion](https://github.com/superlinked/superlinked/discussions)
+* [Discussion](https://github.com/qyver/qyver/discussions)
 
 ## Policies
-* [Terms of Use](https://superlinked.com/policies/terms-and-conditions)
-* [Privacy Policy](https://superlinked.com/policies/privacy-policy)
+* [Terms of Use](https://qyver.com/policies/terms-and-conditions)
+* [Privacy Policy](https://qyver.com/policies/privacy-policy)

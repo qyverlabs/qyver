@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,29 +19,29 @@ from dataclasses import dataclass
 from beartype.typing import Any, Generic, Sequence
 from typing_extensions import override
 
-from superlinked.framework.common.dag.comparison_filter_node import ComparisonFilterNode
-from superlinked.framework.common.dag.dag_effect import DagEffect
-from superlinked.framework.common.dag.effect_modifier import EffectModifier
-from superlinked.framework.common.dag.embedding_node import EmbeddingNode
-from superlinked.framework.common.dag.node import Node
-from superlinked.framework.common.dag.persistence_params import PersistenceParams
-from superlinked.framework.common.dag.schema_object_reference import (
+from qyver.framework.common.dag.comparison_filter_node import ComparisonFilterNode
+from qyver.framework.common.dag.dag_effect import DagEffect
+from qyver.framework.common.dag.effect_modifier import EffectModifier
+from qyver.framework.common.dag.embedding_node import EmbeddingNode
+from qyver.framework.common.dag.node import Node
+from qyver.framework.common.dag.persistence_params import PersistenceParams
+from qyver.framework.common.dag.schema_object_reference import (
     SchemaObjectReference,
 )
-from superlinked.framework.common.data_types import Vector
-from superlinked.framework.common.interface.weighted import Weighted
-from superlinked.framework.common.schema.event_schema_object import EventSchemaObject
-from superlinked.framework.common.schema.schema_object import SchemaObject
-from superlinked.framework.common.space.config.aggregation.aggregation_config import (
+from qyver.framework.common.data_types import Vector
+from qyver.framework.common.interface.weighted import Weighted
+from qyver.framework.common.schema.event_schema_object import EventSchemaObject
+from qyver.framework.common.schema.schema_object import SchemaObject
+from qyver.framework.common.space.config.aggregation.aggregation_config import (
     AggregationInputT,
 )
-from superlinked.framework.common.space.config.embedding.embedding_config import (
+from qyver.framework.common.space.config.embedding.embedding_config import (
     EmbeddingInputT,
 )
-from superlinked.framework.common.space.config.transformation_config import (
+from qyver.framework.common.space.config.transformation_config import (
     TransformationConfig,
 )
-from superlinked.framework.common.space.interface.has_transformation_config import (
+from qyver.framework.common.space.interface.has_transformation_config import (
     HasTransformationConfig,
 )
 

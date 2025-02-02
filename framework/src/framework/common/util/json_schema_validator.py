@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,7 +19,7 @@ from pathlib import Path
 import jsonschema
 from beartype.typing import Any, Sequence
 
-from superlinked.framework.common.exception import ValidationException
+from qyver.framework.common.exception import ValidationException
 
 
 class JsonSchemaValidator:

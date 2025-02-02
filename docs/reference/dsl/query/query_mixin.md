@@ -1,4 +1,4 @@
-Module superlinked.framework.dsl.query.query_mixin
+Module qyver.framework.dsl.query.query_mixin
 ==================================================
 
 Classes
@@ -11,11 +11,11 @@ Classes
 
     ### Descendants
 
-    * superlinked.framework.dsl.app.online.online_app.OnlineApp
+    * qyver.framework.dsl.app.online.online_app.OnlineApp
 
     ### Methods
 
-    `query(self, query_descriptor: superlinked.framework.dsl.query.query_descriptor.QueryDescriptor, **params: Any) ‑> superlinked.framework.dsl.query.result.QueryResult`
+    `query(self, query_descriptor: qyver.framework.dsl.query.query_descriptor.QueryDescriptor, **params: Any) ‑> qyver.framework.dsl.query.result.QueryResult`
     :   Execute a query using the provided QueryDescriptor and additional parameters.
         
         Args:
@@ -28,7 +28,7 @@ Classes
         Raises:
             QueryException: If the query index is not found among the executor's indices.
 
-    `setup_query_execution(self, indices: Sequence[superlinked.framework.dsl.index.index.Index]) ‑> None`
+    `setup_query_execution(self, indices: Sequence[qyver.framework.dsl.index.index.Index]) ‑> None`
     :   Set up the query execution environment by initializing a mapping between indices
         and their corresponding QueryVectorFactory instances.
         
@@ -36,7 +36,7 @@ Classes
             indices (Sequence[Index]): A sequence of Index instances to be used for query execution.
             storage_manager (StorageManager): The storage manager instance to be used.
 
-    `setup_query_result_converter(self, query_result_converter: superlinked.framework.dsl.query.query_result_converter.query_result_converter.QueryResultConverter) ‑> None`
+    `setup_query_result_converter(self, query_result_converter: qyver.framework.dsl.query.query_result_converter.query_result_converter.QueryResultConverter) ‑> None`
     :   Set up the query result converter to be used for converting the query results.
         
         Args:

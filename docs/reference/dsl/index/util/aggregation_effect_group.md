@@ -1,4 +1,4 @@
-Module superlinked.framework.dsl.index.util.aggregation_effect_group
+Module qyver.framework.dsl.index.util.aggregation_effect_group
 ====================================================================
 
 Classes
@@ -13,16 +13,16 @@ Classes
 
     ### Class variables
 
-    `affected_schema: superlinked.framework.common.schema.schema_object.SchemaObject`
+    `affected_schema: qyver.framework.common.schema.schema_object.SchemaObject`
     :
 
-    `effects: Sequence[superlinked.framework.dsl.index.util.effect_with_referenced_schema_object.EffectWithReferencedSchemaObject[~AggregationInputT, ~EmbeddingInputT]]`
+    `effects: Sequence[qyver.framework.dsl.index.util.effect_with_referenced_schema_object.EffectWithReferencedSchemaObject[~AggregationInputT, ~EmbeddingInputT]]`
     :
 
-    `space: superlinked.framework.dsl.space.space.Space[~AggregationInputT, ~EmbeddingInputT]`
+    `space: qyver.framework.dsl.space.space.Space[~AggregationInputT, ~EmbeddingInputT]`
     :
 
     ### Static methods
 
-    `from_filtered_effects(filtered_effects: Sequence[EffectWithReferencedSchemaObject[AggregationInputT, EmbeddingInputT]]) ‑> superlinked.framework.dsl.index.util.aggregation_effect_group.AggregationEffectGroup[~AggregationInputT, ~EmbeddingInputT]`
+    `from_filtered_effects(filtered_effects: Sequence[EffectWithReferencedSchemaObject[AggregationInputT, EmbeddingInputT]]) ‑> qyver.framework.dsl.index.util.aggregation_effect_group.AggregationEffectGroup[~AggregationInputT, ~EmbeddingInputT]`
     :

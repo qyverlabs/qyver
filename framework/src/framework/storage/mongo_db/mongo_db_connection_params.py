@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,8 +15,8 @@
 from beartype.typing import Any
 from typing_extensions import override
 
-from superlinked.framework.storage.common.connection_params import ConnectionParams
-from superlinked.framework.storage.mongo_db.search_index.mongo_db_admin_params import (
+from qyver.framework.storage.common.connection_params import ConnectionParams
+from qyver.framework.storage.mongo_db.search_index.mongo_db_admin_params import (
     MongoDBAdminParams,
 )
 

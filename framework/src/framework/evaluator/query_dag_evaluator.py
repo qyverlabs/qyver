@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,25 +17,25 @@ from functools import partial
 
 import structlog
 
-from superlinked.framework.common.dag.context import ExecutionContext
-from superlinked.framework.common.dag.dag import Dag
-from superlinked.framework.common.data_types import Vector
-from superlinked.framework.common.exception import (
+from qyver.framework.common.dag.context import ExecutionContext
+from qyver.framework.common.dag.dag import Dag
+from qyver.framework.common.data_types import Vector
+from qyver.framework.common.exception import (
     DagEvaluationException,
     InvalidSchemaException,
 )
-from superlinked.framework.common.parser.parsed_schema import (
+from qyver.framework.common.parser.parsed_schema import (
     ParsedSchema,
     ParsedSchemaWithEvent,
 )
-from superlinked.framework.common.schema.id_schema_object import IdSchemaObject
-from superlinked.framework.common.schema.schema_object import SchemaObject
-from superlinked.framework.common.storage_manager.storage_manager import StorageManager
-from superlinked.framework.compiler.online.online_schema_dag_compiler import (
+from qyver.framework.common.schema.id_schema_object import IdSchemaObject
+from qyver.framework.common.schema.schema_object import SchemaObject
+from qyver.framework.common.storage_manager.storage_manager import StorageManager
+from qyver.framework.compiler.online.online_schema_dag_compiler import (
     OnlineSchemaDagCompiler,
 )
-from superlinked.framework.online.dag.evaluation_result import EvaluationResult
-from superlinked.framework.online.dag.online_schema_dag import OnlineSchemaDag
+from qyver.framework.online.dag.evaluation_result import EvaluationResult
+from qyver.framework.online.dag.online_schema_dag import OnlineSchemaDag
 
 logger = structlog.get_logger()
 

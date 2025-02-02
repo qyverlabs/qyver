@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,8 +19,8 @@ from pydoc import locate
 
 from beartype.typing import Any, Generic, Sequence, TypeVar, cast
 
-from superlinked.framework.common.dag.node import Node
-from superlinked.framework.common.exception import NotImplementedException
+from qyver.framework.common.dag.node import Node
+from qyver.framework.common.exception import NotImplementedException
 
 CompiledNodeT = TypeVar("CompiledNodeT")
 ImportedNodeT = TypeVar("ImportedNodeT")

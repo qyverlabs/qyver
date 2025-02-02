@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,19 +17,19 @@ from __future__ import annotations
 from beartype.typing import Sequence
 from typing_extensions import override
 
-from superlinked.framework.common.dag.aggregation_node import AggregationNode
-from superlinked.framework.common.dag.context import ExecutionContext
-from superlinked.framework.common.dag.node import Node
-from superlinked.framework.common.data_types import Vector
-from superlinked.framework.query.dag.exception import (
+from qyver.framework.common.dag.aggregation_node import AggregationNode
+from qyver.framework.common.dag.context import ExecutionContext
+from qyver.framework.common.dag.node import Node
+from qyver.framework.common.data_types import Vector
+from qyver.framework.query.dag.exception import (
     QueryDagInitializationException,
     QueryEvaluationException,
 )
-from superlinked.framework.query.dag.query_evaluation_data_types import (
+from qyver.framework.query.dag.query_evaluation_data_types import (
     QueryEvaluationResult,
 )
-from superlinked.framework.query.dag.query_node import QueryNode
-from superlinked.framework.query.dag.query_node_with_parent import QueryNodeWithParent
+from qyver.framework.query.dag.query_node import QueryNode
+from qyver.framework.query.dag.query_node_with_parent import QueryNodeWithParent
 
 
 class QueryAggregationNode(QueryNodeWithParent[AggregationNode, Vector]):

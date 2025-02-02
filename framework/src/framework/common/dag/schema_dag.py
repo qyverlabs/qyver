@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,13 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from superlinked.framework.common.dag.exception import (
+from qyver.framework.common.dag.exception import (
     LeafNodeCountException,
     LeafNodeTypeException,
 )
-from superlinked.framework.common.dag.index_node import IndexNode
-from superlinked.framework.common.dag.node import Node
-from superlinked.framework.common.schema.schema_object import SchemaObject
+from qyver.framework.common.dag.index_node import IndexNode
+from qyver.framework.common.dag.node import Node
+from qyver.framework.common.schema.schema_object import SchemaObject
 
 
 class SchemaDag:

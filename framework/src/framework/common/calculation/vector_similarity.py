@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,8 +14,8 @@
 
 import numpy as np
 
-from superlinked.framework.common.calculation.distance_metric import DistanceMetric
-from superlinked.framework.common.data_types import NPArray, Vector
+from qyver.framework.common.calculation.distance_metric import DistanceMetric
+from qyver.framework.common.data_types import NPArray, Vector
 
 
 class VectorSimilarityCalculator:

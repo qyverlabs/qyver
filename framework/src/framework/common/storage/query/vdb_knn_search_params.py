@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,11 +16,11 @@ from dataclasses import dataclass
 
 from beartype.typing import Sequence
 
-from superlinked.framework.common.interface.comparison_operand import (
+from qyver.framework.common.interface.comparison_operand import (
     ComparisonOperation,
 )
-from superlinked.framework.common.storage.field.field import Field
-from superlinked.framework.common.storage.field.field_data import VectorFieldData
+from qyver.framework.common.storage.field.field import Field
+from qyver.framework.common.storage.field.field_data import VectorFieldData
 
 
 @dataclass(frozen=True)

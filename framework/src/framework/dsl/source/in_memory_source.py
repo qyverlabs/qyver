@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,9 +14,9 @@
 
 from beartype.typing import Generic
 
-from superlinked.framework.common.schema.id_schema_object import IdSchemaObjectT
-from superlinked.framework.common.source.types import SourceTypeT
-from superlinked.framework.dsl.source.interactive_source import InteractiveSource
+from qyver.framework.common.schema.id_schema_object import IdSchemaObjectT
+from qyver.framework.common.source.types import SourceTypeT
+from qyver.framework.dsl.source.interactive_source import InteractiveSource
 
 
 class InMemorySource(

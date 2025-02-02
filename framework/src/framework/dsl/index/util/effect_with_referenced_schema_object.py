@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,28 +18,28 @@ from dataclasses import dataclass
 
 from beartype.typing import Generic, cast
 
-from superlinked.framework.common.dag.dag_effect import DagEffect
-from superlinked.framework.common.dag.resolved_schema_reference import (
+from qyver.framework.common.dag.dag_effect import DagEffect
+from qyver.framework.common.dag.resolved_schema_reference import (
     ResolvedSchemaReference,
 )
-from superlinked.framework.common.exception import (
+from qyver.framework.common.exception import (
     InitializationException,
     InvalidSchemaException,
 )
-from superlinked.framework.common.schema.event_schema_object import (
+from qyver.framework.common.schema.event_schema_object import (
     EventSchemaObject,
     MultipliedSchemaReference,
     SchemaReference,
 )
-from superlinked.framework.common.schema.id_schema_object import IdSchemaObject
-from superlinked.framework.common.schema.schema_object import SchemaObject
-from superlinked.framework.common.space.config.aggregation.aggregation_config import (
+from qyver.framework.common.schema.id_schema_object import IdSchemaObject
+from qyver.framework.common.schema.schema_object import SchemaObject
+from qyver.framework.common.space.config.aggregation.aggregation_config import (
     AggregationInputT,
 )
-from superlinked.framework.common.space.config.embedding.embedding_config import (
+from qyver.framework.common.space.config.embedding.embedding_config import (
     EmbeddingInputT,
 )
-from superlinked.framework.dsl.index.effect import Effect
+from qyver.framework.dsl.index.effect import Effect
 
 
 @dataclass(frozen=True)

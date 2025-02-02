@@ -5,18 +5,18 @@ icon: square-sliders
 
 # Server Configuration Guidelines
 
-The application's main logic resides in the Superlinked configuration files. These are where you define your application's structure and behavior using the Superlinked library.
+The application's main logic resides in the qyver configuration files. These are where you define your application's structure and behavior using the qyver library.
 
-By default, all examples within this documentation utilize an in-memory database. This configuration is optimal for testing and initial experimentation with the Superlinked framework. For detailed instructions on configuring and employing alternative vector databases, please refer to the [vector databases documentation.](../vdbs/index.md).
+By default, all examples within this documentation utilize an in-memory database. This configuration is optimal for testing and initial experimentation with the qyver framework. For detailed instructions on configuring and employing alternative vector databases, please refer to the [vector databases documentation.](../vdbs/index.md).
 
 To begin interacting with the system, you may start with the basic example application found [here](../example/simple/api.py).
 For a more complex yet approachable example, refer to the Amazon case study [here](../example/amazon/api.py).
 
-For advanced examples on constructing spaces and queries, please explore the [Superlinked notebooks](https://github.com/superlinked/superlinked/tree/main).
+For advanced examples on constructing spaces and queries, please explore the [qyver notebooks](https://github.com/qyver/qyver/tree/main).
 
 > Important Note: The `RecencySpace` feature is turned off by default due to the constraints of this release. For a detailed explanation and instructions on enabling it, refer to the [Using Recency Space](#using-recency-space) section of the documentation.
 
-> Note: The primary aim of this document is to guide you on how to operate the Superlinked system with your preferred configuration, rather than explaining the inner workings of the Superlinked components. For a deeper understanding of the components, please refer to the notebooks mentioned above.
+> Note: The primary aim of this document is to guide you on how to operate the qyver system with your preferred configuration, rather than explaining the inner workings of the qyver components. For a deeper understanding of the components, please refer to the notebooks mentioned above.
 
 ## Understanding the building blocks of the application
 
@@ -27,7 +27,7 @@ A functional application is structured around three core components:
 
 ### index.py
 ```python
-from superlinked import framework as sl
+from qyver import framework as sl
 
 class YourSchema(sl.Schema):
     id: sl.IdField
@@ -49,7 +49,7 @@ In this file, a schema is defined to structure your input data. Additionally, a 
 ### query.py
 
 ```python
-from superlinked import framework as sl
+from qyver import framework as sl
 
 from .index import index, text_space, your_schema
 
@@ -69,7 +69,7 @@ In the `query.py` file, you should define your queries. These queries are design
 ### api.py
 
 ```python
-from superlinked import framework as sl
+from qyver import framework as sl
 
 from .index import index, your_schema
 from .query import query
@@ -84,16 +84,16 @@ executor = sl.RestExecutor(
     vector_database=sl.InMemoryVectorDatabase(),
 )
 
-sl.SuperlinkedRegistry.register(executor)
+sl.qyverRegistry.register(executor)
 ```
 
 In this document, you set up your source, which acts as the entry point for your schema into the application. The `RestSource` can use a `RestDescriptor` to specify the path for adding data to your system. The `RestQuery` function wraps your query in a `RestDescriptor`, giving your query a name that makes it callable through the REST API. In the example shown, the path is set to `/api/v1/search/query`. Here, you assign a name to the last part of the path, assuming you stick with the default settings. [More detailed API info](#customize-your-api)
 
 The executor acts as the heart of your application, needing all the necessary information to function. It requires your sources to bring in data, indices to understand the data structure, queries to help you search effectively, and finally, the vector database where all the data is stored.
 
-You can find more detailed information and examples of various features in the [Superlinked feature notebooks](https://github.com/superlinked/superlinked/tree/main/notebook/feature). The [basic_building_blocks.ipynb](https://github.com/superlinked/superlinked/blob/main/notebook/feature/basic_building_blocks.ipynb) notebook provides a comprehensive guide on the basic structure and how to use it, while the other notebooks cover various features of the Superlinked library.
+You can find more detailed information and examples of various features in the [qyver feature notebooks](https://github.com/qyver/qyver/tree/main/notebook/feature). The [basic_building_blocks.ipynb](https://github.com/qyver/qyver/blob/main/notebook/feature/basic_building_blocks.ipynb) notebook provides a comprehensive guide on the basic structure and how to use it, while the other notebooks cover various features of the qyver library.
 
-In this deployment setup, you are not required to define any computations as you would in the [basic_building_blocks.ipynb](https://github.com/superlinked/superlinked/blob/main/notebook/feature/basic_building_blocks.ipynb) notebook. Instead, your focus will be on defining the schema, the text similarity space, the index, the query, the REST source, and the executor.
+In this deployment setup, you are not required to define any computations as you would in the [basic_building_blocks.ipynb](https://github.com/qyver/qyver/blob/main/notebook/feature/basic_building_blocks.ipynb) notebook. Instead, your focus will be on defining the schema, the text similarity space, the index, the query, the REST source, and the executor.
 
 ## Configuring the data loader
 
@@ -159,7 +159,7 @@ config = sl.DataLoaderConfig("https://path-to-your-file.csv", DataFormat.CSV, pa
 config = sl.DataLoaderConfig("https://path-to-your-file.jsonl", DataFormat.JSON, pandas_read_kwargs={"lines": True, "chunksize": 10000})
 ```
 
-The Superlinked library performs internal batching for embeddings, with a default batch size of 10000. If you are utilizing a chunk size different from 10000, it is advisable to adjust this batch size to match your chunk size.
+The qyver library performs internal batching for embeddings, with a default batch size of 10000. If you are utilizing a chunk size different from 10000, it is advisable to adjust this batch size to match your chunk size.
 To modify this, set the `ONLINE_PUT_CHUNK_SIZE` environment variable to the desired number.
 
 ### Customize your API
@@ -174,7 +174,7 @@ To change the API's default path, see the following code, that let's you customi
 rest_endpoint_config = sl.RestEndpointConfiguration(
     query_path_prefix="retrieve",
     ingest_path_prefix="insert",
-    api_root_path="/superlinked/v3",
+    api_root_path="/qyver/v3",
 ) # This will change the root path for both ingest and query endpoints
 
 executor = sl.RestExecutor(
@@ -217,7 +217,7 @@ If your system's host machine is equipped with a GPU, this documentation provide
 
 > Ensure that your system has a GPU compatible with PyTorch and that the GPU drivers are up to date. For optimal performance, we recommend using NVIDIA GPUs as they provide the best support for deep learning frameworks like PyTorch.
 
-To enable GPU acceleration in Superlinked, configure the `GPU_EMBEDDING_THRESHOLD` environment variable. This variable determines when GPU embedding is activated based on batch size:
+To enable GPU acceleration in qyver, configure the `GPU_EMBEDDING_THRESHOLD` environment variable. This variable determines when GPU embedding is activated based on batch size:
 
 - Default value: 0 (GPU embedding disabled)
 - Valid range: 1-9999

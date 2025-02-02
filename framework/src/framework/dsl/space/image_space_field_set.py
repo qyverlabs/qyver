@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,11 +18,11 @@ import PIL
 import PIL.Image
 from typing_extensions import override
 
-from superlinked.framework.common.data_types import PythonTypes
-from superlinked.framework.common.parser.blob_loader import BlobLoader
-from superlinked.framework.common.schema.image_data import ImageData
-from superlinked.framework.common.util.image_util import ImageUtil
-from superlinked.framework.dsl.space.space_field_set import SpaceFieldSet
+from qyver.framework.common.data_types import PythonTypes
+from qyver.framework.common.parser.blob_loader import BlobLoader
+from qyver.framework.common.schema.image_data import ImageData
+from qyver.framework.common.util.image_util import ImageUtil
+from qyver.framework.dsl.space.space_field_set import SpaceFieldSet
 
 blob_loader = BlobLoader(allow_bytes=True)
 

@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,14 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from superlinked.framework.common.dag.node import Node
-from superlinked.framework.common.dag.schema_dag import SchemaDag
-from superlinked.framework.common.storage_manager.storage_manager import StorageManager
-from superlinked.framework.compiler.online.online_node_registry import (
+from qyver.framework.common.dag.node import Node
+from qyver.framework.common.dag.schema_dag import SchemaDag
+from qyver.framework.common.storage_manager.storage_manager import StorageManager
+from qyver.framework.compiler.online.online_node_registry import (
     OnlineNodeRegistry,
 )
-from superlinked.framework.online.dag.online_node import OnlineNode
-from superlinked.framework.online.dag.online_schema_dag import OnlineSchemaDag
+from qyver.framework.online.dag.online_node import OnlineNode
+from qyver.framework.online.dag.online_schema_dag import OnlineSchemaDag
 
 
 class OnlineSchemaDagCompiler:

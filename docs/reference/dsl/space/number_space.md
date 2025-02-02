@@ -1,10 +1,10 @@
-Module superlinked.framework.dsl.space.number_space
+Module qyver.framework.dsl.space.number_space
 ===================================================
 
 Classes
 -------
 
-`NumberSpace(number: superlinked.framework.common.schema.schema_object.Number | None | list[superlinked.framework.common.schema.schema_object.Number | None], min_value: float | int, max_value: float | int, mode: superlinked.framework.common.space.config.embedding.number_embedding_config.Mode, scale: superlinked.framework.common.space.config.embedding.number_embedding_config.Scale = LinearScale(), aggregation_mode: superlinked.framework.dsl.space.input_aggregation_mode.InputAggregationMode = InputAggregationMode.INPUT_AVERAGE, negative_filter: float = 0.0)`
+`NumberSpace(number: qyver.framework.common.schema.schema_object.Number | None | list[qyver.framework.common.schema.schema_object.Number | None], min_value: float | int, max_value: float | int, mode: qyver.framework.common.space.config.embedding.number_embedding_config.Mode, scale: qyver.framework.common.space.config.embedding.number_embedding_config.Scale = LinearScale(), aggregation_mode: qyver.framework.dsl.space.input_aggregation_mode.InputAggregationMode = InputAggregationMode.INPUT_AVERAGE, negative_filter: float = 0.0)`
 :   NumberSpace is used to encode numerical values within a specified range.
     The range is defined by the min_value and max_value parameters.
     The preference can be controlled by the mode parameter.
@@ -53,12 +53,12 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.dsl.space.space.Space
-    * superlinked.framework.common.space.interface.has_transformation_config.HasTransformationConfig
-    * superlinked.framework.common.interface.has_length.HasLength
+    * qyver.framework.dsl.space.space.Space
+    * qyver.framework.common.space.interface.has_transformation_config.HasTransformationConfig
+    * qyver.framework.common.interface.has_length.HasLength
     * typing.Generic
-    * superlinked.framework.common.interface.has_annotation.HasAnnotation
-    * superlinked.framework.dsl.space.has_space_field_set.HasSpaceFieldSet
+    * qyver.framework.common.interface.has_annotation.HasAnnotation
+    * qyver.framework.dsl.space.has_space_field_set.HasSpaceFieldSet
     * abc.ABC
 
     ### Instance variables
@@ -66,8 +66,8 @@ Classes
     `allow_similar_clause: bool`
     :
 
-    `space_field_set: superlinked.framework.dsl.space.space_field_set.SpaceFieldSet`
+    `space_field_set: qyver.framework.dsl.space.space_field_set.SpaceFieldSet`
     :
 
-    `transformation_config: superlinked.framework.common.space.config.transformation_config.TransformationConfig[float, float]`
+    `transformation_config: qyver.framework.common.space.config.transformation_config.TransformationConfig[float, float]`
     :

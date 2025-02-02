@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,15 +15,15 @@
 
 from beartype.typing import Sequence
 
-from superlinked.framework.common.dag.context import ExecutionContext
-from superlinked.framework.common.util.type_validator import TypeValidator
-from superlinked.framework.dsl.app.interactive.interactive_app import InteractiveApp
-from superlinked.framework.dsl.index.index import Index
-from superlinked.framework.dsl.source.in_memory_source import InMemorySource
-from superlinked.framework.dsl.storage.in_memory_vector_database import (
+from qyver.framework.common.dag.context import ExecutionContext
+from qyver.framework.common.util.type_validator import TypeValidator
+from qyver.framework.dsl.app.interactive.interactive_app import InteractiveApp
+from qyver.framework.dsl.index.index import Index
+from qyver.framework.dsl.source.in_memory_source import InMemorySource
+from qyver.framework.dsl.storage.in_memory_vector_database import (
     InMemoryVectorDatabase,
 )
-from superlinked.framework.dsl.storage.vector_database import VectorDatabase
+from qyver.framework.dsl.storage.vector_database import VectorDatabase
 
 
 @TypeValidator.wrap

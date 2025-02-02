@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,12 +15,12 @@
 
 from beartype.typing import Any
 
-from superlinked.framework.dsl.storage.vector_database import VectorDatabase
-from superlinked.framework.storage.common.vdb_settings import VDBSettings
-from superlinked.framework.storage.qdrant.qdrant_connection_params import (
+from qyver.framework.dsl.storage.vector_database import VectorDatabase
+from qyver.framework.storage.common.vdb_settings import VDBSettings
+from qyver.framework.storage.qdrant.qdrant_connection_params import (
     QdrantConnectionParams,
 )
-from superlinked.framework.storage.qdrant.qdrant_vdb_connector import QdrantVDBConnector
+from qyver.framework.storage.qdrant.qdrant_vdb_connector import QdrantVDBConnector
 
 
 class QdrantVectorDatabase(VectorDatabase[QdrantVDBConnector]):

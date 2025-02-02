@@ -1,10 +1,10 @@
-Module superlinked.framework.dsl.executor.rest.rest_handler
+Module qyver.framework.dsl.executor.rest.rest_handler
 ===========================================================
 
 Classes
 -------
 
-`RestHandler(query_mixin: superlinked.framework.dsl.query.query_mixin.QueryMixin, sources: Sequence[superlinked.framework.dsl.source.rest_source.RestSource], queries: Sequence[superlinked.framework.dsl.executor.rest.rest_configuration.RestQuery], endpoint_config: superlinked.framework.dsl.executor.rest.rest_configuration.RestEndpointConfiguration)`
+`RestHandler(query_mixin: qyver.framework.dsl.query.query_mixin.QueryMixin, sources: Sequence[qyver.framework.dsl.source.rest_source.RestSource], queries: Sequence[qyver.framework.dsl.executor.rest.rest_configuration.RestQuery], endpoint_config: qyver.framework.dsl.executor.rest.rest_configuration.RestEndpointConfiguration)`
 :   
 
     ### Instance variables

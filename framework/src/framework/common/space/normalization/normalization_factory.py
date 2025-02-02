@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,13 +15,13 @@
 
 from beartype.typing import Any, Mapping
 
-from superlinked.framework.common.space.config.normalization.normalization_config import (
+from qyver.framework.common.space.config.normalization.normalization_config import (
     ConstantNormConfig,
     L2NormConfig,
     NoNormConfig,
     NormalizationConfig,
 )
-from superlinked.framework.common.space.normalization.normalization import (
+from qyver.framework.common.space.normalization.normalization import (
     ConstantNorm,
     L2Norm,
     NoNorm,

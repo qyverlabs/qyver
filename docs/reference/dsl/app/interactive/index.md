@@ -1,6 +1,6 @@
-Module superlinked.framework.dsl.app.interactive
+Module qyver.framework.dsl.app.interactive
 ================================================
 
 Sub-modules
 -----------
-* superlinked.framework.dsl.app.interactive.interactive_app
+* qyver.framework.dsl.app.interactive.interactive_app

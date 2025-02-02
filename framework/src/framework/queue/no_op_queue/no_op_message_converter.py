@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,8 +16,8 @@
 from beartype.typing import Any
 from typing_extensions import override
 
-from superlinked.framework.queue.interface.message_converter import MessageConverter
-from superlinked.framework.queue.interface.queue_message import QueueMessage
+from qyver.framework.queue.interface.message_converter import MessageConverter
+from qyver.framework.queue.interface.queue_message import QueueMessage
 
 
 class NoOpMessageConverter(MessageConverter[Any, Any]):

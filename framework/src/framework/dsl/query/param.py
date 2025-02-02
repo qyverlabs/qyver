@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,8 +18,8 @@ from __future__ import annotations
 from beartype.typing import Any, Sequence, TypeAlias, TypeVar
 from PIL.Image import Image
 
-from superlinked.framework.common.interface.evaluated import Evaluated
-from superlinked.framework.common.util.type_validator import TypeValidator
+from qyver.framework.common.interface.evaluated import Evaluated
+from qyver.framework.common.util.type_validator import TypeValidator
 
 UNSET_PARAM_NAME = "__UNSET_PARAM_NAME_"
 

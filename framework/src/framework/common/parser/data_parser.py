@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,23 +19,23 @@ from math import isfinite
 
 from beartype.typing import Generic, Mapping, Sequence, cast
 
-from superlinked.framework.common.exception import InitializationException
-from superlinked.framework.common.parser.blob_loader import BlobLoader
-from superlinked.framework.common.parser.exception import InvalidMappingException
-from superlinked.framework.common.parser.parsed_schema import (
+from qyver.framework.common.exception import InitializationException
+from qyver.framework.common.parser.blob_loader import BlobLoader
+from qyver.framework.common.parser.exception import InvalidMappingException
+from qyver.framework.common.parser.parsed_schema import (
     ParsedSchema,
     ParsedSchemaField,
 )
-from superlinked.framework.common.schema.blob_information import BlobInformation
-from superlinked.framework.common.schema.event_schema_object import EventSchemaObject
-from superlinked.framework.common.schema.exception import SchemaMismatchException
-from superlinked.framework.common.schema.id_schema_object import (
+from qyver.framework.common.schema.blob_information import BlobInformation
+from qyver.framework.common.schema.event_schema_object import EventSchemaObject
+from qyver.framework.common.schema.exception import SchemaMismatchException
+from qyver.framework.common.schema.id_schema_object import (
     IdSchemaObject,
     IdSchemaObjectT,
     SchemaField,
 )
-from superlinked.framework.common.schema.schema_object import SFT, Blob
-from superlinked.framework.common.source.types import SourceTypeT
+from qyver.framework.common.schema.schema_object import SFT, Blob
+from qyver.framework.common.source.types import SourceTypeT
 
 
 class DataParser(ABC, Generic[IdSchemaObjectT, SourceTypeT]):

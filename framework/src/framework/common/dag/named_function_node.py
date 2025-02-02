@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,9 +15,9 @@
 from beartype.typing import Any
 from typing_extensions import override
 
-from superlinked.framework.common.dag.node import Node, NodeDataT
-from superlinked.framework.common.schema.schema_object import SchemaObject
-from superlinked.framework.common.util.named_function_evaluator import NamedFunction
+from qyver.framework.common.dag.node import Node, NodeDataT
+from qyver.framework.common.schema.schema_object import SchemaObject
+from qyver.framework.common.util.named_function_evaluator import NamedFunction
 
 
 class NamedFunctionNode(Node[NodeDataT]):

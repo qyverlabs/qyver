@@ -1,9 +1,9 @@
-Module superlinked.framework.dsl.executor.rest
+Module qyver.framework.dsl.executor.rest
 ==============================================
 
 Sub-modules
 -----------
-* superlinked.framework.dsl.executor.rest.rest_configuration
-* superlinked.framework.dsl.executor.rest.rest_descriptor
-* superlinked.framework.dsl.executor.rest.rest_executor
-* superlinked.framework.dsl.executor.rest.rest_handler
+* qyver.framework.dsl.executor.rest.rest_configuration
+* qyver.framework.dsl.executor.rest.rest_descriptor
+* qyver.framework.dsl.executor.rest.rest_executor
+* qyver.framework.dsl.executor.rest.rest_handler

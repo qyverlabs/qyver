@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,24 +12,24 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from superlinked.framework.dsl.executor.executor import Executor
-from superlinked.framework.dsl.registry.exception import DuplicateElementException
+from qyver.framework.dsl.executor.executor import Executor
+from qyver.framework.dsl.registry.exception import DuplicateElementException
 
 
-class SuperlinkedRegistry:
+class qyverRegistry:
     __executors: set[Executor] = set()
 
     @staticmethod
     def register(*items: Executor) -> None:
         for item in items:
-            SuperlinkedRegistry.__check_for_duplicates(item)
-            SuperlinkedRegistry.__executors.add(item)
+            qyverRegistry.__check_for_duplicates(item)
+            qyverRegistry.__executors.add(item)
 
     @staticmethod
     def __check_for_duplicates(item: Executor) -> None:
-        if item in SuperlinkedRegistry.__executors:
+        if item in qyverRegistry.__executors:
             raise DuplicateElementException(f"{item} already registered!")
 
     @staticmethod
     def get_executors() -> frozenset[Executor]:
-        return frozenset(SuperlinkedRegistry.__executors)
+        return frozenset(qyverRegistry.__executors)

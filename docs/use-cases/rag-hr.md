@@ -1,5 +1,5 @@
 ---
-description: Learn about fundamental concepts of Superlinked.
+description: Learn about fundamental concepts of qyver.
 icon: headset
 ---
 
@@ -39,5 +39,5 @@ which one is more relevant to our query.
 
 ### Follow along in this Colab
 
-{% embed url="https://colab.research.google.com/github/superlinked/superlinked/blob/main/notebook/rag_hr_knowledgebase.ipynb#scrollTo=e9fb5d47-d6b9-4cdd-b2b4-80dda4eef996" %}
+{% embed url="https://colab.research.google.com/github/qyver/qyver/blob/main/notebook/rag_hr_knowledgebase.ipynb#scrollTo=e9fb5d47-d6b9-4cdd-b2b4-80dda4eef996" %}
 {% endembed %}

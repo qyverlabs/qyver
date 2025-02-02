@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,13 +16,13 @@ from pymongo.command_cursor import CommandCursor
 from pymongo.database import Database
 from typing_extensions import override
 
-from superlinked.framework.common.storage.index_config import IndexConfig
-from superlinked.framework.common.storage.search import Search
-from superlinked.framework.storage.mongo_db.mongo_db_field_encoder import (
+from qyver.framework.common.storage.index_config import IndexConfig
+from qyver.framework.common.storage.search import Search
+from qyver.framework.storage.mongo_db.mongo_db_field_encoder import (
     MongoDBFieldEncoder,
 )
-from superlinked.framework.storage.mongo_db.query.mongo_db_query import MongoDBQuery
-from superlinked.framework.storage.mongo_db.query.mongo_db_vdb_knn_search_params import (
+from qyver.framework.storage.mongo_db.query.mongo_db_query import MongoDBQuery
+from qyver.framework.storage.mongo_db.query.mongo_db_vdb_knn_search_params import (
     MongoDBVDBKNNSearchParams,
 )
 

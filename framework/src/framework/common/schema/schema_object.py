@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,11 +20,11 @@ from dataclasses import dataclass
 from beartype.typing import Generic, Sequence, TypeVar, cast
 from typing_extensions import override
 
-from superlinked.framework.common.data_types import PythonTypes
-from superlinked.framework.common.interface.comparison_operand import ComparisonOperand
-from superlinked.framework.common.schema.blob_information import BlobInformation
-from superlinked.framework.common.schema.exception import FieldException
-from superlinked.framework.common.schema.schema_field_descriptor import (
+from qyver.framework.common.data_types import PythonTypes
+from qyver.framework.common.interface.comparison_operand import ComparisonOperand
+from qyver.framework.common.schema.blob_information import BlobInformation
+from qyver.framework.common.schema.exception import FieldException
+from qyver.framework.common.schema.schema_field_descriptor import (
     SchemaFieldDescriptor,
 )
 

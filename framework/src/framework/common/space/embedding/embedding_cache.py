@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,8 +17,8 @@ from dataclasses import dataclass
 from beartype.typing import Sequence
 from cachetools import LRUCache
 
-from superlinked.framework.common.data_types import Vector
-from superlinked.framework.common.space.embedding.exception import EmbeddingException
+from qyver.framework.common.data_types import Vector
+from qyver.framework.common.space.embedding.exception import EmbeddingException
 
 
 @dataclass(frozen=True)

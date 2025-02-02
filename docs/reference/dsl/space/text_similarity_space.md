@@ -1,10 +1,10 @@
-Module superlinked.framework.dsl.space.text_similarity_space
+Module qyver.framework.dsl.space.text_similarity_space
 ============================================================
 
 Functions
 ---------
 
-`chunk(text: superlinked.framework.common.schema.schema_object.String, chunk_size: int | None = None, chunk_overlap: int | None = None, split_chars_keep: list[str] | None = None, split_chars_remove: list[str] | None = None) ‑> superlinked.framework.common.dag.chunking_node.ChunkingNode`
+`chunk(text: qyver.framework.common.schema.schema_object.String, chunk_size: int | None = None, chunk_overlap: int | None = None, split_chars_keep: list[str] | None = None, split_chars_remove: list[str] | None = None) ‑> qyver.framework.common.dag.chunking_node.ChunkingNode`
 :   Create smaller chunks from the given text, a String SchemaFieldObject. It is helpful when you search
         for more granular information in your text corpus. It is recommended to try different chunk_sizes to
         find what fits best your use-case. Chunking respects word boundaries.
@@ -27,7 +27,7 @@ Functions
 Classes
 -------
 
-`TextSimilaritySpace(text: superlinked.framework.common.schema.schema_object.String | superlinked.framework.common.dag.chunking_node.ChunkingNode | None | collections.abc.Sequence[superlinked.framework.common.schema.schema_object.String | superlinked.framework.common.dag.chunking_node.ChunkingNode | None], model: str, cache_size: int = 10000, model_cache_dir: pathlib.Path | None = None)`
+`TextSimilaritySpace(text: qyver.framework.common.schema.schema_object.String | qyver.framework.common.dag.chunking_node.ChunkingNode | None | collections.abc.Sequence[qyver.framework.common.schema.schema_object.String | qyver.framework.common.dag.chunking_node.ChunkingNode | None], model: str, cache_size: int = 10000, model_cache_dir: pathlib.Path | None = None)`
 :   A text similarity space is used to create vectors from documents in order to search in them
     later on. We only support (SentenceTransformers)[https://www.sbert.net/] models as they have
     finetuned pooling to encode longer text sequences most efficiently.
@@ -45,18 +45,18 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.dsl.space.space.Space
-    * superlinked.framework.common.space.interface.has_transformation_config.HasTransformationConfig
-    * superlinked.framework.common.interface.has_length.HasLength
+    * qyver.framework.dsl.space.space.Space
+    * qyver.framework.common.space.interface.has_transformation_config.HasTransformationConfig
+    * qyver.framework.common.interface.has_length.HasLength
     * typing.Generic
-    * superlinked.framework.common.interface.has_annotation.HasAnnotation
-    * superlinked.framework.dsl.space.has_space_field_set.HasSpaceFieldSet
+    * qyver.framework.common.interface.has_annotation.HasAnnotation
+    * qyver.framework.dsl.space.has_space_field_set.HasSpaceFieldSet
     * abc.ABC
 
     ### Instance variables
 
-    `space_field_set: superlinked.framework.dsl.space.space_field_set.SpaceFieldSet`
+    `space_field_set: qyver.framework.dsl.space.space_field_set.SpaceFieldSet`
     :
 
-    `transformation_config: superlinked.framework.common.space.config.transformation_config.TransformationConfig[superlinked.framework.common.data_types.Vector, str]`
+    `transformation_config: qyver.framework.common.space.config.transformation_config.TransformationConfig[qyver.framework.common.data_types.Vector, str]`
     :

@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,8 +14,8 @@
 
 import os
 
-from superlinked.framework.dsl.query.nlq.nlq_clause_collector import NLQClauseCollector
-from superlinked.framework.dsl.query.nlq.param_filler.query_param_prompt_builder import (
+from qyver.framework.dsl.query.nlq.nlq_clause_collector import NLQClauseCollector
+from qyver.framework.dsl.query.nlq.param_filler.query_param_prompt_builder import (
     QueryParamPromptBuilder,
 )
 

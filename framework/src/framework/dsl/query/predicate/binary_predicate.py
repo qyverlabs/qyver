@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,17 +17,17 @@ from itertools import count
 
 from beartype.typing import Generic, TypeVar, cast
 
-from superlinked.framework.common.dag.node import Node
-from superlinked.framework.common.exception import ValidationException
-from superlinked.framework.common.schema.schema_object import SchemaField
-from superlinked.framework.dsl.query.param import (
+from qyver.framework.common.dag.node import Node
+from qyver.framework.common.exception import ValidationException
+from qyver.framework.common.schema.schema_object import SchemaField
+from qyver.framework.dsl.query.param import (
     NumericParamType,
     Param,
     ParamInputType,
     ParamType,
 )
-from superlinked.framework.dsl.query.predicate.binary_op import BinaryOp
-from superlinked.framework.dsl.query.predicate.query_predicate import QueryPredicate
+from qyver.framework.dsl.query.predicate.binary_op import BinaryOp
+from qyver.framework.dsl.query.predicate.query_predicate import QueryPredicate
 
 # Exclude from documentation.
 __pdoc__ = {}

@@ -1,6 +1,6 @@
 from datetime import timedelta
 
-from superlinked import framework as sl
+from qyver import framework as sl
 
 
 @sl.schema

@@ -1,4 +1,4 @@
-Module superlinked.framework.dsl.storage.vector_database
+Module qyver.framework.dsl.storage.vector_database
 ========================================================
 
 Classes
@@ -20,7 +20,7 @@ Classes
 
     ### Descendants
 
-    * superlinked.framework.dsl.storage.in_memory_vector_database.InMemoryVectorDatabase
-    * superlinked.framework.dsl.storage.mongo_db_vector_database.MongoDBVectorDatabase
-    * superlinked.framework.dsl.storage.qdrant_vector_database.QdrantVectorDatabase
-    * superlinked.framework.dsl.storage.redis_vector_database.RedisVectorDatabase
+    * qyver.framework.dsl.storage.in_memory_vector_database.InMemoryVectorDatabase
+    * qyver.framework.dsl.storage.mongo_db_vector_database.MongoDBVectorDatabase
+    * qyver.framework.dsl.storage.qdrant_vector_database.QdrantVectorDatabase
+    * qyver.framework.dsl.storage.redis_vector_database.RedisVectorDatabase

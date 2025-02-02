@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,43 +12,43 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from superlinked.framework.compiler.compiled_node_registry import CompiledNodeRegistry
-from superlinked.framework.online.dag.online_aggregation_node import (
+from qyver.framework.compiler.compiled_node_registry import CompiledNodeRegistry
+from qyver.framework.online.dag.online_aggregation_node import (
     OnlineAggregationNode,
 )
-from superlinked.framework.online.dag.online_categorical_similarity_node import (
+from qyver.framework.online.dag.online_categorical_similarity_node import (
     OnlineCategoricalSimilarityNode,
 )
-from superlinked.framework.online.dag.online_chunking_node import OnlineChunkingNode
-from superlinked.framework.online.dag.online_comparison_filter_node import (
+from qyver.framework.online.dag.online_chunking_node import OnlineChunkingNode
+from qyver.framework.online.dag.online_comparison_filter_node import (
     OnlineComparisonFilterNode,
 )
-from superlinked.framework.online.dag.online_concatenation_node import (
+from qyver.framework.online.dag.online_concatenation_node import (
     OnlineConcatenationNode,
 )
-from superlinked.framework.online.dag.online_constant_node import OnlineConstantNode
-from superlinked.framework.online.dag.online_custom_vector_embedding_node import (
+from qyver.framework.online.dag.online_constant_node import OnlineConstantNode
+from qyver.framework.online.dag.online_custom_vector_embedding_node import (
     OnlineCustomVectorEmbeddingNode,
 )
-from superlinked.framework.online.dag.online_event_aggregation_node import (
+from qyver.framework.online.dag.online_event_aggregation_node import (
     OnlineEventAggregationNode,
 )
-from superlinked.framework.online.dag.online_image_embedding_node import (
+from qyver.framework.online.dag.online_image_embedding_node import (
     OnlineImageEmbeddingNode,
 )
-from superlinked.framework.online.dag.online_index_node import OnlineIndexNode
-from superlinked.framework.online.dag.online_named_function_node import (
+from qyver.framework.online.dag.online_index_node import OnlineIndexNode
+from qyver.framework.online.dag.online_named_function_node import (
     OnlineNamedFunctionNode,
 )
-from superlinked.framework.online.dag.online_node import OnlineNode
-from superlinked.framework.online.dag.online_number_embedding_node import (
+from qyver.framework.online.dag.online_node import OnlineNode
+from qyver.framework.online.dag.online_number_embedding_node import (
     OnlineNumberEmbeddingNode,
 )
-from superlinked.framework.online.dag.online_recency_node import OnlineRecencyNode
-from superlinked.framework.online.dag.online_schema_field_node import (
+from qyver.framework.online.dag.online_recency_node import OnlineRecencyNode
+from qyver.framework.online.dag.online_schema_field_node import (
     OnlineSchemaFieldNode,
 )
-from superlinked.framework.online.dag.online_text_embedding_node import (
+from qyver.framework.online.dag.online_text_embedding_node import (
     OnlineTextEmbeddingNode,
 )
 

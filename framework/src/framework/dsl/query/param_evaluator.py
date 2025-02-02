@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,37 +17,37 @@ from dataclasses import dataclass
 
 from beartype.typing import Any, Mapping, Sequence, cast
 
-from superlinked.framework.common.const import (
+from qyver.framework.common.const import (
     DEFAULT_LIMIT,
     DEFAULT_NOT_AFFECTING_WEIGHT,
 )
-from superlinked.framework.common.exception import QueryException
-from superlinked.framework.common.interface.comparison_operand import (
+from qyver.framework.common.exception import QueryException
+from qyver.framework.common.interface.comparison_operand import (
     ComparisonOperand,
     ComparisonOperation,
 )
-from superlinked.framework.common.schema.schema_object import SchemaField
-from superlinked.framework.dsl.query.natural_language_query_param_handler import (
+from qyver.framework.common.schema.schema_object import SchemaField
+from qyver.framework.dsl.query.natural_language_query_param_handler import (
     EvaluatedParam,
     NaturalLanguageQueryParams,
     WeightedEvaluatedParam,
 )
-from superlinked.framework.dsl.query.param import (
+from qyver.framework.dsl.query.param import (
     IntParamType,
     NumericParamType,
     Param,
     ParamInputType,
     ParamType,
 )
-from superlinked.framework.dsl.query.predicate.binary_predicate import (
+from qyver.framework.dsl.query.predicate.binary_predicate import (
     BPT,
     BinaryPredicate,
     EvaluatedBinaryPredicate,
     LooksLikePredicate,
     SimilarPredicate,
 )
-from superlinked.framework.dsl.query.query import QueryObj
-from superlinked.framework.dsl.space.space import Space
+from qyver.framework.dsl.query.query import QueryObj
+from qyver.framework.dsl.space.space import Space
 
 # Exclude from documentation.
 __pdoc__ = {}

@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,11 +16,11 @@ from dataclasses import dataclass
 
 from beartype.typing import Any
 
-from superlinked.framework.common.interface.comparison_operation_type import (
+from qyver.framework.common.interface.comparison_operation_type import (
     ComparisonOperationType,
 )
-from superlinked.framework.common.storage.field.field_data_type import FieldDataType
-from superlinked.framework.common.storage.query.vdb_filter import VDBFilter
+from qyver.framework.common.storage.field.field_data_type import FieldDataType
+from qyver.framework.common.storage.query.vdb_filter import VDBFilter
 
 OR_OPERATOR = "|"
 AND_OPERATOR = " "  # it is really a space

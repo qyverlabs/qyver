@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,13 +18,13 @@ from itertools import chain
 from beartype.typing import Any, Generic, cast
 from pydantic import BaseModel, Field, create_model
 
-from superlinked.framework.common.const import DEFAULT_NOT_AFFECTING_WEIGHT
-from superlinked.framework.common.exception import NotImplementedException
-from superlinked.framework.common.interface.comparison_operand import ComparisonOperand
-from superlinked.framework.common.schema.schema_object import SchemaField
-from superlinked.framework.common.util.generic_class_util import GenericClassUtil
-from superlinked.framework.dsl.query.param import PIT, ParamInputType
-from superlinked.framework.dsl.space.space import Space
+from qyver.framework.common.const import DEFAULT_NOT_AFFECTING_WEIGHT
+from qyver.framework.common.exception import NotImplementedException
+from qyver.framework.common.interface.comparison_operand import ComparisonOperand
+from qyver.framework.common.schema.schema_object import SchemaField
+from qyver.framework.common.util.generic_class_util import GenericClassUtil
+from qyver.framework.dsl.query.param import PIT, ParamInputType
+from qyver.framework.dsl.space.space import Space
 
 # Exclude from documentation.
 __pdoc__ = {}

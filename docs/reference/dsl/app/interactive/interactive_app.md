@@ -1,10 +1,10 @@
-Module superlinked.framework.dsl.app.interactive.interactive_app
+Module qyver.framework.dsl.app.interactive.interactive_app
 ================================================================
 
 Classes
 -------
 
-`InteractiveApp(sources: Sequence[superlinked.framework.dsl.source.interactive_source.InteractiveSource], indices: Sequence[superlinked.framework.dsl.index.index.Index], vector_database: superlinked.framework.dsl.storage.vector_database.VectorDatabase, context: superlinked.framework.common.dag.context.ExecutionContext, init_search_indices: bool = True)`
+`InteractiveApp(sources: Sequence[qyver.framework.dsl.source.interactive_source.InteractiveSource], indices: Sequence[qyver.framework.dsl.index.index.Index], vector_database: qyver.framework.dsl.storage.vector_database.VectorDatabase, context: qyver.framework.common.dag.context.ExecutionContext, init_search_indices: bool = True)`
 :   Interactive implementation of the App class.
     
     Initialize the InteractiveApp from an InteractiveExecutor.
@@ -17,12 +17,12 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.dsl.app.online.online_app.OnlineApp
-    * superlinked.framework.dsl.app.app.App
+    * qyver.framework.dsl.app.online.online_app.OnlineApp
+    * qyver.framework.dsl.app.app.App
     * abc.ABC
     * typing.Generic
-    * superlinked.framework.dsl.query.query_mixin.QueryMixin
+    * qyver.framework.dsl.query.query_mixin.QueryMixin
 
     ### Descendants
 
-    * superlinked.framework.dsl.app.in_memory.in_memory_app.InMemoryApp
+    * qyver.framework.dsl.app.in_memory.in_memory_app.InMemoryApp

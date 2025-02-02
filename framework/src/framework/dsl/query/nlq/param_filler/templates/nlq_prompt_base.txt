@@ -1,4 +1,4 @@
-You are assisting a user in translating their natural language query into a structured superlinked query. A superlinked query is a k-nearest neighbors (k-NN) search using a query vector against a knowledge base of items, utilizing inner product similarity.
+You are assisting a user in translating their natural language query into a structured qyver query. A qyver query is a k-nearest neighbors (k-NN) search using a query vector against a knowledge base of items, utilizing inner product similarity.
 
 **Your Task:**
 1. **Extract Key Requirements:**

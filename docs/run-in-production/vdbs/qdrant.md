@@ -1,10 +1,10 @@
 # Qdrant
 
-This document provides clear steps on how to use and integrate Qdrant with Superlinked.
+This document provides clear steps on how to use and integrate Qdrant with qyver.
 
 ## Configuring your existing managed Qdrant
 
-To use Superlinked with Qdrant, start a managed instance provided by Qdrant (a free-tier is available). For detailed steps on initializing a managed instance, refer to the [Start a Managed Qdrant Instance](#start-a-managed-qdrant-instance) section below.
+To use qyver with Qdrant, start a managed instance provided by Qdrant (a free-tier is available). For detailed steps on initializing a managed instance, refer to the [Start a Managed Qdrant Instance](#start-a-managed-qdrant-instance) section below.
 
 Once your Qdrant instance is up and running, ensure it is accessible from the server that will use it. Additionally, configure the necessary authentication settings as described below.
 
@@ -12,7 +12,7 @@ Once your Qdrant instance is up and running, ensure it is accessible from the se
 
 To integrate Qdrant, you need to add the `QdrantVectorDatabase` class and include it in the executor. Here’s how you can do it:
 ```python
-from superlinked import framework as sl
+from qyver import framework as sl
 
 vector_database = sl.QdrantVectorDatabase(
     "<your_qdrant_url>", # (Mandatory) This is your qdrant URL generally with a port but without any extra fields
@@ -42,4 +42,4 @@ After the cluster was created, generate an API key and save it to a secure place
 
 ## Example app with Qdrant
 
-You can find an example that utilizes Qdrant [here](https://github.com/superlinked/superlinked/blob/main/docs/run-in-production/vdbs/qdrant/app_with_qdrant.py).
+You can find an example that utilizes Qdrant [here](https://github.com/qyver/qyver/blob/main/docs/run-in-production/vdbs/qdrant/app_with_qdrant.py).

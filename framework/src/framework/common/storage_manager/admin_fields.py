@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,13 +19,13 @@ from dataclasses import dataclass
 
 from beartype.typing import Sequence, cast
 
-from superlinked.framework.common.data_types import PythonTypes
-from superlinked.framework.common.storage.entity.entity_id import EntityId
-from superlinked.framework.common.storage.field.field import Field
-from superlinked.framework.common.storage.field.field_data import FT, FieldData
-from superlinked.framework.common.storage.field.field_data_type import FieldDataType
-from superlinked.framework.common.storage_manager.header import Header
-from superlinked.framework.common.storage_manager.storage_naming import StorageNaming
+from qyver.framework.common.data_types import PythonTypes
+from qyver.framework.common.storage.entity.entity_id import EntityId
+from qyver.framework.common.storage.field.field import Field
+from qyver.framework.common.storage.field.field_data import FT, FieldData
+from qyver.framework.common.storage.field.field_data_type import FieldDataType
+from qyver.framework.common.storage_manager.header import Header
+from qyver.framework.common.storage_manager.storage_naming import StorageNaming
 
 
 @dataclass(frozen=True)

@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,19 +17,19 @@ from __future__ import annotations
 from beartype.typing import Sequence
 from typing_extensions import override
 
-from superlinked.framework.common.dag.context import ExecutionContext
-from superlinked.framework.common.dag.text_embedding_node import TextEmbeddingNode
-from superlinked.framework.common.data_types import Vector
-from superlinked.framework.common.interface.has_length import HasLength
-from superlinked.framework.common.parser.parsed_schema import ParsedSchema
-from superlinked.framework.common.storage_manager.storage_manager import StorageManager
-from superlinked.framework.common.transform.transform import Step
-from superlinked.framework.common.transform.transformation_factory import (
+from qyver.framework.common.dag.context import ExecutionContext
+from qyver.framework.common.dag.text_embedding_node import TextEmbeddingNode
+from qyver.framework.common.data_types import Vector
+from qyver.framework.common.interface.has_length import HasLength
+from qyver.framework.common.parser.parsed_schema import ParsedSchema
+from qyver.framework.common.storage_manager.storage_manager import StorageManager
+from qyver.framework.common.transform.transform import Step
+from qyver.framework.common.transform.transformation_factory import (
     TransformationFactory,
 )
-from superlinked.framework.online.dag.default_online_node import DefaultOnlineNode
-from superlinked.framework.online.dag.evaluation_result import SingleEvaluationResult
-from superlinked.framework.online.dag.online_node import OnlineNode
+from qyver.framework.online.dag.default_online_node import DefaultOnlineNode
+from qyver.framework.online.dag.evaluation_result import SingleEvaluationResult
+from qyver.framework.online.dag.online_node import OnlineNode
 
 
 class OnlineTextEmbeddingNode(DefaultOnlineNode[TextEmbeddingNode, Vector], HasLength):

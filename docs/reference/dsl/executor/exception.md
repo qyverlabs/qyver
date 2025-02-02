@@ -1,4 +1,4 @@
-Module superlinked.framework.dsl.executor.exception
+Module qyver.framework.dsl.executor.exception
 ===================================================
 
 Classes
@@ -9,6 +9,6 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.common.exception.ValidationException
+    * qyver.framework.common.exception.ValidationException
     * builtins.Exception
     * builtins.BaseException

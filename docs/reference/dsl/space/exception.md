@@ -1,4 +1,4 @@
-Module superlinked.framework.dsl.space.exception
+Module qyver.framework.dsl.space.exception
 ================================================
 
 Classes
@@ -9,7 +9,7 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.common.exception.ValidationException
+    * qyver.framework.common.exception.ValidationException
     * builtins.Exception
     * builtins.BaseException
 
@@ -18,7 +18,7 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.common.exception.ValidationException
+    * qyver.framework.common.exception.ValidationException
     * builtins.Exception
     * builtins.BaseException
 
@@ -27,6 +27,6 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.common.exception.ValidationException
+    * qyver.framework.common.exception.ValidationException
     * builtins.Exception
     * builtins.BaseException

@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,16 +12,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from superlinked.framework.common.dag.chunking_node import ChunkingNode
-from superlinked.framework.common.dag.comparison_filter_node import ComparisonFilterNode
-from superlinked.framework.common.dag.dag import Dag
-from superlinked.framework.common.dag.event_aggregation_node import EventAggregationNode
-from superlinked.framework.common.dag.exception import LeafNodeCountException
-from superlinked.framework.common.dag.node import Node
-from superlinked.framework.common.dag.schema_field_node import SchemaFieldNode
-from superlinked.framework.compiler.query.query_node_registry import QueryNodeRegistry
-from superlinked.framework.query.dag.query_dag import QueryDag
-from superlinked.framework.query.dag.query_node import QueryNode
+from qyver.framework.common.dag.chunking_node import ChunkingNode
+from qyver.framework.common.dag.comparison_filter_node import ComparisonFilterNode
+from qyver.framework.common.dag.dag import Dag
+from qyver.framework.common.dag.event_aggregation_node import EventAggregationNode
+from qyver.framework.common.dag.exception import LeafNodeCountException
+from qyver.framework.common.dag.node import Node
+from qyver.framework.common.dag.schema_field_node import SchemaFieldNode
+from qyver.framework.compiler.query.query_node_registry import QueryNodeRegistry
+from qyver.framework.query.dag.query_dag import QueryDag
+from qyver.framework.query.dag.query_node import QueryNode
 
 NODES_TO_EXCLUDE = (
     ChunkingNode,

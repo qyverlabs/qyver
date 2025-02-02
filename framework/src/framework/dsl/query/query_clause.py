@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,37 +20,37 @@ from dataclasses import dataclass, replace
 from beartype.typing import Any, Generic, Mapping, Sequence, TypeVar, cast
 from typing_extensions import Self, override
 
-from superlinked.framework.common.const import constants
-from superlinked.framework.common.data_types import PythonTypes
-from superlinked.framework.common.exception import QueryException
-from superlinked.framework.common.interface.comparison_operand import (
+from qyver.framework.common.const import constants
+from qyver.framework.common.data_types import PythonTypes
+from qyver.framework.common.exception import QueryException
+from qyver.framework.common.interface.comparison_operand import (
     ComparisonOperation,
 )
-from superlinked.framework.common.interface.comparison_operation_type import (
+from qyver.framework.common.interface.comparison_operation_type import (
     ComparisonOperationType,
 )
-from superlinked.framework.common.interface.evaluated import Evaluated
-from superlinked.framework.common.interface.has_annotation import HasAnnotation
-from superlinked.framework.common.interface.weighted import Weighted
-from superlinked.framework.common.nlq.open_ai import OpenAIClientConfig
-from superlinked.framework.common.schema.schema_object import SchemaField
-from superlinked.framework.common.util.generic_class_util import GenericClassUtil
-from superlinked.framework.common.util.type_validator import TypeValidator
-from superlinked.framework.dsl.query.param import (
+from qyver.framework.common.interface.evaluated import Evaluated
+from qyver.framework.common.interface.has_annotation import HasAnnotation
+from qyver.framework.common.interface.weighted import Weighted
+from qyver.framework.common.nlq.open_ai import OpenAIClientConfig
+from qyver.framework.common.schema.schema_object import SchemaField
+from qyver.framework.common.util.generic_class_util import GenericClassUtil
+from qyver.framework.common.util.type_validator import TypeValidator
+from qyver.framework.dsl.query.param import (
     UNSET_PARAM_NAME,
     Param,
     ParamInputType,
 )
-from superlinked.framework.dsl.query.predicate.binary_predicate import (
+from qyver.framework.dsl.query.predicate.binary_predicate import (
     EvaluatedBinaryPredicate,
     LooksLikePredicate,
 )
-from superlinked.framework.dsl.query.query_filter_validator import QueryFilterValidator
-from superlinked.framework.dsl.space.categorical_similarity_space import (
+from qyver.framework.dsl.query.query_filter_validator import QueryFilterValidator
+from qyver.framework.dsl.space.categorical_similarity_space import (
     CategoricalSimilaritySpace,
 )
-from superlinked.framework.dsl.space.space import Space
-from superlinked.framework.dsl.space.space_field_set import SpaceFieldSet
+from qyver.framework.dsl.space.space import Space
+from qyver.framework.dsl.space.space_field_set import SpaceFieldSet
 
 EvaluatedQueryT = TypeVar("EvaluatedQueryT")
 

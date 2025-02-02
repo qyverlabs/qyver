@@ -1,7 +1,7 @@
-Module superlinked.framework.dsl.registry
+Module qyver.framework.dsl.registry
 =========================================
 
 Sub-modules
 -----------
-* superlinked.framework.dsl.registry.exception
-* superlinked.framework.dsl.registry.superlinked_registry
+* qyver.framework.dsl.registry.exception
+* qyver.framework.dsl.registry.qyver_registry

@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,12 +16,12 @@ from __future__ import annotations
 
 from beartype.typing import Mapping
 
-from superlinked.framework.common.schema.id_schema_object import IdSchemaObject
-from superlinked.framework.common.util.type_validator import TypeValidator
-from superlinked.framework.dsl.index.index import Index
-from superlinked.framework.dsl.query.param import NumericParamType
-from superlinked.framework.dsl.query.query_descriptor import QueryDescriptor
-from superlinked.framework.dsl.space.space import Space
+from qyver.framework.common.schema.id_schema_object import IdSchemaObject
+from qyver.framework.common.util.type_validator import TypeValidator
+from qyver.framework.dsl.index.index import Index
+from qyver.framework.dsl.query.param import NumericParamType
+from qyver.framework.dsl.query.query_descriptor import QueryDescriptor
+from qyver.framework.dsl.space.space import Space
 
 
 @TypeValidator.wrap

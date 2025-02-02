@@ -6,15 +6,15 @@ icon: hotel
 
 ## Overview
 
-This project is a demonstration of a hotel search system built using Superlinked.
+This project is a demonstration of a hotel search system built using qyver.
 It allows users to search for hotels based on various criteria such as description, price, rating, and more, all through natural language queries.
 
 {% hint style="info" %}
-🚀 Try it out: [hotel-search-recipe.superlinked.io](https://hotel-search-recipe.superlinked.io/)
+🚀 Try it out: [hotel-search-recipe.qyver.io](https://hotel-search-recipe.qyver.io/)
 {% endhint %}
 
 {% hint style="info" %}
-💻 Github repo: [here](https://github.com/superlinked/superlinked-recipes/tree/main/projects/hotel-search)
+💻 Github repo: [here](https://github.com/qyver/qyver-recipes/tree/main/projects/hotel-search)
 {% endhint %}
 
 
@@ -61,7 +61,7 @@ It allows users to search for hotels based on various criteria such as descripti
 ### How it works in a nutshell
 
 <div align="center">
-  <img src="./assets/superlinked-in-a-nutshell.svg" alt="Superlinked in a nutshell">
+  <img src="./assets/qyver-in-a-nutshell.svg" alt="qyver in a nutshell">
 </div>
 
 ## Quick Start
@@ -89,17 +89,17 @@ docker run -d \
 
 Once running, you can access the Redis browser at [localhost:8001/browser](http://localhost:8001/browser/).
 
-For more details on using Redis with Superlinked, refer to the [our docs](https://docs.superlinked.com/run-in-production/index-1/redis).
+For more details on using Redis with qyver, refer to the [our docs](https://docs.qyver.com/run-in-production/index-1/redis).
 
-### Superlinked server
+### qyver server
 
-Use [`superlinked_app/.env-example`](https://github.com/superlinked/superlinked-recipes/blob/main/projects/hotel-search/superlinked_app/.env-example) as a template, create `superlinked_app/.env` and set `OPENAI_API_KEY` required for Natural Query Interface.
+Use [`qyver_app/.env-example`](https://github.com/qyver/qyver-recipes/blob/main/projects/hotel-search/qyver_app/.env-example) as a template, create `qyver_app/.env` and set `OPENAI_API_KEY` required for Natural Query Interface.
 
 ```shell
 python3.11 -m venv .venv
 . .venv/bin/activate
 pip install -r requirements.txt
-APP_MODULE_PATH=superlinked_app python -m superlinked.server
+APP_MODULE_PATH=qyver_app python -m qyver.server
 ```
 
 It will take some time (depending on the network) to download the sentence-transformers model for the very first time.
@@ -128,41 +128,41 @@ The Streamlit UI will be available at [localhost:8501](http://localhost:8501).
 
 ### Jupyter notebook
 
-Attach to VDB and experiment with different superlinked queries from the jupyter notebook: [superlinked-queries.ipynb](https://github.com/superlinked/superlinked-recipes/blob/main/projects/hotel-search/notebooks/superlinked-queries.ipynb).
+Attach to VDB and experiment with different qyver queries from the jupyter notebook: [qyver-queries.ipynb](https://github.com/qyver/qyver-recipes/blob/main/projects/hotel-search/notebooks/qyver-queries.ipynb).
 
 ## Cloud
 
-The `superlinked cli` is a one-package solution to deploy the Superlinked cluster on your GCP cloud.
-Via `superlinked cli` you will be able to run superlinked application at scale with additional important components such as batch engine, logging and more, utilizing the same superlinked configuration you used in your local setup!
+The `qyver cli` is a one-package solution to deploy the qyver cluster on your GCP cloud.
+Via `qyver cli` you will be able to run qyver application at scale with additional important components such as batch engine, logging and more, utilizing the same qyver configuration you used in your local setup!
 
-Want to try it now? Contact us at [superlinked.com](https://superlinked.typeform.com/to/LXMRzHWk?typeform-source=hotel-search-recipe).
+Want to try it now? Contact us at [qyver.com](https://qyver.typeform.com/to/LXMRzHWk?typeform-source=hotel-search-recipe).
 
 ## Tutorial
 
-To configure your superlinked application you need to create a simple python package with few files, we will go though them one by one.
+To configure your qyver application you need to create a simple python package with few files, we will go though them one by one.
 All files contain necessary inline comments, check them out!
-Also, feel free to read our docs: [docs.superlinked.com](https://docs.superlinked.com/run-in-production/index/configuring-your-app).
+Also, feel free to read our docs: [docs.qyver.com](https://docs.qyver.com/run-in-production/index/configuring-your-app).
 
-Once you are happy with your local Superlinked setup, you can use config files without changes for your Cloud deployent.
-To make transition to the cloud smooth, we provide Superlinked CLI.
-[Contact us](https://superlinked.typeform.com/to/LXMRzHWk?typeform-source=hotel-search-recipe) if you want to try it now!
+Once you are happy with your local qyver setup, you can use config files without changes for your Cloud deployent.
+To make transition to the cloud smooth, we provide qyver CLI.
+[Contact us](https://qyver.typeform.com/to/LXMRzHWk?typeform-source=hotel-search-recipe) if you want to try it now!
 
 ---
 
-[**`__init__.py`**](https://github.com/superlinked/superlinked-recipes/blob/main/projects/hotel-search/superlinked_app/__init__.py)
+[**`__init__.py`**](https://github.com/qyver/qyver-recipes/blob/main/projects/hotel-search/qyver_app/__init__.py)
 
 It's needed just to make a python package, you can keep it empty.
 
 ---
 
-[**`config.py`**](https://github.com/superlinked/superlinked-recipes/blob/main/projects/hotel-search/superlinked_app/config.py)
+[**`config.py`**](https://github.com/qyver/qyver-recipes/blob/main/projects/hotel-search/qyver_app/config.py)
 
 Settings of our application are read from `.env` file.
-You can create one simply by copying [`.env-example`](./superlinked_app/.env-example) and setting `openai_api_key` which is needed for NLQ.
+You can create one simply by copying [`.env-example`](./qyver_app/.env-example) and setting `openai_api_key` which is needed for NLQ.
 
 ---
 
-[**`index.py`**](https://github.com/superlinked/superlinked-recipes/blob/main/projects/hotel-search/superlinked_app/index.py)
+[**`index.py`**](https://github.com/qyver/qyver-recipes/blob/main/projects/hotel-search/qyver_app/index.py)
 
 This file defines three important things:
 - object schema: declares names and types of raw attributes
@@ -170,55 +170,55 @@ This file defines three important things:
 - index: combines spaces for multi-modal vector search
 
 <div align="center">
-  <img src="./assets/superlinked-index.svg" alt="Graphical abstract">
+  <img src="./assets/qyver-index.svg" alt="Graphical abstract">
 </div>
 
-In our superlinked application, we will embed one textual field (hotel `description`) and three numeric fields (`price`, `rating`, `rating_count`).
+In our qyver application, we will embed one textual field (hotel `description`) and three numeric fields (`price`, `rating`, `rating_count`).
 Description is embedded using [all-mpnet-base-v2](https://huggingface.co/sentence-transformers/all-mpnet-base-v2).
 If you need faster model, you can try [all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2).
 Or if you are aiming for better retrieval quality, bigger models like [gte-large-en-v1.5](https://huggingface.co/Alibaba-NLP/gte-large-en-v1.5) are worth checking out.
 
-**Note.** Apart from texts and numbers, out-of-the-box Superlinked can embed images, categories, recency.
+**Note.** Apart from texts and numbers, out-of-the-box qyver can embed images, categories, recency.
 It also supports arbitrary embeddings via custom spaces.
-Learn more about Superlinked embeddings in [our github](https://github.com/superlinked/superlinked/tree/main?tab=readme-ov-file#features)!
+Learn more about qyver embeddings in [our github](https://github.com/qyver/qyver/tree/main?tab=readme-ov-file#features)!
 
 Attribues like city, hotel-type, and amenities are used for hard-filtering.
 
 ---
 
-[**`query.py`**](https://github.com/superlinked/superlinked-recipes/blob/main/projects/hotel-search/superlinked_app/query.py) and [**`nlq.py`**](https://github.com/superlinked/superlinked-recipes/blob/main/projects/hotel-search/superlinked_app/nlq.py)
+[**`query.py`**](https://github.com/qyver/qyver-recipes/blob/main/projects/hotel-search/qyver_app/query.py) and [**`nlq.py`**](https://github.com/qyver/qyver-recipes/blob/main/projects/hotel-search/qyver_app/nlq.py)
 
-These two files define superlinked queries used for multi-modal semantic search with Natural Language Interface (NLI) on top.
-Our github contains many helpful notebooks that show how to configure superlinked queries:
-- [query time weights](https://github.com/superlinked/superlinked/blob/main/notebook/feature/query_time_weights.ipynb)
-- [querying options](https://github.com/superlinked/superlinked/blob/main/notebook/feature/querying_options.ipynb)
-- [dynamic parameters](https://github.com/superlinked/superlinked/blob/main/notebook/feature/dynamic_parameters.ipynb)
-- [natural language interface](https://github.com/superlinked/superlinked/blob/main/notebook/feature/natural_language_querying.ipynb)
+These two files define qyver queries used for multi-modal semantic search with Natural Language Interface (NLI) on top.
+Our github contains many helpful notebooks that show how to configure qyver queries:
+- [query time weights](https://github.com/qyver/qyver/blob/main/notebook/feature/query_time_weights.ipynb)
+- [querying options](https://github.com/qyver/qyver/blob/main/notebook/feature/querying_options.ipynb)
+- [dynamic parameters](https://github.com/qyver/qyver/blob/main/notebook/feature/dynamic_parameters.ipynb)
+- [natural language interface](https://github.com/qyver/qyver/blob/main/notebook/feature/natural_language_querying.ipynb)
 
 ---
 
-[**`api.py`**](https://github.com/superlinked/superlinked-recipes/blob/main/projects/hotel-search/superlinked_app/api.py)
+[**`api.py`**](https://github.com/qyver/qyver-recipes/blob/main/projects/hotel-search/qyver_app/api.py)
 
 This file sets the following components:
 - vector database: in current application we are using Redis.
-  We also support [MongoDB and Qdrant](https://docs.superlinked.com/run-in-production/index-1).
+  We also support [MongoDB and Qdrant](https://docs.qyver.com/run-in-production/index-1).
 - data loader: our data is ingested from gcp bucket
-- REST API: our app will provide endpoints for ingestion (bulk and one-by-one) and for querying. More information is in [our docs](https://docs.superlinked.com/run-in-production/index/interacting-with-app-via-api).
+- REST API: our app will provide endpoints for ingestion (bulk and one-by-one) and for querying. More information is in [our docs](https://docs.qyver.com/run-in-production/index/interacting-with-app-via-api).
 
 ## What's next
 
 We publish our recipes as a starting point for your own projects.
 There are many things you might want to try:
-- **Experiment with superlinked queries.**
+- **Experiment with qyver queries.**
   Try to come up with more queries focused on different search scenarios fitting your use-case.
 - **Bring your own dataset.**
   Want to run Natural Language Query with your data?
   Define your schema, spaces, index, queries, and data-sources based on this recipe.
-  In case of questions, don't hesitate to [contact us](https://superlinked.typeform.com/to/LXMRzHWk?typeform-source=hotel-search-recipe)!
+  In case of questions, don't hesitate to [contact us](https://qyver.typeform.com/to/LXMRzHWk?typeform-source=hotel-search-recipe)!
 - **Try different VDBs.**
-  Depending on your needs you can choose one of the [VDBs we currently support](https://docs.superlinked.com/run-in-production/index-1).
+  Depending on your needs you can choose one of the [VDBs we currently support](https://docs.qyver.com/run-in-production/index-1).
   More to come!
 - **Try other text embedding models.**
   There are a ton of different text embedding models out there.
   Discover [sentence-transformers](https://sbert.net/docs/sentence_transformer/pretrained_models.html), [hugging-face](https://huggingface.co/sentence-transformers) and select models that suit your use-case best.
-- **Explore additional use-cases.** Check out our [notebooks](https://github.com/superlinked/superlinked/tree/main/notebook) and [docs](https://docs.superlinked.com/).
+- **Explore additional use-cases.** Check out our [notebooks](https://github.com/qyver/qyver/tree/main/notebook) and [docs](https://docs.qyver.com/).

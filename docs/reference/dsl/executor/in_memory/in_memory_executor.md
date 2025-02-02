@@ -1,4 +1,4 @@
-Module superlinked.framework.dsl.executor.in_memory.in_memory_executor
+Module qyver.framework.dsl.executor.in_memory.in_memory_executor
 ======================================================================
 
 Classes
@@ -37,14 +37,14 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.dsl.executor.interactive.interactive_executor.InteractiveExecutor
-    * superlinked.framework.dsl.executor.executor.Executor
+    * qyver.framework.dsl.executor.interactive.interactive_executor.InteractiveExecutor
+    * qyver.framework.dsl.executor.executor.Executor
     * abc.ABC
     * typing.Generic
 
     ### Methods
 
-    `run(self) ‑> superlinked.framework.dsl.app.in_memory.in_memory_app.InMemoryApp`
+    `run(self) ‑> qyver.framework.dsl.app.in_memory.in_memory_app.InMemoryApp`
     :   Run the InMemoryExecutor. It returns an app that can accept queries.
         Returns:
             InMemoryApp: An instance of InMemoryApp.

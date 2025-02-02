@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,16 +19,16 @@ from dataclasses import dataclass
 from beartype.typing import Generic
 from typing_extensions import override
 
-from superlinked.framework.common.interface.has_length import HasLength
-from superlinked.framework.common.space.config.aggregation.aggregation_config import (
+from qyver.framework.common.interface.has_length import HasLength
+from qyver.framework.common.space.config.aggregation.aggregation_config import (
     AggregationConfig,
     AggregationInputT,
 )
-from superlinked.framework.common.space.config.embedding.embedding_config import (
+from qyver.framework.common.space.config.embedding.embedding_config import (
     EmbeddingConfig,
     EmbeddingInputT,
 )
-from superlinked.framework.common.space.config.normalization.normalization_config import (
+from qyver.framework.common.space.config.normalization.normalization_config import (
     NormalizationConfig,
 )
 

@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,28 +19,28 @@ from abc import abstractmethod
 from beartype.typing import Generic, Sequence, TypeAlias, TypeVar
 from typing_extensions import override
 
-from superlinked.framework.common.dag.chunking_node import ChunkingNode
-from superlinked.framework.common.dag.embedding_node import EmbeddingNode
-from superlinked.framework.common.data_types import NodeDataTypes
-from superlinked.framework.common.interface.has_annotation import HasAnnotation
-from superlinked.framework.common.schema.schema_object import (
+from qyver.framework.common.dag.chunking_node import ChunkingNode
+from qyver.framework.common.dag.embedding_node import EmbeddingNode
+from qyver.framework.common.data_types import NodeDataTypes
+from qyver.framework.common.interface.has_annotation import HasAnnotation
+from qyver.framework.common.schema.schema_object import (
     ConcreteSchemaField,
     DescribedBlob,
     Number,
     SchemaField,
     SchemaObject,
 )
-from superlinked.framework.common.space.config.aggregation.aggregation_config import (
+from qyver.framework.common.space.config.aggregation.aggregation_config import (
     AggregationInputT,
 )
-from superlinked.framework.common.space.config.embedding.embedding_config import (
+from qyver.framework.common.space.config.embedding.embedding_config import (
     EmbeddingInputT,
 )
-from superlinked.framework.common.space.interface.has_transformation_config import (
+from qyver.framework.common.space.interface.has_transformation_config import (
     HasTransformationConfig,
 )
-from superlinked.framework.common.util.type_validator import TypeValidator
-from superlinked.framework.dsl.space.exception import InvalidSpaceParamException
+from qyver.framework.common.util.type_validator import TypeValidator
+from qyver.framework.dsl.space.exception import InvalidSpaceParamException
 
 # SpaceInputType
 SIT = TypeVar("SIT", bound=NodeDataTypes)

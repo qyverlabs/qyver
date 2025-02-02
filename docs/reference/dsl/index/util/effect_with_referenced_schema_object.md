@@ -1,4 +1,4 @@
-Module superlinked.framework.dsl.index.util.effect_with_referenced_schema_object
+Module qyver.framework.dsl.index.util.effect_with_referenced_schema_object
 ================================================================================
 
 Classes
@@ -13,21 +13,21 @@ Classes
 
     ### Class variables
 
-    `base_effect: superlinked.framework.dsl.index.effect.Effect[~AggregationInputT, ~EmbeddingInputT]`
+    `base_effect: qyver.framework.dsl.index.effect.Effect[~AggregationInputT, ~EmbeddingInputT]`
     :
 
-    `event_schema: superlinked.framework.common.schema.event_schema_object.EventSchemaObject`
+    `event_schema: qyver.framework.common.schema.event_schema_object.EventSchemaObject`
     :
 
-    `resolved_affected_schema_reference: superlinked.framework.common.dag.resolved_schema_reference.ResolvedSchemaReference`
+    `resolved_affected_schema_reference: qyver.framework.common.dag.resolved_schema_reference.ResolvedSchemaReference`
     :
 
-    `resolved_affecting_schema_reference: superlinked.framework.common.dag.resolved_schema_reference.ResolvedSchemaReference`
+    `resolved_affecting_schema_reference: qyver.framework.common.dag.resolved_schema_reference.ResolvedSchemaReference`
     :
 
     ### Static methods
 
-    `from_base_effect(base_effect: Effect, schemas: set[SchemaObject]) ‑> superlinked.framework.dsl.index.util.effect_with_referenced_schema_object.EffectWithReferencedSchemaObject`
+    `from_base_effect(base_effect: Effect, schemas: set[SchemaObject]) ‑> qyver.framework.dsl.index.util.effect_with_referenced_schema_object.EffectWithReferencedSchemaObject`
     :
 
     ### Instance variables

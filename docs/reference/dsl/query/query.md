@@ -1,10 +1,10 @@
-Module superlinked.framework.dsl.query.query
+Module qyver.framework.dsl.query.query
 ============================================
 
 Classes
 -------
 
-`Query(index: superlinked.framework.dsl.index.index.Index, weights: collections.abc.Mapping[superlinked.framework.dsl.space.space.Space, float | int | superlinked.framework.dsl.query.param.Param] | None = None)`
+`Query(index: qyver.framework.dsl.index.index.Index, weights: collections.abc.Mapping[qyver.framework.dsl.space.space.Space, float | int | qyver.framework.dsl.query.param.Param] | None = None)`
 :   A class representing a query. Build queries using Params as placeholders for weights or query text,
     and supply their value later on when executing a query.
     
@@ -22,7 +22,7 @@ Classes
 
     ### Methods
 
-    `find(self, schema: superlinked.framework.common.schema.id_schema_object.IdSchemaObject) ‑> superlinked.framework.dsl.query.query_descriptor.QueryDescriptor`
+    `find(self, schema: qyver.framework.common.schema.id_schema_object.IdSchemaObject) ‑> qyver.framework.dsl.query.query_descriptor.QueryDescriptor`
     :   Find a schema in the query.
         
         Args:

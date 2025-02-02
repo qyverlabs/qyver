@@ -1,4 +1,4 @@
-Module superlinked.framework.common.dag.period_time
+Module qyver.framework.common.dag.period_time
 ===================================================
 
 Classes

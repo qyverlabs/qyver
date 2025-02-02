@@ -1,4 +1,4 @@
-Module superlinked.framework.dsl.registry.exception
+Module qyver.framework.dsl.registry.exception
 ===================================================
 
 Classes

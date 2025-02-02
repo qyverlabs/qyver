@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,16 +17,16 @@ from beartype.typing import Any, cast
 from redis import Redis
 from typing_extensions import override
 
-from superlinked.framework.common.storage.index_config import IndexConfig
-from superlinked.framework.common.storage.query.vdb_knn_search_params import (
+from qyver.framework.common.storage.index_config import IndexConfig
+from qyver.framework.common.storage.query.vdb_knn_search_params import (
     VDBKNNSearchParams,
 )
-from superlinked.framework.common.storage.search import Search
-from superlinked.framework.storage.redis.query.redis_query_builder import (
+from qyver.framework.common.storage.search import Search
+from qyver.framework.storage.redis.query.redis_query_builder import (
     RedisQuery,
     RedisQueryBuilder,
 )
-from superlinked.framework.storage.redis.redis_field_encoder import RedisFieldEncoder
+from qyver.framework.storage.redis.redis_field_encoder import RedisFieldEncoder
 
 
 class RedisSearch(Search[VDBKNNSearchParams, RedisQuery, dict[bytes, Any]]):

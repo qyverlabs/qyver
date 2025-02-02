@@ -1,4 +1,4 @@
-Module superlinked.framework.dsl.query.query_filter_validator
+Module qyver.framework.dsl.query.query_filter_validator
 =============================================================
 
 Classes
@@ -9,5 +9,5 @@ Classes
 
     ### Static methods
 
-    `validate_operation_operand_type(comparison_operation: superlinked.framework.common.interface.comparison_operand.ComparisonOperation, allow_param: bool) ‑> None`
+    `validate_operation_operand_type(comparison_operation: qyver.framework.common.interface.comparison_operand.ComparisonOperation, allow_param: bool) ‑> None`
     :

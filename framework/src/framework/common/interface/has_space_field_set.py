@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
 
 from abc import ABC, abstractmethod
 
-from superlinked.framework.dsl.space.space_field_set import SpaceFieldSet
+from qyver.framework.dsl.space.space_field_set import SpaceFieldSet
 
 
 class HasSpaceFieldSet(ABC):

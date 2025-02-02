@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,8 +14,8 @@
 
 from __future__ import annotations
 
-from superlinked.framework.common.interface.comparison_operand import ComparisonOperand
-from superlinked.framework.common.storage.field_data_type import FieldDataType
+from qyver.framework.common.interface.comparison_operand import ComparisonOperand
+from qyver.framework.common.storage.field_data_type import FieldDataType
 
 
 class Field(ComparisonOperand):

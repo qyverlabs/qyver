@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,19 +20,19 @@ from functools import partial
 import structlog
 from beartype.typing import Generic, Mapping, Sequence
 
-from superlinked.framework.common.dag.context import ExecutionContext
-from superlinked.framework.common.dag.exception import ParentCountException
-from superlinked.framework.common.dag.node import NT, Node, NodeDataT
-from superlinked.framework.common.exception import DagEvaluationException
-from superlinked.framework.common.parser.parsed_schema import ParsedSchema
-from superlinked.framework.common.schema.schema_object import SchemaObject
-from superlinked.framework.common.storage_manager.storage_manager import StorageManager
-from superlinked.framework.online.dag.evaluation_result import (
+from qyver.framework.common.dag.context import ExecutionContext
+from qyver.framework.common.dag.exception import ParentCountException
+from qyver.framework.common.dag.node import NT, Node, NodeDataT
+from qyver.framework.common.exception import DagEvaluationException
+from qyver.framework.common.parser.parsed_schema import ParsedSchema
+from qyver.framework.common.schema.schema_object import SchemaObject
+from qyver.framework.common.storage_manager.storage_manager import StorageManager
+from qyver.framework.online.dag.evaluation_result import (
     EvaluationResult,
     SingleEvaluationResult,
 )
-from superlinked.framework.online.dag.exception import ParentResultException
-from superlinked.framework.online.dag.parent_validator import ParentValidationType
+from qyver.framework.online.dag.exception import ParentResultException
+from qyver.framework.online.dag.parent_validator import ParentValidationType
 
 logger = structlog.get_logger()
 

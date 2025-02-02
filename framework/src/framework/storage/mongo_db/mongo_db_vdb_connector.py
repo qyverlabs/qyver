@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,34 +16,34 @@ from beartype.typing import Any, Sequence
 from pymongo import MongoClient, UpdateOne
 from typing_extensions import override
 
-from superlinked.framework.common.storage.entity.entity import Entity
-from superlinked.framework.common.storage.entity.entity_data import EntityData
-from superlinked.framework.common.storage.entity.entity_id import EntityId
-from superlinked.framework.common.storage.field.field import Field
-from superlinked.framework.common.storage.field.field_data import FieldData
-from superlinked.framework.common.storage.query.vdb_knn_search_params import (
+from qyver.framework.common.storage.entity.entity import Entity
+from qyver.framework.common.storage.entity.entity_data import EntityData
+from qyver.framework.common.storage.entity.entity_id import EntityId
+from qyver.framework.common.storage.field.field import Field
+from qyver.framework.common.storage.field.field_data import FieldData
+from qyver.framework.common.storage.query.vdb_knn_search_params import (
     VDBKNNSearchParams,
 )
-from superlinked.framework.common.storage.result_entity_data import ResultEntityData
-from superlinked.framework.common.storage.search_index.manager.search_index_manager import (
+from qyver.framework.common.storage.result_entity_data import ResultEntityData
+from qyver.framework.common.storage.search_index.manager.search_index_manager import (
     SearchIndexManager,
 )
-from superlinked.framework.common.storage.vdb_connector import VDBConnector
-from superlinked.framework.storage.common.vdb_settings import VDBSettings
-from superlinked.framework.storage.mongo_db.mongo_db_connection_params import (
+from qyver.framework.common.storage.vdb_connector import VDBConnector
+from qyver.framework.storage.common.vdb_settings import VDBSettings
+from qyver.framework.storage.mongo_db.mongo_db_connection_params import (
     MongoDBConnectionParams,
 )
-from superlinked.framework.storage.mongo_db.mongo_db_field_encoder import (
+from qyver.framework.storage.mongo_db.mongo_db_field_encoder import (
     MongoDBFieldEncoder,
 )
-from superlinked.framework.storage.mongo_db.query.mongo_db_query import (
+from qyver.framework.storage.mongo_db.query.mongo_db_query import (
     VECTOR_SCORE_ALIAS,
 )
-from superlinked.framework.storage.mongo_db.query.mongo_db_search import MongoDBSearch
-from superlinked.framework.storage.mongo_db.query.mongo_db_vdb_knn_search_params import (
+from qyver.framework.storage.mongo_db.query.mongo_db_search import MongoDBSearch
+from qyver.framework.storage.mongo_db.query.mongo_db_vdb_knn_search_params import (
     MongoDBVDBKNNSearchParams,
 )
-from superlinked.framework.storage.mongo_db.search_index.mongo_db_search_index_manager import (
+from qyver.framework.storage.mongo_db.search_index.mongo_db_search_index_manager import (
     MongoDBSearchIndexManager,
 )
 

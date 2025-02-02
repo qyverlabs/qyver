@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,12 +20,12 @@ from enum import Enum, auto
 from beartype.typing import Mapping, TypeVar, cast
 from typing_extensions import Self, TypeAlias
 
-from superlinked.framework.common.const import constants
-from superlinked.framework.common.exception import (
+from qyver.framework.common.const import constants
+from qyver.framework.common.exception import (
     NotImplementedException,
     QueryException,
 )
-from superlinked.framework.common.util import time_util
+from qyver.framework.common.util import time_util
 
 ContextValue: TypeAlias = int | float | str | Mapping | list | bool | None
 T = TypeVar("T", bound=ContextValue)

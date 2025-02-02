@@ -1,4 +1,4 @@
-Module superlinked.framework.dsl.query.nlq.param_filler.query_param_model_validator
+Module qyver.framework.dsl.query.nlq.param_filler.query_param_model_validator
 ===================================================================================
 
 Classes
@@ -9,5 +9,5 @@ Classes
 
     ### Static methods
 
-    `build(clause_collector: superlinked.framework.dsl.query.nlq.nlq_clause_collector.NLQClauseCollector) ‑> pydantic._internal._decorators.PydanticDescriptorProxy[pydantic._internal._decorators.ModelValidatorDecoratorInfo]`
+    `build(clause_collector: qyver.framework.dsl.query.nlq.nlq_clause_collector.NLQClauseCollector) ‑> pydantic._internal._decorators.PydanticDescriptorProxy[pydantic._internal._decorators.ModelValidatorDecoratorInfo]`
     :

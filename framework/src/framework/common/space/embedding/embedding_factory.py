@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,43 +15,43 @@
 
 from beartype.typing import Any, Mapping
 
-from superlinked.framework.common.space.config.embedding.categorical_similarity_embedding_config import (
+from qyver.framework.common.space.config.embedding.categorical_similarity_embedding_config import (
     CategoricalSimilarityEmbeddingConfig,
 )
-from superlinked.framework.common.space.config.embedding.custom_embedding_config import (
+from qyver.framework.common.space.config.embedding.custom_embedding_config import (
     CustomEmbeddingConfig,
 )
-from superlinked.framework.common.space.config.embedding.embedding_config import (
+from qyver.framework.common.space.config.embedding.embedding_config import (
     EmbeddingConfig,
     EmbeddingInputT,
 )
-from superlinked.framework.common.space.config.embedding.image_embedding_config import (
+from qyver.framework.common.space.config.embedding.image_embedding_config import (
     ImageEmbeddingConfig,
 )
-from superlinked.framework.common.space.config.embedding.number_embedding_config import (
+from qyver.framework.common.space.config.embedding.number_embedding_config import (
     NumberEmbeddingConfig,
 )
-from superlinked.framework.common.space.config.embedding.recency_embedding_config import (
+from qyver.framework.common.space.config.embedding.recency_embedding_config import (
     RecencyEmbeddingConfig,
 )
-from superlinked.framework.common.space.config.embedding.text_similarity_embedding_config import (
+from qyver.framework.common.space.config.embedding.text_similarity_embedding_config import (
     TextSimilarityEmbeddingConfig,
 )
-from superlinked.framework.common.space.embedding.categorical_similarity_embedding import (
+from qyver.framework.common.space.embedding.categorical_similarity_embedding import (
     CategoricalSimilarityEmbedding,
 )
-from superlinked.framework.common.space.embedding.custom_embedding import (
+from qyver.framework.common.space.embedding.custom_embedding import (
     CustomEmbedding,
 )
-from superlinked.framework.common.space.embedding.embedding import Embedding
-from superlinked.framework.common.space.embedding.image_embedding import ImageEmbedding
-from superlinked.framework.common.space.embedding.number_embedding import (
+from qyver.framework.common.space.embedding.embedding import Embedding
+from qyver.framework.common.space.embedding.image_embedding import ImageEmbedding
+from qyver.framework.common.space.embedding.number_embedding import (
     NumberEmbedding,
 )
-from superlinked.framework.common.space.embedding.recency_embedding import (
+from qyver.framework.common.space.embedding.recency_embedding import (
     RecencyEmbedding,
 )
-from superlinked.framework.common.space.embedding.sentence_transformer_embedding import (
+from qyver.framework.common.space.embedding.sentence_transformer_embedding import (
     SentenceTransformerEmbedding,
 )
 

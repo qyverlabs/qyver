@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,6 +14,6 @@
 
 from beartype.typing import TypeVar
 
-from superlinked.framework.common.source.source import Source
+from qyver.framework.common.source.source import Source
 
 SourceT = TypeVar("SourceT", bound=Source)

@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,15 +21,15 @@ from beartype.typing import cast
 from qdrant_client.models import FieldCondition, MatchAny, MatchValue, Range
 from typing_extensions import override
 
-from superlinked.framework.common.interface.comparison_operand import (
+from qyver.framework.common.interface.comparison_operand import (
     ComparisonOperation,
 )
-from superlinked.framework.common.interface.comparison_operation_type import (
+from qyver.framework.common.interface.comparison_operation_type import (
     ComparisonOperationType,
 )
-from superlinked.framework.common.storage.field.field import Field
-from superlinked.framework.common.storage.field.field_data import FieldData
-from superlinked.framework.storage.qdrant.qdrant_field_encoder import QdrantFieldEncoder
+from qyver.framework.common.storage.field.field import Field
+from qyver.framework.common.storage.field.field_data import FieldData
+from qyver.framework.storage.qdrant.qdrant_field_encoder import QdrantFieldEncoder
 
 
 class ClauseType(Enum):

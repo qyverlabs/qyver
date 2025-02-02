@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,23 +18,23 @@ from beartype.typing import Sequence, cast
 from PIL.Image import Image
 from typing_extensions import override
 
-from superlinked.framework.common.dag.context import ExecutionContext
-from superlinked.framework.common.dag.image_embedding_node import ImageEmbeddingNode
-from superlinked.framework.common.dag.schema_field_node import SchemaFieldNode
-from superlinked.framework.common.data_types import PythonTypes, Vector
-from superlinked.framework.common.interface.has_length import HasLength
-from superlinked.framework.common.parser.blob_loader import BlobLoader
-from superlinked.framework.common.parser.parsed_schema import ParsedSchema
-from superlinked.framework.common.schema.blob_information import BlobInformation
-from superlinked.framework.common.schema.image_data import ImageData
-from superlinked.framework.common.storage_manager.storage_manager import StorageManager
-from superlinked.framework.common.transform.transform import Step
-from superlinked.framework.common.transform.transformation_factory import (
+from qyver.framework.common.dag.context import ExecutionContext
+from qyver.framework.common.dag.image_embedding_node import ImageEmbeddingNode
+from qyver.framework.common.dag.schema_field_node import SchemaFieldNode
+from qyver.framework.common.data_types import PythonTypes, Vector
+from qyver.framework.common.interface.has_length import HasLength
+from qyver.framework.common.parser.blob_loader import BlobLoader
+from qyver.framework.common.parser.parsed_schema import ParsedSchema
+from qyver.framework.common.schema.blob_information import BlobInformation
+from qyver.framework.common.schema.image_data import ImageData
+from qyver.framework.common.storage_manager.storage_manager import StorageManager
+from qyver.framework.common.transform.transform import Step
+from qyver.framework.common.transform.transformation_factory import (
     TransformationFactory,
 )
-from superlinked.framework.common.util.image_util import ImageUtil
-from superlinked.framework.online.dag.evaluation_result import EvaluationResult
-from superlinked.framework.online.dag.online_node import OnlineNode
+from qyver.framework.common.util.image_util import ImageUtil
+from qyver.framework.online.dag.evaluation_result import EvaluationResult
+from qyver.framework.online.dag.online_node import OnlineNode
 
 
 class OnlineImageEmbeddingNode(OnlineNode[ImageEmbeddingNode, Vector], HasLength):

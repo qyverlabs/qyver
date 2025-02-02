@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,10 +18,10 @@ from itertools import groupby
 from beartype.typing import Any, cast
 from typing_extensions import TypeVar
 
-from superlinked.framework.common.interface.evaluated import Evaluated
-from superlinked.framework.common.interface.has_annotation import HasAnnotation
-from superlinked.framework.common.schema.schema_object import Blob
-from superlinked.framework.dsl.query.query_clause import (
+from qyver.framework.common.interface.evaluated import Evaluated
+from qyver.framework.common.interface.has_annotation import HasAnnotation
+from qyver.framework.common.schema.schema_object import Blob
+from qyver.framework.dsl.query.query_clause import (
     QueryClause,
     SimilarFilterClause,
 )

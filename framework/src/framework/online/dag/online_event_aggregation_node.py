@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,34 +19,34 @@ import math
 from beartype.typing import Sequence, cast
 from typing_extensions import override
 
-from superlinked.framework.common.const import constants
-from superlinked.framework.common.dag.context import ExecutionContext
-from superlinked.framework.common.dag.event_aggregation_node import EventAggregationNode
-from superlinked.framework.common.dag.exception import ParentCountException
-from superlinked.framework.common.data_types import Vector
-from superlinked.framework.common.exception import (
+from qyver.framework.common.const import constants
+from qyver.framework.common.dag.context import ExecutionContext
+from qyver.framework.common.dag.event_aggregation_node import EventAggregationNode
+from qyver.framework.common.dag.exception import ParentCountException
+from qyver.framework.common.data_types import Vector
+from qyver.framework.common.exception import (
     DagEvaluationException,
     ValidationException,
 )
-from superlinked.framework.common.interface.has_length import HasLength
-from superlinked.framework.common.interface.weighted import Weighted
-from superlinked.framework.common.parser.parsed_schema import (
+from qyver.framework.common.interface.has_length import HasLength
+from qyver.framework.common.interface.weighted import Weighted
+from qyver.framework.common.parser.parsed_schema import (
     EventParsedSchema,
     ParsedSchema,
     ParsedSchemaWithEvent,
 )
-from superlinked.framework.common.schema.schema_object import SchemaObject
-from superlinked.framework.common.storage_manager.storage_manager import StorageManager
-from superlinked.framework.online.dag.evaluation_result import EvaluationResult
-from superlinked.framework.online.dag.event_aggregator import (
+from qyver.framework.common.schema.schema_object import SchemaObject
+from qyver.framework.common.storage_manager.storage_manager import StorageManager
+from qyver.framework.online.dag.evaluation_result import EvaluationResult
+from qyver.framework.online.dag.event_aggregator import (
     EventAggregator,
     EventAggregatorParams,
     EventMetadata,
 )
-from superlinked.framework.online.dag.online_comparison_filter_node import (
+from qyver.framework.online.dag.online_comparison_filter_node import (
     OnlineComparisonFilterNode,
 )
-from superlinked.framework.online.dag.online_node import OnlineNode
+from qyver.framework.online.dag.online_node import OnlineNode
 
 
 class OnlineEventAggregationNode(OnlineNode[EventAggregationNode, Vector], HasLength):

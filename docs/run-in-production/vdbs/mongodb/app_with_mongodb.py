@@ -1,4 +1,4 @@
-from superlinked import framework as sl
+from qyver import framework as sl
 
 
 @sl.schema
@@ -42,4 +42,4 @@ executor = sl.RestExecutor(
     vector_database=mongo_db_vector_database,
 )
 
-sl.SuperlinkedRegistry.register(executor)
+sl.qyverRegistry.register(executor)

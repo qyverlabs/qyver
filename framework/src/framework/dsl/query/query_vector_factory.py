@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,21 +16,21 @@ from collections.abc import Mapping
 
 from beartype.typing import Sequence
 
-from superlinked.framework.common.dag.context import (
+from qyver.framework.common.dag.context import (
     ExecutionContext,
     ExecutionEnvironment,
     NowStrategy,
 )
-from superlinked.framework.common.dag.dag import Dag
-from superlinked.framework.common.data_types import Vector
-from superlinked.framework.common.schema.id_schema_object import IdSchemaObject
-from superlinked.framework.dsl.query.query_weighting import QueryWeighting
-from superlinked.framework.dsl.space.space import Space
-from superlinked.framework.query.dag.query_index_node import (
+from qyver.framework.common.dag.dag import Dag
+from qyver.framework.common.data_types import Vector
+from qyver.framework.common.schema.id_schema_object import IdSchemaObject
+from qyver.framework.dsl.query.query_weighting import QueryWeighting
+from qyver.framework.dsl.space.space import Space
+from qyver.framework.query.dag.query_index_node import (
     QUERIED_SCHEMA_NAME_CONTEXT_KEY,
 )
-from superlinked.framework.query.query_dag_evaluator import QueryDagEvaluator
-from superlinked.framework.query.query_node_input import QueryNodeInput
+from qyver.framework.query.query_dag_evaluator import QueryDagEvaluator
+from qyver.framework.query.query_node_input import QueryNodeInput
 
 # Exclude from documentation.
 __pdoc__ = {}

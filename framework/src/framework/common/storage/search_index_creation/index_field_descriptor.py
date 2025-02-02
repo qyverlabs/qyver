@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,12 +14,12 @@
 
 from dataclasses import dataclass
 
-from superlinked.framework.common.calculation.distance_metric import DistanceMetric
-from superlinked.framework.common.storage.field_data_type import FieldDataType
-from superlinked.framework.common.storage.search_index_creation.search_algorithm import (
+from qyver.framework.common.calculation.distance_metric import DistanceMetric
+from qyver.framework.common.storage.field_data_type import FieldDataType
+from qyver.framework.common.storage.search_index_creation.search_algorithm import (
     SearchAlgorithm,
 )
-from superlinked.framework.common.storage.search_index_creation.vector_component_precision import (
+from qyver.framework.common.storage.search_index_creation.vector_component_precision import (
     VectorComponentPrecision,
 )
 

@@ -1,4 +1,4 @@
-Module superlinked.framework.common.schema.event_schema_object
+Module qyver.framework.common.schema.event_schema_object
 ==============================================================
 
 Classes
@@ -9,8 +9,8 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.common.schema.schema_object.SchemaField
-    * superlinked.framework.common.interface.comparison_operand.ComparisonOperand
+    * qyver.framework.common.schema.schema_object.SchemaField
+    * qyver.framework.common.interface.comparison_operand.ComparisonOperand
     * abc.ABC
     * typing.Generic
 
@@ -20,13 +20,13 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.common.schema.id_schema_object.IdSchemaObject
-    * superlinked.framework.common.schema.schema_object.SchemaObject
+    * qyver.framework.common.schema.id_schema_object.IdSchemaObject
+    * qyver.framework.common.schema.schema_object.SchemaObject
     * abc.ABC
 
     ### Descendants
 
-    * superlinked.framework.common.schema.event_schema.EventSchema
+    * qyver.framework.common.schema.event_schema.EventSchema
 
     ### Static methods
 
@@ -44,7 +44,7 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.common.interface.has_multiplier.HasMultiplier
+    * qyver.framework.common.interface.has_multiplier.HasMultiplier
     * abc.ABC
     * typing.Generic
 
@@ -53,8 +53,8 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.common.schema.schema_object.SchemaField
-    * superlinked.framework.common.interface.comparison_operand.ComparisonOperand
-    * superlinked.framework.common.interface.has_multiplier.HasMultiplier
+    * qyver.framework.common.schema.schema_object.SchemaField
+    * qyver.framework.common.interface.comparison_operand.ComparisonOperand
+    * qyver.framework.common.interface.has_multiplier.HasMultiplier
     * abc.ABC
     * typing.Generic

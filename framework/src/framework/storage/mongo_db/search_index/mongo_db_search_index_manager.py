@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,26 +17,26 @@ from beartype.typing import Sequence
 from requests.auth import HTTPDigestAuth
 from typing_extensions import override
 
-from superlinked.framework.common.calculation.distance_metric import DistanceMetric
-from superlinked.framework.common.exception import UnexpectedResponseException
-from superlinked.framework.common.storage.index_config import IndexConfig
-from superlinked.framework.common.storage.search_index.index_field_descriptor import (
+from qyver.framework.common.calculation.distance_metric import DistanceMetric
+from qyver.framework.common.exception import UnexpectedResponseException
+from qyver.framework.common.storage.index_config import IndexConfig
+from qyver.framework.common.storage.search_index.index_field_descriptor import (
     IndexFieldDescriptor,
     VectorIndexFieldDescriptor,
 )
-from superlinked.framework.common.storage.search_index.manager.dynamic_search_index_manager import (
+from qyver.framework.common.storage.search_index.manager.dynamic_search_index_manager import (
     DynamicSearchIndexManager,
 )
-from superlinked.framework.common.storage.search_index.search_algorithm import (
+from qyver.framework.common.storage.search_index.search_algorithm import (
     SearchAlgorithm,
 )
-from superlinked.framework.storage.mongo_db.search_index.dto import (
+from qyver.framework.storage.mongo_db.search_index.dto import (
     CreateSearchIndexRequest,
     IndexField,
     ListIndicesResponse,
     VectorIndexField,
 )
-from superlinked.framework.storage.mongo_db.search_index.mongo_db_admin_params import (
+from qyver.framework.storage.mongo_db.search_index.mongo_db_admin_params import (
     MongoDBAdminParams,
 )
 

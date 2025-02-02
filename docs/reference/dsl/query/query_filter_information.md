@@ -1,4 +1,4 @@
-Module superlinked.framework.dsl.query.query_filter_information
+Module qyver.framework.dsl.query.query_filter_information
 ===============================================================
 
 Functions

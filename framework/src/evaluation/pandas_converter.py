@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,10 +16,10 @@ import pandas as pd
 from beartype.typing import Any
 from pandas import DataFrame
 
-from superlinked.framework.dsl.query.result import QueryResult
+from qyver.framework.dsl.query.result import QueryResult
 
 DEFAULT_SCORE_FIELD_NAME = "similarity_score"
-FALLBACK_SCORE_FIELD_NAME = f"superlinked_{DEFAULT_SCORE_FIELD_NAME}"
+FALLBACK_SCORE_FIELD_NAME = f"qyver_{DEFAULT_SCORE_FIELD_NAME}"
 
 
 class PandasConverter:
@@ -46,7 +46,7 @@ class PandasConverter:
                 it contains the above-mentioned score column.
 
         Raises:
-            ValueError: If both 'similarity_score' and 'superlinked_similarity_score' fields are present.
+            ValueError: If both 'similarity_score' and 'qyver_similarity_score' fields are present.
         """
         dataframe_rows = []
         for entry in result.entries:

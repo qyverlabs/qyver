@@ -1,4 +1,4 @@
-Module superlinked.framework.dsl.executor.interactive.interactive_executor
+Module qyver.framework.dsl.executor.interactive.interactive_executor
 ==========================================================================
 
 Classes
@@ -19,17 +19,17 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.dsl.executor.executor.Executor
+    * qyver.framework.dsl.executor.executor.Executor
     * abc.ABC
     * typing.Generic
 
     ### Descendants
 
-    * superlinked.framework.dsl.executor.in_memory.in_memory_executor.InMemoryExecutor
+    * qyver.framework.dsl.executor.in_memory.in_memory_executor.InMemoryExecutor
 
     ### Methods
 
-    `run(self) ‑> superlinked.framework.dsl.app.interactive.interactive_app.InteractiveApp`
+    `run(self) ‑> qyver.framework.dsl.app.interactive.interactive_app.InteractiveApp`
     :   Run the InteractiveExecutor. It returns an app that can accept queries.
         Returns:
             InteractiveApp: An instance of InteractiveApp.

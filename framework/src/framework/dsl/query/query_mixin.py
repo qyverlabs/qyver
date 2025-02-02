@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,16 +14,16 @@
 
 from beartype.typing import Any, Sequence
 
-from superlinked.framework.common.exception import QueryException
-from superlinked.framework.common.util.type_validator import TypeValidator
-from superlinked.framework.dsl.executor.query.query_executor import QueryExecutor
-from superlinked.framework.dsl.index.index import Index
-from superlinked.framework.dsl.query.query_descriptor import QueryDescriptor
-from superlinked.framework.dsl.query.query_result_converter.query_result_converter import (
+from qyver.framework.common.exception import QueryException
+from qyver.framework.common.util.type_validator import TypeValidator
+from qyver.framework.dsl.executor.query.query_executor import QueryExecutor
+from qyver.framework.dsl.index.index import Index
+from qyver.framework.dsl.query.query_descriptor import QueryDescriptor
+from qyver.framework.dsl.query.query_result_converter.query_result_converter import (
     QueryResultConverter,
 )
-from superlinked.framework.dsl.query.query_vector_factory import QueryVectorFactory
-from superlinked.framework.dsl.query.result import QueryResult
+from qyver.framework.dsl.query.query_vector_factory import QueryVectorFactory
+from qyver.framework.dsl.query.result import QueryResult
 
 
 @TypeValidator.wrap

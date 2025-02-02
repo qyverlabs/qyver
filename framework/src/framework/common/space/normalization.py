@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@ from beartype.typing import Any
 from scipy import linalg
 from typing_extensions import override
 
-from superlinked.framework.common.data_types import NPArray, Vector
+from qyver.framework.common.data_types import NPArray, Vector
 
 
 class Normalization(ABC):

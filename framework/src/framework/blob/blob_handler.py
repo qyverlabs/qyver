@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,8 +16,8 @@ import mimetypes
 from abc import abstractmethod
 from urllib.parse import unquote, urlparse
 
-from superlinked.framework.blob.blob_metadata import BlobMetadata
-from superlinked.framework.common.schema.blob_information import BlobInformation
+from qyver.framework.blob.blob_metadata import BlobMetadata
+from qyver.framework.common.schema.blob_information import BlobInformation
 
 
 class BlobHandler:

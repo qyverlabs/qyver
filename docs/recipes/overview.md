@@ -1,11 +1,11 @@
 ---
-description: Explore Superlinked's capabilities with real-world apps.
+description: Explore qyver's capabilities with real-world apps.
 icon: grill-fire
 ---
 
 # Overview
 
-Superlinked recipes are standalone applications designed to showcase the powerful capabilities of Superlinked through real-world examples. Each recipe is accessible as a public Streamlit app, allowing for easy experimentation. You can run these projects locally or take advantage of our free-tier cloud solution on GCP. Comprehensive instructions and code are provided, enabling you to deploy the entire application yourself.
+qyver recipes are standalone applications designed to showcase the powerful capabilities of qyver through real-world examples. Each recipe is accessible as a public Streamlit app, allowing for easy experimentation. You can run these projects locally or take advantage of our free-tier cloud solution on GCP. Comprehensive instructions and code are provided, enabling you to deploy the entire application yourself.
 
 
 <style>
@@ -33,7 +33,7 @@ Superlinked recipes are standalone applications designed to showcase the powerfu
       <a href="./hotel-search.md">🏨 Hotel Search</a>
     </td>
     <td valign="top">
-      <a href="https://hotel-search-recipe.superlinked.io/">🚀 Try it now</a>
+      <a href="https://hotel-search-recipe.qyver.io/">🚀 Try it now</a>
     </td>
     <td valign="top">
           Natural Language Queries, Multi-modal Semantic Search
@@ -50,7 +50,7 @@ Superlinked recipes are standalone applications designed to showcase the powerfu
       <strong>🛍️ E-Commerce RecSys</strong><br>
     </td>
     <td valign="top">
-      <a href="https://e-commerce-recsys-recipe.superlinked.io">🚀 Try it now</a>
+      <a href="https://e-commerce-recsys-recipe.qyver.io">🚀 Try it now</a>
     </td>
     <td valign="top">
           Item-to-item recommendations, Item-to-user recommendations, Collaborative filtering

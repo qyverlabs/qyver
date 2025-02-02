@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -30,36 +30,36 @@ from qdrant_client.models import (
 )
 from typing_extensions import override
 
-from superlinked.framework.common.storage.entity.entity import Entity
-from superlinked.framework.common.storage.entity.entity_data import EntityData
-from superlinked.framework.common.storage.entity.entity_id import EntityId
-from superlinked.framework.common.storage.exception import IndexConfigNotFoundException
-from superlinked.framework.common.storage.field.field import Field
-from superlinked.framework.common.storage.field.field_data import FieldData
-from superlinked.framework.common.storage.field.field_data_type import FieldDataType
-from superlinked.framework.common.storage.index_config import IndexConfig
-from superlinked.framework.common.storage.query.vdb_knn_search_params import (
+from qyver.framework.common.storage.entity.entity import Entity
+from qyver.framework.common.storage.entity.entity_data import EntityData
+from qyver.framework.common.storage.entity.entity_id import EntityId
+from qyver.framework.common.storage.exception import IndexConfigNotFoundException
+from qyver.framework.common.storage.field.field import Field
+from qyver.framework.common.storage.field.field_data import FieldData
+from qyver.framework.common.storage.field.field_data_type import FieldDataType
+from qyver.framework.common.storage.index_config import IndexConfig
+from qyver.framework.common.storage.query.vdb_knn_search_params import (
     VDBKNNSearchParams,
 )
-from superlinked.framework.common.storage.result_entity_data import ResultEntityData
-from superlinked.framework.common.storage.search_index.manager.search_index_manager import (
+from qyver.framework.common.storage.result_entity_data import ResultEntityData
+from qyver.framework.common.storage.search_index.manager.search_index_manager import (
     SearchIndexManager,
 )
-from superlinked.framework.common.storage.vdb_connector import VDBConnector
-from superlinked.framework.common.util.string_util import StringUtil
-from superlinked.framework.storage.common.vdb_settings import VDBSettings
-from superlinked.framework.storage.qdrant.qdrant_connection_params import (
+from qyver.framework.common.storage.vdb_connector import VDBConnector
+from qyver.framework.common.util.string_util import StringUtil
+from qyver.framework.storage.common.vdb_settings import VDBSettings
+from qyver.framework.storage.qdrant.qdrant_connection_params import (
     QdrantConnectionParams,
 )
-from superlinked.framework.storage.qdrant.qdrant_field_encoder import (
+from qyver.framework.storage.qdrant.qdrant_field_encoder import (
     QdrantEncodedTypes,
     QdrantFieldEncoder,
 )
-from superlinked.framework.storage.qdrant.qdrant_search_index_manager import (
+from qyver.framework.storage.qdrant.qdrant_search_index_manager import (
     QdrantSearchIndexManager,
 )
-from superlinked.framework.storage.qdrant.query.qdrant_search import QdrantSearch
-from superlinked.framework.storage.qdrant.query.qdrant_vdb_knn_search_params import (
+from qyver.framework.storage.qdrant.query.qdrant_search import QdrantSearch
+from qyver.framework.storage.qdrant.query.qdrant_vdb_knn_search_params import (
     QdrantVDBKNNSearchParams,
 )
 

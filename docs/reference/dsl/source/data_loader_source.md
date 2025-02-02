@@ -1,4 +1,4 @@
-Module superlinked.framework.dsl.source.data_loader_source
+Module qyver.framework.dsl.source.data_loader_source
 ==========================================================
 
 Classes
@@ -66,12 +66,12 @@ Classes
     `XML`
     :
 
-`DataLoaderConfig(path: str, format: superlinked.framework.dsl.source.data_loader_source.DataFormat, name: str | None = None, pandas_read_kwargs: dict[str, typing.Any] | None = None)`
-:   DataLoaderConfig(path: str, format: superlinked.framework.dsl.source.data_loader_source.DataFormat, name: str | None = None, pandas_read_kwargs: dict[str, typing.Any] | None = None)
+`DataLoaderConfig(path: str, format: qyver.framework.dsl.source.data_loader_source.DataFormat, name: str | None = None, pandas_read_kwargs: dict[str, typing.Any] | None = None)`
+:   DataLoaderConfig(path: str, format: qyver.framework.dsl.source.data_loader_source.DataFormat, name: str | None = None, pandas_read_kwargs: dict[str, typing.Any] | None = None)
 
     ### Class variables
 
-    `format: superlinked.framework.dsl.source.data_loader_source.DataFormat`
+    `format: qyver.framework.dsl.source.data_loader_source.DataFormat`
     :
 
     `name: str | None`
@@ -83,7 +83,7 @@ Classes
     `path: str`
     :
 
-`DataLoaderSource(schema: ~IdSchemaObjectT, data_loader_config: superlinked.framework.dsl.source.data_loader_source.DataLoaderConfig, parser: superlinked.framework.common.parser.data_parser.DataParser[~IdSchemaObjectT, ~SourceTypeT] | None = None)`
+`DataLoaderSource(schema: ~IdSchemaObjectT, data_loader_config: qyver.framework.dsl.source.data_loader_source.DataLoaderConfig, parser: qyver.framework.common.parser.data_parser.DataParser[~IdSchemaObjectT, ~SourceTypeT] | None = None)`
 :   Abstract base class for generic types.
     
     A generic type is typically declared by inheriting from
@@ -105,14 +105,14 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.online.source.online_source.OnlineSource
-    * superlinked.framework.common.observable.TransformerPublisher
-    * superlinked.framework.common.source.source.Source
+    * qyver.framework.online.source.online_source.OnlineSource
+    * qyver.framework.common.observable.TransformerPublisher
+    * qyver.framework.common.source.source.Source
     * typing.Generic
 
     ### Instance variables
 
-    `config: superlinked.framework.dsl.source.data_loader_source.DataLoaderConfig`
+    `config: qyver.framework.dsl.source.data_loader_source.DataLoaderConfig`
     :
 
     `name: str`

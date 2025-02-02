@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,13 +16,13 @@
 from beartype.typing import Any, Optional
 from pydantic import BaseModel, Field, create_model
 
-from superlinked.framework.common.interface.evaluated import Evaluated
-from superlinked.framework.dsl.query.nlq.nlq_clause_collector import NLQClauseCollector
-from superlinked.framework.dsl.query.nlq.param_filler.query_param_model_validator import (
+from qyver.framework.common.interface.evaluated import Evaluated
+from qyver.framework.dsl.query.nlq.nlq_clause_collector import NLQClauseCollector
+from qyver.framework.dsl.query.nlq.param_filler.query_param_model_validator import (
     QueryParamModelValidator,
 )
-from superlinked.framework.dsl.query.param import Param
-from superlinked.framework.dsl.query.query_clause import (
+from qyver.framework.dsl.query.param import Param
+from qyver.framework.dsl.query.query_clause import (
     HardFilterClause,
     QueryClause,
     WeightedQueryClause,

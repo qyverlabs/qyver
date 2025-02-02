@@ -1,5 +1,5 @@
 ---
-description: Discover the powerful capabilities Superlinked offers.
+description: Discover the powerful capabilities qyver offers.
 icon: list
 ---
 

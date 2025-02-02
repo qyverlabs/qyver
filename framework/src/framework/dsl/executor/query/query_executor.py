@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,40 +20,40 @@ import numpy as np
 import structlog
 from beartype.typing import Any, Sequence, cast
 
-from superlinked.framework.common.dag.context import (
+from qyver.framework.common.dag.context import (
     CONTEXT_COMMON,
     CONTEXT_COMMON_NOW,
     ExecutionContext,
     ExecutionEnvironment,
     NowStrategy,
 )
-from superlinked.framework.common.data_types import NodeDataTypes, Vector
-from superlinked.framework.common.exception import QueryException
-from superlinked.framework.common.interface.weighted import Weighted
-from superlinked.framework.common.storage_manager.knn_search_params import (
+from qyver.framework.common.data_types import NodeDataTypes, Vector
+from qyver.framework.common.exception import QueryException
+from qyver.framework.common.interface.weighted import Weighted
+from qyver.framework.common.storage_manager.knn_search_params import (
     KNNSearchParams,
 )
-from superlinked.framework.common.storage_manager.search_result_item import (
+from qyver.framework.common.storage_manager.search_result_item import (
     SearchResultItem,
 )
-from superlinked.framework.dsl.executor.executor import App
-from superlinked.framework.dsl.query.param import ParamInputType
-from superlinked.framework.dsl.query.query_clause import (
+from qyver.framework.dsl.executor.executor import App
+from qyver.framework.dsl.query.param import ParamInputType
+from qyver.framework.dsl.query.query_clause import (
     LooksLikeFilterClause,
     SimilarFilterClause,
 )
-from superlinked.framework.dsl.query.query_descriptor import QueryDescriptor
-from superlinked.framework.dsl.query.query_param_value_setter import (
+from qyver.framework.dsl.query.query_descriptor import QueryDescriptor
+from qyver.framework.dsl.query.query_param_value_setter import (
     QueryParamValueSetter,
 )
-from superlinked.framework.dsl.query.query_vector_factory import QueryVectorFactory
-from superlinked.framework.dsl.query.result import (
+from qyver.framework.dsl.query.query_vector_factory import QueryVectorFactory
+from qyver.framework.dsl.query.result import (
     QueryResult,
     ResultEntry,
     ResultEntryMetadata,
     ResultMetadata,
 )
-from superlinked.framework.query.query_node_input import QueryNodeInput
+from qyver.framework.query.query_node_input import QueryNodeInput
 
 logger = structlog.getLogger()
 

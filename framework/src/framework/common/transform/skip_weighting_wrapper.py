@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,8 +17,8 @@ from __future__ import annotations
 from beartype.typing import Generic, Sequence
 from typing_extensions import override
 
-from superlinked.framework.common.interface.weighted import Weighted
-from superlinked.framework.common.transform.transform import (
+from qyver.framework.common.interface.weighted import Weighted
+from qyver.framework.common.transform.transform import (
     StepInputT,
     StepOutputT,
     WrapperStep,

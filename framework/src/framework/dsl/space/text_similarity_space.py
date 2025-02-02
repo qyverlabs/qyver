@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,32 +17,32 @@ from pathlib import Path
 from beartype.typing import Sequence, cast
 from typing_extensions import override
 
-from superlinked.framework.common.dag.chunking_node import ChunkingNode
-from superlinked.framework.common.dag.embedding_node import EmbeddingNode
-from superlinked.framework.common.dag.node import Node
-from superlinked.framework.common.dag.schema_field_node import SchemaFieldNode
-from superlinked.framework.common.dag.text_embedding_node import TextEmbeddingNode
-from superlinked.framework.common.data_types import Vector
-from superlinked.framework.common.schema.schema_object import SchemaObject, String
-from superlinked.framework.common.space.config.aggregation.aggregation_config import (
+from qyver.framework.common.dag.chunking_node import ChunkingNode
+from qyver.framework.common.dag.embedding_node import EmbeddingNode
+from qyver.framework.common.dag.node import Node
+from qyver.framework.common.dag.schema_field_node import SchemaFieldNode
+from qyver.framework.common.dag.text_embedding_node import TextEmbeddingNode
+from qyver.framework.common.data_types import Vector
+from qyver.framework.common.schema.schema_object import SchemaObject, String
+from qyver.framework.common.space.config.aggregation.aggregation_config import (
     VectorAggregationConfig,
 )
-from superlinked.framework.common.space.config.embedding.text_similarity_embedding_config import (
+from qyver.framework.common.space.config.embedding.text_similarity_embedding_config import (
     TextSimilarityEmbeddingConfig,
 )
-from superlinked.framework.common.space.config.normalization.normalization_config import (
+from qyver.framework.common.space.config.normalization.normalization_config import (
     L2NormConfig,
 )
-from superlinked.framework.common.space.config.transformation_config import (
+from qyver.framework.common.space.config.transformation_config import (
     TransformationConfig,
 )
-from superlinked.framework.common.space.embedding.sentence_transformer_manager import (
+from qyver.framework.common.space.embedding.sentence_transformer_manager import (
     SentenceTransformerManager,
 )
-from superlinked.framework.common.util.type_validator import TypeValidator
-from superlinked.framework.dsl.space.has_space_field_set import HasSpaceFieldSet
-from superlinked.framework.dsl.space.space import Space
-from superlinked.framework.dsl.space.space_field_set import SpaceFieldSet
+from qyver.framework.common.util.type_validator import TypeValidator
+from qyver.framework.dsl.space.has_space_field_set import HasSpaceFieldSet
+from qyver.framework.dsl.space.space import Space
+from qyver.framework.dsl.space.space_field_set import SpaceFieldSet
 
 TextInput = String | ChunkingNode
 

@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@ from types import UnionType
 
 from beartype.typing import TypeVar, cast
 
-from superlinked.framework.common.schema.schema_object import (
+from qyver.framework.common.schema.schema_object import (
     ConcreteSchemaField,
     SchemaField,
     SchemaObject,

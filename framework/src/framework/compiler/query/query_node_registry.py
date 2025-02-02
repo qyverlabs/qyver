@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,31 +12,31 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from superlinked.framework.compiler.compiled_node_registry import CompiledNodeRegistry
-from superlinked.framework.query.dag.query_aggregation_node import QueryAggregationNode
-from superlinked.framework.query.dag.query_categorical_similarity_node import (
+from qyver.framework.compiler.compiled_node_registry import CompiledNodeRegistry
+from qyver.framework.query.dag.query_aggregation_node import QueryAggregationNode
+from qyver.framework.query.dag.query_categorical_similarity_node import (
     QueryCategoricalSimilarityNode,
 )
-from superlinked.framework.query.dag.query_concatenation_node import (
+from qyver.framework.query.dag.query_concatenation_node import (
     QueryConcatenationNode,
 )
-from superlinked.framework.query.dag.query_constant_node import QueryConstantNode
-from superlinked.framework.query.dag.query_custom_vector_embedding_node import (
+from qyver.framework.query.dag.query_constant_node import QueryConstantNode
+from qyver.framework.query.dag.query_custom_vector_embedding_node import (
     QueryCustomVectorEmbeddingNode,
 )
-from superlinked.framework.query.dag.query_image_embedding_node import (
+from qyver.framework.query.dag.query_image_embedding_node import (
     QueryImageEmbeddingNode,
 )
-from superlinked.framework.query.dag.query_index_node import QueryIndexNode
-from superlinked.framework.query.dag.query_named_function_node import (
+from qyver.framework.query.dag.query_index_node import QueryIndexNode
+from qyver.framework.query.dag.query_named_function_node import (
     QueryNamedFunctionNode,
 )
-from superlinked.framework.query.dag.query_node import QueryNode
-from superlinked.framework.query.dag.query_number_embedding_node import (
+from qyver.framework.query.dag.query_node import QueryNode
+from qyver.framework.query.dag.query_number_embedding_node import (
     QueryNumberEmbeddingNode,
 )
-from superlinked.framework.query.dag.query_recency_node import QueryRecencyNode
-from superlinked.framework.query.dag.query_text_embedding_node import (
+from qyver.framework.query.dag.query_recency_node import QueryRecencyNode
+from qyver.framework.query.dag.query_text_embedding_node import (
     QueryTextEmbeddingNode,
 )
 

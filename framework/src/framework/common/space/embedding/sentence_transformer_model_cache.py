@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -25,11 +25,11 @@ from huggingface_hub import snapshot_download
 from huggingface_hub.file_download import repo_folder_name
 from sentence_transformers import SentenceTransformer
 
-from superlinked.framework.common.settings import Settings
-from superlinked.framework.common.space.embedding.model_manager import (
+from qyver.framework.common.settings import Settings
+from qyver.framework.common.space.embedding.model_manager import (
     SENTENCE_TRANSFORMERS_ORG_NAME,
 )
-from superlinked.framework.common.util.gpu_embedding_util import CPU_DEVICE_TYPE
+from qyver.framework.common.util.gpu_embedding_util import CPU_DEVICE_TYPE
 
 logger = structlog.getLogger()
 

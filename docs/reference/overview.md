@@ -1,11 +1,11 @@
 ---
-description: Access detailed documentation for Superlinked's components..
+description: Access detailed documentation for qyver's components..
 icon: bullseye-arrow
 ---
 
 # Overview
 
-Superlinked's framework is broadly divided into 2 modules:
+qyver's framework is broadly divided into 2 modules:
 - Common: Contains components that help your parse data and define your schema.
   - [DAG](../reference/common/dag/period_time.md), [Parser](../reference/common/parser/data_parser.md), [Schema](../reference/common/schema/schema.md)
 - DSL: Contains components that are used to define the vector computation.

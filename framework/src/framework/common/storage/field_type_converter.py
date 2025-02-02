@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,10 +14,10 @@
 
 from beartype.typing import Any, Sequence, cast
 
-from superlinked.framework.common.data_types import NodeDataTypes, Vector
-from superlinked.framework.common.schema.blob_information import BlobInformation
-from superlinked.framework.common.schema.image_data import ImageData
-from superlinked.framework.common.schema.schema_object import (
+from qyver.framework.common.data_types import NodeDataTypes, Vector
+from qyver.framework.common.schema.blob_information import BlobInformation
+from qyver.framework.common.schema.image_data import ImageData
+from qyver.framework.common.schema.schema_object import (
     Blob,
     ConcreteSchemaField,
     Float,
@@ -28,8 +28,8 @@ from superlinked.framework.common.schema.schema_object import (
     StringList,
     Timestamp,
 )
-from superlinked.framework.common.storage.field.field_data_type import FieldDataType
-from superlinked.framework.common.util.generic_class_util import GenericClassUtil
+from qyver.framework.common.storage.field.field_data_type import FieldDataType
+from qyver.framework.common.util.generic_class_util import GenericClassUtil
 
 FIELD_DATA_TYPE_BY_SCHEMA_FIELD_TYPE: dict[type[ConcreteSchemaField], FieldDataType] = {
     Blob: FieldDataType.BLOB,

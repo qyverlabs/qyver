@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,7 +13,7 @@
 # limitations under the License.
 
 
-from superlinked.framework.common.schema.schema_object import SchemaField
+from qyver.framework.common.schema.schema_object import SchemaField
 
 
 class StorageNaming:

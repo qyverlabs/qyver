@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,23 +16,23 @@ from __future__ import annotations
 
 from beartype.typing import Any, Generic, Sequence, cast
 
-from superlinked.framework.common.parser.data_parser import DataParser
-from superlinked.framework.common.parser.exception import (
+from qyver.framework.common.parser.data_parser import DataParser
+from qyver.framework.common.parser.exception import (
     MissingCreatedAtException,
     MissingIdException,
 )
-from superlinked.framework.common.parser.parsed_schema import (
+from qyver.framework.common.parser.parsed_schema import (
     EventParsedSchema,
     ParsedSchema,
     ParsedSchemaField,
 )
-from superlinked.framework.common.schema.event_schema_object import (
+from qyver.framework.common.schema.event_schema_object import (
     EventSchemaObject,
     SchemaReference,
 )
-from superlinked.framework.common.schema.id_schema_object import IdSchemaObjectT
-from superlinked.framework.common.schema.schema_object import SFT, Blob, SchemaField
-from superlinked.framework.common.util.dot_separated_path_util import (
+from qyver.framework.common.schema.id_schema_object import IdSchemaObjectT
+from qyver.framework.common.schema.schema_object import SFT, Blob, SchemaField
+from qyver.framework.common.util.dot_separated_path_util import (
     DotSeparatedPathUtil,
     ValuedDotSeparatedPath,
 )

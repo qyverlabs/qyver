@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,13 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from superlinked.framework.common.dag.embedding_node import EmbeddingNode
-from superlinked.framework.common.dag.node import Node
-from superlinked.framework.common.data_types import Vector
-from superlinked.framework.common.schema.blob_information import BlobInformation
-from superlinked.framework.common.schema.image_data import ImageData
-from superlinked.framework.common.schema.schema_object import SchemaField, SchemaObject
-from superlinked.framework.common.space.config.transformation_config import (
+from qyver.framework.common.dag.embedding_node import EmbeddingNode
+from qyver.framework.common.dag.node import Node
+from qyver.framework.common.data_types import Vector
+from qyver.framework.common.schema.blob_information import BlobInformation
+from qyver.framework.common.schema.image_data import ImageData
+from qyver.framework.common.schema.schema_object import SchemaField, SchemaObject
+from qyver.framework.common.space.config.transformation_config import (
     TransformationConfig,
 )
 

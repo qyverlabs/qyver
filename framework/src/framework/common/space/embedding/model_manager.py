@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,9 +19,9 @@ import numpy as np
 from beartype.typing import Sequence
 from PIL.Image import Image
 
-from superlinked.framework.common.dag.context import ExecutionContext
-from superlinked.framework.common.data_types import Vector
-from superlinked.framework.common.settings import Settings
+from qyver.framework.common.dag.context import ExecutionContext
+from qyver.framework.common.data_types import Vector
+from qyver.framework.common.settings import Settings
 
 SENTENCE_TRANSFORMERS_ORG_NAME = "sentence-transformers"
 DEFAULT_MODEL_CACHE_DIR = (Path.home() / ".cache" / SENTENCE_TRANSFORMERS_ORG_NAME).absolute().as_posix()

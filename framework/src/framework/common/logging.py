@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,11 +20,11 @@ from beartype.typing import cast
 from structlog.contextvars import merge_contextvars
 from structlog.typing import Processor
 
-from superlinked.framework.common.util.custom_structlog_processor import (
+from qyver.framework.common.util.custom_structlog_processor import (
     CustomStructlogProcessor,
 )
 
-PACKAGE_NAME = "superlinked"
+PACKAGE_NAME = "qyver"
 
 
 class LoggerConfigurator:

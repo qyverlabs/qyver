@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,20 +22,20 @@ from PIL import Image
 from PIL.ImageFile import ImageFile
 from typing_extensions import override
 
-from superlinked.framework.common.dag.context import ExecutionContext
-from superlinked.framework.common.dag.image_information_node import ImageInformationNode
-from superlinked.framework.common.dag.node import Node
-from superlinked.framework.common.dag.schema_field_node import SchemaFieldNode
-from superlinked.framework.common.data_types import PythonTypes
-from superlinked.framework.common.parser.blob_loader import BlobLoader
-from superlinked.framework.common.parser.parsed_schema import ParsedSchema
-from superlinked.framework.common.schema.blob_information import BlobInformation
-from superlinked.framework.common.schema.image_data import ImageData
-from superlinked.framework.common.schema.schema_object import SchemaField
-from superlinked.framework.common.storage_manager.storage_manager import StorageManager
-from superlinked.framework.online.dag.evaluation_result import EvaluationResult
-from superlinked.framework.online.dag.online_node import OnlineNode
-from superlinked.framework.online.dag.parent_validator import ParentValidationType
+from qyver.framework.common.dag.context import ExecutionContext
+from qyver.framework.common.dag.image_information_node import ImageInformationNode
+from qyver.framework.common.dag.node import Node
+from qyver.framework.common.dag.schema_field_node import SchemaFieldNode
+from qyver.framework.common.data_types import PythonTypes
+from qyver.framework.common.parser.blob_loader import BlobLoader
+from qyver.framework.common.parser.parsed_schema import ParsedSchema
+from qyver.framework.common.schema.blob_information import BlobInformation
+from qyver.framework.common.schema.image_data import ImageData
+from qyver.framework.common.schema.schema_object import SchemaField
+from qyver.framework.common.storage_manager.storage_manager import StorageManager
+from qyver.framework.online.dag.evaluation_result import EvaluationResult
+from qyver.framework.online.dag.online_node import OnlineNode
+from qyver.framework.online.dag.parent_validator import ParentValidationType
 
 
 class OnlineImageInformationNode(OnlineNode[ImageInformationNode, ImageData]):

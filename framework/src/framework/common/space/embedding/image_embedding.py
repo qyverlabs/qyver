@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,24 +18,24 @@ import structlog
 from beartype.typing import Sequence
 from typing_extensions import override
 
-from superlinked.framework.common.dag.context import ExecutionContext
-from superlinked.framework.common.data_types import Vector
-from superlinked.framework.common.interface.weighted import Weighted
-from superlinked.framework.common.schema.image_data import ImageData
-from superlinked.framework.common.space.aggregation.aggregation import VectorAggregation
-from superlinked.framework.common.space.config.aggregation.aggregation_config import (
+from qyver.framework.common.dag.context import ExecutionContext
+from qyver.framework.common.data_types import Vector
+from qyver.framework.common.interface.weighted import Weighted
+from qyver.framework.common.schema.image_data import ImageData
+from qyver.framework.common.space.aggregation.aggregation import VectorAggregation
+from qyver.framework.common.space.config.aggregation.aggregation_config import (
     VectorAggregationConfig,
 )
-from superlinked.framework.common.space.config.embedding.image_embedding_config import (
+from qyver.framework.common.space.config.embedding.image_embedding_config import (
     ImageEmbeddingConfig,
     ModelHandler,
 )
-from superlinked.framework.common.space.embedding.embedding import Embedding
-from superlinked.framework.common.space.embedding.model_manager import ModelManager
-from superlinked.framework.common.space.embedding.open_clip_manager import (
+from qyver.framework.common.space.embedding.embedding import Embedding
+from qyver.framework.common.space.embedding.model_manager import ModelManager
+from qyver.framework.common.space.embedding.open_clip_manager import (
     OpenClipManager,
 )
-from superlinked.framework.common.space.embedding.sentence_transformer_manager import (
+from qyver.framework.common.space.embedding.sentence_transformer_manager import (
     SentenceTransformerManager,
 )
 

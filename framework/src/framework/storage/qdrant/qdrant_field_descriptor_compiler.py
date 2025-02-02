@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,11 +17,11 @@ from collections import defaultdict
 from beartype.typing import Sequence
 from qdrant_client.models import Distance, PayloadSchemaType, VectorParams
 
-from superlinked.framework.common.calculation.distance_metric import DistanceMetric
-from superlinked.framework.common.storage.exception import InvalidIndexConfigException
-from superlinked.framework.common.storage.field.field_data_type import FieldDataType
-from superlinked.framework.common.storage.index_config import IndexConfig
-from superlinked.framework.common.storage.search_index.index_field_descriptor import (
+from qyver.framework.common.calculation.distance_metric import DistanceMetric
+from qyver.framework.common.storage.exception import InvalidIndexConfigException
+from qyver.framework.common.storage.field.field_data_type import FieldDataType
+from qyver.framework.common.storage.index_config import IndexConfig
+from qyver.framework.common.storage.search_index.index_field_descriptor import (
     IndexFieldDescriptor,
 )
 
@@ -64,7 +64,7 @@ class QdrantFieldDescriptorCompiler:
             raise InvalidIndexConfigException(
                 "Qdrant's cosine similarity isn't supported because a search index with "
                 + "cosine distance metric sill always L2 normalie its inputs. Tha's "
-                + "incompatible with Superlinked."
+                + "incompatible with qyver."
             )
 
     @staticmethod

@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,17 +14,17 @@
 
 from beartype.typing import Sequence
 
-from superlinked.framework.common.dag.dag_effect import DagEffect
-from superlinked.framework.common.dag.exception import InvalidDagException
-from superlinked.framework.common.dag.index_node import IndexNode
-from superlinked.framework.common.dag.node import Node
-from superlinked.framework.common.dag.schema_dag import SchemaDag
-from superlinked.framework.common.exception import (
+from qyver.framework.common.dag.dag_effect import DagEffect
+from qyver.framework.common.dag.exception import InvalidDagException
+from qyver.framework.common.dag.index_node import IndexNode
+from qyver.framework.common.dag.node import Node
+from qyver.framework.common.dag.schema_dag import SchemaDag
+from qyver.framework.common.exception import (
     DuplicateNodeIdException,
     InvalidDagEffectException,
     InvalidSchemaException,
 )
-from superlinked.framework.common.schema.schema_object import SchemaObject
+from qyver.framework.common.schema.schema_object import SchemaObject
 
 
 class Dag:

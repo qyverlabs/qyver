@@ -1,10 +1,10 @@
-Module superlinked.framework.dsl.space.categorical_similarity_space
+Module qyver.framework.dsl.space.categorical_similarity_space
 ===================================================================
 
 Classes
 -------
 
-`CategoricalSimilaritySpace(category_input: superlinked.framework.common.schema.schema_object.String | superlinked.framework.common.schema.schema_object.StringList | None | list[superlinked.framework.common.schema.schema_object.String | superlinked.framework.common.schema.schema_object.StringList | None], categories: list[str], negative_filter: float = 0.0, uncategorized_as_category: bool = True)`
+`CategoricalSimilaritySpace(category_input: qyver.framework.common.schema.schema_object.String | qyver.framework.common.schema.schema_object.StringList | None | list[qyver.framework.common.schema.schema_object.String | qyver.framework.common.schema.schema_object.StringList | None], categories: list[str], negative_filter: float = 0.0, uncategorized_as_category: bool = True)`
 :   Represents a space for encoding categorical similarity.
     
     A CategoricalSimilaritySpace is designed to measure the similarity between items that
@@ -63,23 +63,23 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.dsl.space.space.Space
-    * superlinked.framework.common.space.interface.has_transformation_config.HasTransformationConfig
-    * superlinked.framework.common.interface.has_length.HasLength
+    * qyver.framework.dsl.space.space.Space
+    * qyver.framework.common.space.interface.has_transformation_config.HasTransformationConfig
+    * qyver.framework.common.interface.has_length.HasLength
     * typing.Generic
-    * superlinked.framework.common.interface.has_annotation.HasAnnotation
-    * superlinked.framework.dsl.space.has_space_field_set.HasSpaceFieldSet
+    * qyver.framework.common.interface.has_annotation.HasAnnotation
+    * qyver.framework.dsl.space.has_space_field_set.HasSpaceFieldSet
     * abc.ABC
 
     ### Instance variables
 
-    `category: superlinked.framework.dsl.space.space_field_set.SpaceFieldSet`
+    `category: qyver.framework.dsl.space.space_field_set.SpaceFieldSet`
     :
 
-    `space_field_set: superlinked.framework.dsl.space.space_field_set.SpaceFieldSet`
+    `space_field_set: qyver.framework.dsl.space.space_field_set.SpaceFieldSet`
     :
 
-    `transformation_config: superlinked.framework.common.space.config.transformation_config.TransformationConfig[superlinked.framework.common.data_types.Vector, list[str]]`
+    `transformation_config: qyver.framework.common.space.config.transformation_config.TransformationConfig[qyver.framework.common.data_types.Vector, list[str]]`
     :
 
     `uncategorized_as_category: bool`

@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@ from enum import Enum
 
 from beartype.typing import Any
 
-from superlinked.framework.common.dag.context import ExecutionContext
+from qyver.framework.common.dag.context import ExecutionContext
 
 
 class NamedFunction(Enum):

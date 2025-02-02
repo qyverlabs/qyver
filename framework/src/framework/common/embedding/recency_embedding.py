@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,15 +20,15 @@ import numpy as np
 from beartype.typing import Sequence
 from typing_extensions import override
 
-from superlinked.framework.common.dag.context import ExecutionContext
-from superlinked.framework.common.dag.period_time import PeriodTime
-from superlinked.framework.common.data_types import Vector
-from superlinked.framework.common.embedding.embedding import Embedding
-from superlinked.framework.common.space.config.recency_embedding_config import (
+from qyver.framework.common.dag.context import ExecutionContext
+from qyver.framework.common.dag.period_time import PeriodTime
+from qyver.framework.common.data_types import Vector
+from qyver.framework.common.embedding.embedding import Embedding
+from qyver.framework.common.space.config.recency_embedding_config import (
     RecencyEmbeddingConfig,
 )
-from superlinked.framework.common.space.normalization import ConstantNorm
-from superlinked.framework.common.util import time_util
+from qyver.framework.common.space.normalization import ConstantNorm
+from qyver.framework.common.util import time_util
 
 MAX_PERIOD_TIME_X_COORDINATE: int = -3
 MAX_PERIOD_TIME_Y_COORDINATE: int = -2

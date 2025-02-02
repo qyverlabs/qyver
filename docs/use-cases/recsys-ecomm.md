@@ -1,5 +1,5 @@
 ---
-description: Learn about fundamental concepts of Superlinked.
+description: Learn about fundamental concepts of qyver.
 icon: cart-shopping
 ---
 
@@ -33,5 +33,5 @@ After introducing user behavioral data in the form of events, we look at users w
 
 ### Follow along in this Colab
 
-{% embed url="https://colab.research.google.com/github/superlinked/superlinked/blob/main/notebook/recommendations_e_commerce.ipynb" %}
+{% embed url="https://colab.research.google.com/github/qyver/qyver/blob/main/notebook/recommendations_e_commerce.ipynb" %}
 {% endembed %}

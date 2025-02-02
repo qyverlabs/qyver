@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,13 +18,13 @@ from abc import ABC, abstractmethod
 from beartype.typing import Generic, Sequence
 from typing_extensions import Annotated
 
-from superlinked.framework.common.dag.context import ExecutionContext
-from superlinked.framework.common.util.generic_class_util import GenericClassUtil
-from superlinked.framework.common.util.type_validator import TypeValidator
-from superlinked.framework.dsl.app.app import App
-from superlinked.framework.dsl.index.index import Index
-from superlinked.framework.dsl.source.types import SourceT
-from superlinked.framework.dsl.storage.vector_database import VectorDatabase
+from qyver.framework.common.dag.context import ExecutionContext
+from qyver.framework.common.util.generic_class_util import GenericClassUtil
+from qyver.framework.common.util.type_validator import TypeValidator
+from qyver.framework.dsl.app.app import App
+from qyver.framework.dsl.index.index import Index
+from qyver.framework.dsl.source.types import SourceT
+from qyver.framework.dsl.storage.vector_database import VectorDatabase
 
 
 class Executor(ABC, Generic[SourceT]):

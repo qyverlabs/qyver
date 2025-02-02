@@ -1,10 +1,10 @@
-Module superlinked.framework.dsl.app.rest.rest_app
+Module qyver.framework.dsl.app.rest.rest_app
 ==================================================
 
 Classes
 -------
 
-`RestApp(sources: Sequence[superlinked.framework.dsl.source.rest_source.RestSource | superlinked.framework.dsl.source.data_loader_source.DataLoaderSource], indices: Sequence[superlinked.framework.dsl.index.index.Index], queries: Sequence[superlinked.framework.dsl.executor.rest.rest_configuration.RestQuery], vector_database: superlinked.framework.dsl.storage.vector_database.VectorDatabase, context: superlinked.framework.common.dag.context.ExecutionContext, endpoint_configuration: superlinked.framework.dsl.executor.rest.rest_configuration.RestEndpointConfiguration, queue: superlinked.framework.queue.interface.queue.Queue[superlinked.framework.queue.interface.queue_message.MessageBody[dict]] | None = None, blob_handler: superlinked.framework.blob.blob_handler.BlobHandler | None = None)`
+`RestApp(sources: Sequence[qyver.framework.dsl.source.rest_source.RestSource | qyver.framework.dsl.source.data_loader_source.DataLoaderSource], indices: Sequence[qyver.framework.dsl.index.index.Index], queries: Sequence[qyver.framework.dsl.executor.rest.rest_configuration.RestQuery], vector_database: qyver.framework.dsl.storage.vector_database.VectorDatabase, context: qyver.framework.common.dag.context.ExecutionContext, endpoint_configuration: qyver.framework.dsl.executor.rest.rest_configuration.RestEndpointConfiguration, queue: qyver.framework.queue.interface.queue.Queue[qyver.framework.queue.interface.queue_message.MessageBody[dict]] | None = None, blob_handler: qyver.framework.blob.blob_handler.BlobHandler | None = None)`
 :   Rest implementation of the App class.
     
     Initialize the RestApp from a RestExecutor.
@@ -21,21 +21,21 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.dsl.app.online.online_app.OnlineApp
-    * superlinked.framework.dsl.app.app.App
+    * qyver.framework.dsl.app.online.online_app.OnlineApp
+    * qyver.framework.dsl.app.app.App
     * abc.ABC
     * typing.Generic
-    * superlinked.framework.dsl.query.query_mixin.QueryMixin
+    * qyver.framework.dsl.query.query_mixin.QueryMixin
 
     ### Instance variables
 
-    `data_loader_sources: Sequence[superlinked.framework.dsl.source.data_loader_source.DataLoaderSource]`
+    `data_loader_sources: Sequence[qyver.framework.dsl.source.data_loader_source.DataLoaderSource]`
     :   Property that returns the list of DataLoaderSource instances associated with the RestApp.
         
         Returns:
             Sequence[DataLoaderSource]: A sequence of DataLoaderSource instances.
 
-    `handler: superlinked.framework.dsl.executor.rest.rest_handler.RestHandler`
+    `handler: qyver.framework.dsl.executor.rest.rest_handler.RestHandler`
     :   Property that returns the RestHandler instance associated with the RestApp.
         
         Returns:

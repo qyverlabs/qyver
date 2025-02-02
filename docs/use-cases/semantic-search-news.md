@@ -1,5 +1,5 @@
 ---
-description: Learn about fundamental concepts of Superlinked.
+description: Learn about fundamental concepts of qyver.
 icon: magnifying-glass
 ---
 
@@ -22,5 +22,5 @@ and also to influence the results using a specific search term.
 
 ### Follow along in this Colab
 
-{% embed url="https://colab.research.google.com/github/superlinked/superlinked/blob/main/notebook/semantic_search_news.ipynb" %}
+{% embed url="https://colab.research.google.com/github/qyver/qyver/blob/main/notebook/semantic_search_news.ipynb" %}
 {% endembed %}

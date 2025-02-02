@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@ from abc import ABC, abstractmethod
 
 from beartype.typing import Any
 
-from superlinked.framework.dsl.query.result import QueryResult
+from qyver.framework.dsl.query.result import QueryResult
 
 
 class QueryResultConverter(ABC):

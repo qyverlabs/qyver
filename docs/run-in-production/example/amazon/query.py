@@ -1,4 +1,4 @@
-from superlinked import framework as sl
+from qyver import framework as sl
 
 from .index import index, rating_space, recency_space, relevance_space, review, verified_category_space
 

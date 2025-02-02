@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,38 +18,38 @@ import structlog
 from beartype.typing import Sequence
 from typing_extensions import override
 
-from superlinked.framework.common.dag.embedding_node import EmbeddingNode
-from superlinked.framework.common.dag.image_embedding_node import ImageEmbeddingNode
-from superlinked.framework.common.dag.schema_field_node import SchemaFieldNode
-from superlinked.framework.common.data_types import Vector
-from superlinked.framework.common.schema.image_data import ImageData
-from superlinked.framework.common.schema.schema_object import (
+from qyver.framework.common.dag.embedding_node import EmbeddingNode
+from qyver.framework.common.dag.image_embedding_node import ImageEmbeddingNode
+from qyver.framework.common.dag.schema_field_node import SchemaFieldNode
+from qyver.framework.common.data_types import Vector
+from qyver.framework.common.schema.image_data import ImageData
+from qyver.framework.common.schema.schema_object import (
     Blob,
     DescribedBlob,
     SchemaField,
     SchemaObject,
     String,
 )
-from superlinked.framework.common.space.config.aggregation.aggregation_config import (
+from qyver.framework.common.space.config.aggregation.aggregation_config import (
     VectorAggregationConfig,
 )
-from superlinked.framework.common.space.config.embedding.image_embedding_config import (
+from qyver.framework.common.space.config.embedding.image_embedding_config import (
     ImageEmbeddingConfig,
     ModelHandler,
 )
-from superlinked.framework.common.space.config.normalization.normalization_config import (
+from qyver.framework.common.space.config.normalization.normalization_config import (
     L2NormConfig,
 )
-from superlinked.framework.common.space.config.transformation_config import (
+from qyver.framework.common.space.config.transformation_config import (
     TransformationConfig,
 )
-from superlinked.framework.common.space.embedding.image_embedding import ImageEmbedding
-from superlinked.framework.dsl.space.exception import InvalidSpaceParamException
-from superlinked.framework.dsl.space.image_space_field_set import (
+from qyver.framework.common.space.embedding.image_embedding import ImageEmbedding
+from qyver.framework.dsl.space.exception import InvalidSpaceParamException
+from qyver.framework.dsl.space.image_space_field_set import (
     ImageDescriptionSpaceFieldSet,
     ImageSpaceFieldSet,
 )
-from superlinked.framework.dsl.space.space import Space
+from qyver.framework.dsl.space.space import Space
 
 logger = structlog.getLogger()
 

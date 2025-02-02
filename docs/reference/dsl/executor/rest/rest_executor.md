@@ -1,4 +1,4 @@
-Module superlinked.framework.dsl.executor.rest.rest_executor
+Module qyver.framework.dsl.executor.rest.rest_executor
 ============================================================
 
 Classes
@@ -21,13 +21,13 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.dsl.executor.executor.Executor
+    * qyver.framework.dsl.executor.executor.Executor
     * abc.ABC
     * typing.Generic
 
     ### Methods
 
-    `run(self) ‑> superlinked.framework.dsl.app.rest.rest_app.RestApp`
+    `run(self) ‑> qyver.framework.dsl.app.rest.rest_app.RestApp`
     :   Run the RestExecutor. It returns an app that will create rest endpoints.
         
         Returns:

@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,14 +17,14 @@ from abc import ABC, abstractmethod
 
 from beartype.typing import Generic, Sequence
 
-from superlinked.framework.common.dag.context import ExecutionContext
-from superlinked.framework.common.storage_manager.storage_manager import (
+from qyver.framework.common.dag.context import ExecutionContext
+from qyver.framework.common.storage_manager.storage_manager import (
     SearchIndexParams,
     StorageManager,
 )
-from superlinked.framework.dsl.index.index import Index
-from superlinked.framework.dsl.source.types import SourceT
-from superlinked.framework.dsl.storage.vector_database import VectorDatabase
+from qyver.framework.dsl.index.index import Index
+from qyver.framework.dsl.source.types import SourceT
+from qyver.framework.dsl.storage.vector_database import VectorDatabase
 
 
 class App(ABC, Generic[SourceT]):

@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,16 +15,16 @@
 
 from beartype.typing import Any
 
-from superlinked.framework.common.exception import QueryException
-from superlinked.framework.common.interface.comparison_operand import (
+from qyver.framework.common.exception import QueryException
+from qyver.framework.common.interface.comparison_operand import (
     ComparisonOperation,
 )
-from superlinked.framework.common.interface.comparison_operation_type import (
+from qyver.framework.common.interface.comparison_operation_type import (
     LIST_TYPE_COMPATIBLE_TYPES,
 )
-from superlinked.framework.common.util.generic_class_util import GenericClassUtil
-from superlinked.framework.common.util.type_validator import TypeValidator
-from superlinked.framework.dsl.query.param import Param
+from qyver.framework.common.util.generic_class_util import GenericClassUtil
+from qyver.framework.common.util.type_validator import TypeValidator
+from qyver.framework.dsl.query.param import Param
 
 
 class QueryFilterValidator:

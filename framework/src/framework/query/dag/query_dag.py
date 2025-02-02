@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,13 +14,13 @@
 
 from beartype.typing import Mapping, Sequence
 
-from superlinked.framework.common.dag.context import ExecutionContext
-from superlinked.framework.common.dag.exception import LeafNodeCountException
-from superlinked.framework.common.data_types import Vector
-from superlinked.framework.query.dag.exception import QueryEvaluationException
-from superlinked.framework.query.dag.query_index_node import QueryIndexNode
-from superlinked.framework.query.dag.query_node import QueryNode
-from superlinked.framework.query.query_node_input import QueryNodeInput
+from qyver.framework.common.dag.context import ExecutionContext
+from qyver.framework.common.dag.exception import LeafNodeCountException
+from qyver.framework.common.data_types import Vector
+from qyver.framework.query.dag.exception import QueryEvaluationException
+from qyver.framework.query.dag.query_index_node import QueryIndexNode
+from qyver.framework.query.dag.query_node import QueryNode
+from qyver.framework.query.query_node_input import QueryNodeInput
 
 
 class QueryDag:

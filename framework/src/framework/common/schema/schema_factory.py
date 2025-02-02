@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,20 +18,20 @@ from types import NoneType, UnionType
 
 from beartype.typing import Sequence, Union, get_args
 
-from superlinked.framework.common.schema.event_schema_object import (
+from qyver.framework.common.schema.event_schema_object import (
     CreatedAtField,
     EventSchemaObject,
 )
-from superlinked.framework.common.schema.exception import InvalidAttributeException
-from superlinked.framework.common.schema.general_type import T
-from superlinked.framework.common.schema.id_schema_object import IdField, IdSchemaObject
-from superlinked.framework.common.schema.schema_field_descriptor import (
+from qyver.framework.common.schema.exception import InvalidAttributeException
+from qyver.framework.common.schema.general_type import T
+from qyver.framework.common.schema.id_schema_object import IdField, IdSchemaObject
+from qyver.framework.common.schema.schema_field_descriptor import (
     SchemaFieldDescriptor,
 )
-from superlinked.framework.common.schema.schema_object import SchemaField
-from superlinked.framework.common.schema.schema_type import SchemaType
-from superlinked.framework.common.schema.schema_validator import SchemaValidator
-from superlinked.framework.common.util.generic_class_util import GenericClassUtil
+from qyver.framework.common.schema.schema_object import SchemaField
+from qyver.framework.common.schema.schema_type import SchemaType
+from qyver.framework.common.schema.schema_validator import SchemaValidator
+from qyver.framework.common.util.generic_class_util import GenericClassUtil
 
 
 @dataclass(frozen=True)

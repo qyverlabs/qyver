@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,14 +14,14 @@
 
 from beartype.typing import Mapping, Sequence
 
-from superlinked.framework.dsl.query.nlq.nlq_clause_collector import NLQClauseCollector
-from superlinked.framework.dsl.query.param import ParamInputType
-from superlinked.framework.dsl.query.query_clause import (
+from qyver.framework.dsl.query.nlq.nlq_clause_collector import NLQClauseCollector
+from qyver.framework.dsl.query.param import ParamInputType
+from qyver.framework.dsl.query.query_clause import (
     LooksLikeFilterClause,
     SimilarFilterClause,
     SpaceWeightClause,
 )
-from superlinked.framework.dsl.space.space import Space
+from qyver.framework.dsl.space.space import Space
 
 
 class QueryParamModelValidatorInfo:

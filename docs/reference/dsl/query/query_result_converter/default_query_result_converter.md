@@ -1,4 +1,4 @@
-Module superlinked.framework.dsl.query.query_result_converter.default_query_result_converter
+Module qyver.framework.dsl.query.query_result_converter.default_query_result_converter
 ============================================================================================
 
 Classes
@@ -10,5 +10,5 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.dsl.query.query_result_converter.query_result_converter.QueryResultConverter
+    * qyver.framework.dsl.query.query_result_converter.query_result_converter.QueryResultConverter
     * abc.ABC

@@ -1,10 +1,10 @@
-Module superlinked.framework.dsl.app.online.online_app
+Module qyver.framework.dsl.app.online.online_app
 ======================================================
 
 Classes
 -------
 
-`OnlineApp(sources: Sequence[~OnlineSourceT], indices: Sequence[superlinked.framework.dsl.index.index.Index], vector_database: superlinked.framework.dsl.storage.vector_database.VectorDatabase, context: superlinked.framework.common.dag.context.ExecutionContext, init_search_indices: bool, queue: superlinked.framework.queue.interface.queue.Queue | None = None, blob_handler: superlinked.framework.blob.blob_handler.BlobHandler | None = None, query_result_converter: superlinked.framework.dsl.query.query_result_converter.query_result_converter.QueryResultConverter | None = None)`
+`OnlineApp(sources: Sequence[~OnlineSourceT], indices: Sequence[qyver.framework.dsl.index.index.Index], vector_database: qyver.framework.dsl.storage.vector_database.VectorDatabase, context: qyver.framework.common.dag.context.ExecutionContext, init_search_indices: bool, queue: qyver.framework.queue.interface.queue.Queue | None = None, blob_handler: qyver.framework.blob.blob_handler.BlobHandler | None = None, query_result_converter: qyver.framework.dsl.query.query_result_converter.query_result_converter.QueryResultConverter | None = None)`
 :   Manages the execution environment for online sources and indices.
     
     This class extends the base App class and incorporates the QueryMixin to handle
@@ -23,15 +23,15 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.dsl.app.app.App
+    * qyver.framework.dsl.app.app.App
     * abc.ABC
     * typing.Generic
-    * superlinked.framework.dsl.query.query_mixin.QueryMixin
+    * qyver.framework.dsl.query.query_mixin.QueryMixin
 
     ### Descendants
 
-    * superlinked.framework.dsl.app.interactive.interactive_app.InteractiveApp
-    * superlinked.framework.dsl.app.rest.rest_app.RestApp
+    * qyver.framework.dsl.app.interactive.interactive_app.InteractiveApp
+    * qyver.framework.dsl.app.rest.rest_app.RestApp
 
     ### Class variables
 

@@ -6,10 +6,10 @@ icon: display
 # Installation
 
 ### In a notebook
-Install the superlinked library:
+Install the qyver library:
 
 ```python
-%pip install superlinked
+%pip install qyver
 ```
 
 
@@ -23,11 +23,11 @@ Python 3.10.9
 
 If your python version is not `>=3.10` and `<=3.12` you might use [pyenv](https://github.com/pyenv/pyenv) to install it.
 
-Upgrade pip and install the superlinked library.
+Upgrade pip and install the qyver library.
 
 ```bash
 $> python -m pip install --upgrade pip
-$> python -m pip install superlinked
+$> python -m pip install qyver
 ```
 
 ### Run the example
@@ -41,7 +41,7 @@ First run will take slightly longer as it has to download the embedding model.
 import json
 import os
 
-from superlinked import framework as sl
+from qyver import framework as sl
 
 
 class Product(sl.Schema):

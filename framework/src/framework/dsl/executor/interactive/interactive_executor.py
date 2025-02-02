@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,19 +17,19 @@ from __future__ import annotations
 import structlog
 from beartype.typing import Generic, Mapping, Sequence, TypeVar
 
-from superlinked.framework.common.dag.context import (
+from qyver.framework.common.dag.context import (
     ContextValue,
     ExecutionContext,
     ExecutionEnvironment,
 )
-from superlinked.framework.dsl.app.interactive.interactive_app import InteractiveApp
-from superlinked.framework.dsl.executor.executor import Executor
-from superlinked.framework.dsl.index.index import Index
-from superlinked.framework.dsl.source.interactive_source import InteractiveSource
-from superlinked.framework.dsl.storage.in_memory_vector_database import (
+from qyver.framework.dsl.app.interactive.interactive_app import InteractiveApp
+from qyver.framework.dsl.executor.executor import Executor
+from qyver.framework.dsl.index.index import Index
+from qyver.framework.dsl.source.interactive_source import InteractiveSource
+from qyver.framework.dsl.storage.in_memory_vector_database import (
     InMemoryVectorDatabase,
 )
-from superlinked.framework.dsl.storage.vector_database import VectorDatabase
+from qyver.framework.dsl.storage.vector_database import VectorDatabase
 
 logger = structlog.getLogger()
 

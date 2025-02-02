@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,12 +17,12 @@ import base64
 import structlog
 from beartype.typing import Sequence, cast
 
-from superlinked.framework.blob.blob_handler import BlobHandler
-from superlinked.framework.blob.blob_id_generator import BlobIdGenerator
-from superlinked.framework.common.observable import Subscriber
-from superlinked.framework.common.parser.parsed_schema import ParsedSchema
-from superlinked.framework.common.schema.blob_information import BlobInformation
-from superlinked.framework.common.schema.schema_object import Blob
+from qyver.framework.blob.blob_handler import BlobHandler
+from qyver.framework.blob.blob_id_generator import BlobIdGenerator
+from qyver.framework.common.observable import Subscriber
+from qyver.framework.common.parser.parsed_schema import ParsedSchema
+from qyver.framework.common.schema.blob_information import BlobInformation
+from qyver.framework.common.schema.schema_object import Blob
 
 logger = structlog.getLogger()
 

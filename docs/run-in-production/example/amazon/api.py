@@ -1,6 +1,6 @@
 from datetime import datetime, timezone
 
-from superlinked import framework as sl
+from qyver import framework as sl
 
 from .index import index, review
 from .query import query
@@ -11,7 +11,7 @@ EXECUTOR_DATA = {sl.CONTEXT_COMMON: {sl.CONTEXT_COMMON_NOW: START_OF_2024_TS}}
 source: sl.RestSource = sl.RestSource(review)
 
 config = sl.DataLoaderConfig(
-    "https://storage.googleapis.com/superlinked-preview-test-data/amazon_dataset_1000.jsonl",
+    "https://storage.googleapis.com/qyver-preview-test-data/amazon_dataset_1000.jsonl",
     sl.DataFormat.JSON,
     pandas_read_kwargs={"lines": True},
 )
@@ -25,4 +25,4 @@ executor = sl.RestExecutor(
     context_data=EXECUTOR_DATA,
 )
 
-sl.SuperlinkedRegistry.register(executor)
+sl.qyverRegistry.register(executor)

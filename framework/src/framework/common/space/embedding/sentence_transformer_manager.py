@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,14 +20,14 @@ from PIL.Image import Image
 from sentence_transformers import SentenceTransformer
 from typing_extensions import override
 
-from superlinked.framework.common.dag.context import ExecutionContext
-from superlinked.framework.common.data_types import Vector
-from superlinked.framework.common.space.embedding.exception import EmbeddingException
-from superlinked.framework.common.space.embedding.model_manager import ModelManager
-from superlinked.framework.common.space.embedding.sentence_transformer_model_cache import (
+from qyver.framework.common.dag.context import ExecutionContext
+from qyver.framework.common.data_types import Vector
+from qyver.framework.common.space.embedding.exception import EmbeddingException
+from qyver.framework.common.space.embedding.model_manager import ModelManager
+from qyver.framework.common.space.embedding.sentence_transformer_model_cache import (
     SentenceTransformerModelCache,
 )
-from superlinked.framework.common.util.gpu_embedding_util import GpuEmbeddingUtil
+from qyver.framework.common.util.gpu_embedding_util import GpuEmbeddingUtil
 
 logger = structlog.getLogger()
 

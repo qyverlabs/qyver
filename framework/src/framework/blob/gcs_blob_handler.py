@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,8 +21,8 @@ from beartype.typing import Any
 from google.cloud import storage
 from typing_extensions import override
 
-from superlinked.framework.blob.blob_handler import BlobHandler
-from superlinked.framework.blob.blob_metadata import BlobMetadata
+from qyver.framework.blob.blob_handler import BlobHandler
+from qyver.framework.blob.blob_metadata import BlobMetadata
 
 logger = structlog.getLogger()
 

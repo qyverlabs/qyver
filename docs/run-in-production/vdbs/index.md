@@ -11,4 +11,4 @@ This document will list and point to the detailed documentation of the supported
 - [MongoDB](mongodb.md)
 - [Qdrant](qdrant.md)
 
-Missing your favorite one? [Let us know in github discussions](https://github.com/superlinked/superlinked/discussions/41)
+Missing your favorite one? [Let us know in github discussions](https://github.com/qyver/qyver/discussions/41)

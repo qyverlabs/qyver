@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,16 +19,16 @@ from dataclasses import asdict
 from beartype.typing import Any, Generic, Sequence, TypeVar
 from typing_extensions import override
 
-from superlinked.framework.common.dag.node import Node, NodeDataT
-from superlinked.framework.common.data_types import Vector
-from superlinked.framework.common.schema.schema_object import SchemaField, SchemaObject
-from superlinked.framework.common.space.config.aggregation.aggregation_config import (
+from qyver.framework.common.dag.node import Node, NodeDataT
+from qyver.framework.common.data_types import Vector
+from qyver.framework.common.schema.schema_object import SchemaField, SchemaObject
+from qyver.framework.common.space.config.aggregation.aggregation_config import (
     AggregationInputT,
 )
-from superlinked.framework.common.space.config.transformation_config import (
+from qyver.framework.common.space.config.transformation_config import (
     TransformationConfig,
 )
-from superlinked.framework.common.space.interface.has_transformation_config import (
+from qyver.framework.common.space.interface.has_transformation_config import (
     HasTransformationConfig,
 )
 

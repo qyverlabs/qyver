@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,17 +18,17 @@ from qdrant_client.conversions.common_types import QueryResponse
 from qdrant_client.models import SearchParams
 from typing_extensions import override
 
-from superlinked.framework.common.storage.index_config import IndexConfig
-from superlinked.framework.common.storage.search import Search
-from superlinked.framework.common.storage.search_index.search_algorithm import (
+from qyver.framework.common.storage.index_config import IndexConfig
+from qyver.framework.common.storage.search import Search
+from qyver.framework.common.storage.search_index.search_algorithm import (
     SearchAlgorithm,
 )
-from superlinked.framework.storage.qdrant.qdrant_field_encoder import QdrantFieldEncoder
-from superlinked.framework.storage.qdrant.query.qdrant_query import (
+from qyver.framework.storage.qdrant.qdrant_field_encoder import QdrantFieldEncoder
+from qyver.framework.storage.qdrant.query.qdrant_query import (
     QdrantQuery,
     QdrantQueryBuilder,
 )
-from superlinked.framework.storage.qdrant.query.qdrant_vdb_knn_search_params import (
+from qyver.framework.storage.qdrant.query.qdrant_vdb_knn_search_params import (
     QdrantVDBKNNSearchParams,
 )
 

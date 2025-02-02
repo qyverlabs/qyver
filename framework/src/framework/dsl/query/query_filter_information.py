@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,29 +19,29 @@ from dataclasses import dataclass, field
 
 from beartype.typing import Sequence
 
-from superlinked.framework.common.const import constants
-from superlinked.framework.common.exception import QueryException
-from superlinked.framework.common.interface.comparison_operand import (
+from qyver.framework.common.const import constants
+from qyver.framework.common.exception import QueryException
+from qyver.framework.common.interface.comparison_operand import (
     ComparisonOperand,
     ComparisonOperation,
 )
-from superlinked.framework.common.interface.comparison_operation_type import (
+from qyver.framework.common.interface.comparison_operation_type import (
     ComparisonOperationType,
 )
-from superlinked.framework.common.schema.schema_object import SchemaField
-from superlinked.framework.common.util.generic_class_util import GenericClassUtil
-from superlinked.framework.dsl.query.predicate.binary_predicate import (
+from qyver.framework.common.schema.schema_object import SchemaField
+from qyver.framework.common.util.generic_class_util import GenericClassUtil
+from qyver.framework.dsl.query.predicate.binary_predicate import (
     EvaluatedBinaryPredicate,
     LooksLikePredicate,
     SimilarPredicate,
 )
-from superlinked.framework.dsl.query.query_filter_validator import QueryFilterValidator
-from superlinked.framework.dsl.query.query_param_information import (
+from qyver.framework.dsl.query.query_filter_validator import QueryFilterValidator
+from qyver.framework.dsl.query.query_param_information import (
     ParamInfo,
     QueryParamInformation,
     WeightedParamInfo,
 )
-from superlinked.framework.dsl.space.space import Space
+from qyver.framework.dsl.space.space import Space
 
 # Exclude from documentation.
 __pdoc__ = {}

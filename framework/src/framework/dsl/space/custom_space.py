@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,31 +16,31 @@
 from beartype.typing import Sequence
 from typing_extensions import override
 
-from superlinked.framework.common.dag.custom_node import CustomVectorEmbeddingNode
-from superlinked.framework.common.dag.embedding_node import EmbeddingNode
-from superlinked.framework.common.dag.schema_field_node import SchemaFieldNode
-from superlinked.framework.common.data_types import Vector
-from superlinked.framework.common.schema.schema_object import FloatList, SchemaObject
-from superlinked.framework.common.space.config.aggregation.aggregation_config import (
+from qyver.framework.common.dag.custom_node import CustomVectorEmbeddingNode
+from qyver.framework.common.dag.embedding_node import EmbeddingNode
+from qyver.framework.common.dag.schema_field_node import SchemaFieldNode
+from qyver.framework.common.data_types import Vector
+from qyver.framework.common.schema.schema_object import FloatList, SchemaObject
+from qyver.framework.common.space.config.aggregation.aggregation_config import (
     VectorAggregationConfig,
 )
-from superlinked.framework.common.space.config.embedding.custom_embedding_config import (
+from qyver.framework.common.space.config.embedding.custom_embedding_config import (
     CustomEmbeddingConfig,
 )
-from superlinked.framework.common.space.config.normalization.normalization_config import (
+from qyver.framework.common.space.config.normalization.normalization_config import (
     L2NormConfig,
 )
-from superlinked.framework.common.space.config.transformation_config import (
+from qyver.framework.common.space.config.transformation_config import (
     TransformationConfig,
 )
-from superlinked.framework.dsl.space.has_space_field_set import HasSpaceFieldSet
-from superlinked.framework.dsl.space.space import Space
-from superlinked.framework.dsl.space.space_field_set import SpaceFieldSet
+from qyver.framework.dsl.space.has_space_field_set import HasSpaceFieldSet
+from qyver.framework.dsl.space.space import Space
+from qyver.framework.dsl.space.space_field_set import SpaceFieldSet
 
 
 class CustomSpace(Space[Vector, Vector], HasSpaceFieldSet):
     """
-    CustomSpace is the instrument of ingesting your own vectors into Superlinked.
+    CustomSpace is the instrument of ingesting your own vectors into qyver.
     This way you can use your own vectors right away. What you need to know: (you can use numbering too)
     - vectors need to have the same length
     - vectors will be L2Norm normalized to ensure weighting makes sense
@@ -56,7 +56,7 @@ class CustomSpace(Space[Vector, Vector], HasSpaceFieldSet):
         description: str | None = None,
     ) -> None:
         """
-        Initializes a CustomSpace for vector storage and manipulation within Superlinked.
+        Initializes a CustomSpace for vector storage and manipulation within qyver.
 
         This constructor sets up a space designed for custom vector ingestion, allowing users to specify how these
         vectors are aggregated and normalized.

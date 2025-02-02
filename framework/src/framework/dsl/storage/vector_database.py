@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@ from abc import ABC, abstractmethod
 
 from beartype.typing import Generic, TypeVar
 
-from superlinked.framework.common.storage.vdb_connector import VDBConnector
+from qyver.framework.common.storage.vdb_connector import VDBConnector
 
 VDBConnectorT = TypeVar("VDBConnectorT", bound=VDBConnector)
 

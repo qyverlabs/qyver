@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@ from abc import ABC, abstractmethod
 from beartype.typing import Generic, Sequence, TypeVar, cast
 from typing_extensions import override
 
-from superlinked.framework.common.util.collection_util import chunk_list
+from qyver.framework.common.util.collection_util import chunk_list
 
 PublishedMessageT = TypeVar("PublishedMessageT")
 

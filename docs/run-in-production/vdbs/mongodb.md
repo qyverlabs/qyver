@@ -1,12 +1,12 @@
 # MongoDB
 
-This document provides clear steps on how to use and integrate MongoDB with Superlinked.
+This document provides clear steps on how to use and integrate MongoDB with qyver.
 
 ## Configuring your existing managed MongoDB
 
-To integrate MongoDB with Superlinked, ensure you are using a version that supports Atlas Vector Search capabilities. Refer to the MongoDB documentation for [more information](https://www.mongodb.com/docs/atlas/atlas-vector-search/vector-search-overview/).
+To integrate MongoDB with qyver, ensure you are using a version that supports Atlas Vector Search capabilities. Refer to the MongoDB documentation for [more information](https://www.mongodb.com/docs/atlas/atlas-vector-search/vector-search-overview/).
 
-Superlinked requires access to MongoDB to list, create, and delete Atlas Search Indexes. As of writing, MongoDB separates functionality by database instance sizes. If you use anything below M10, the database does not support creating, listing, and deleting the Atlas Search Index via a standard user, only via the administration API. You can read more [about the limitation](https://www.mongodb.com/docs/atlas/atlas-vector-search/vector-search-type/) and also [about the administration API](https://www.mongodb.com/docs/atlas/configure-api-access/). To support all types, Superlinked uses the aforementioned API to manage the indexes.
+qyver requires access to MongoDB to list, create, and delete Atlas Search Indexes. As of writing, MongoDB separates functionality by database instance sizes. If you use anything below M10, the database does not support creating, listing, and deleting the Atlas Search Index via a standard user, only via the administration API. You can read more [about the limitation](https://www.mongodb.com/docs/atlas/atlas-vector-search/vector-search-type/) and also [about the administration API](https://www.mongodb.com/docs/atlas/configure-api-access/). To support all types, qyver uses the aforementioned API to manage the indexes.
 
 Due to the reasons above, an API key with the `Project Data Access Admin` role is required. More about how to create that can be found [below](#start-a-managed-mongo-db-instance).
 
@@ -16,7 +16,7 @@ Due to the reasons above, an API key with the `Project Data Access Admin` role i
 
 To integrate MongoDB, you need to add the `MongoDBVectorDatabase` class and include it in the executor. Here’s how you can do it:
 ```python
-from superlinked import framework as sl
+from qyver import framework as sl
 
 vector_database = sl.MongoDBVectorDatabase(
     host="<USER>:<PASSWORD>@<HOST_URL>", # The DB's host URL with the username and password.
@@ -54,10 +54,10 @@ A step-by-step guide to set up a database, a user, and the required API key.
 
 ### Creating the Database:
 1. Navigate to [MongoDB Atlas](https://cloud.mongodb.com/) and sign in.
-2. Create your cluster. The cluster name will be needed for the configuration mentioned above. You can choose any other options as they do not impact Superlinked's functionality.
+2. Create your cluster. The cluster name will be needed for the configuration mentioned above. You can choose any other options as they do not impact qyver's functionality.
 3. Click on the `Database` option in the left menu column.
 4. Once the cluster is created, click on its name and then go to the collections tab or click on the `Browse Collections` button.
-5. Click on `Add My Own Data` and provide a name for your database and collection. The database name will be required for the configuration above. The collection name is not critical and can be deleted later as Superlinked will create its own.
+5. Click on `Add My Own Data` and provide a name for your database and collection. The database name will be required for the configuration above. The collection name is not critical and can be deleted later as qyver will create its own.
 
 ### Creating a Database User and add your IP:
 1. Click on the `Database` option on the left.
@@ -75,4 +75,4 @@ A step-by-step guide to set up a database, a user, and the required API key.
 
 ## Example app with Mongo DB
 
-You can find an example that utilizes Mongo DB [here](https://github.com/superlinked/superlinked/blob/main/docs/run-in-production/vdbs/mongodb/app_with_mongodb.py).
+You can find an example that utilizes Mongo DB [here](https://github.com/qyver/qyver/blob/main/docs/run-in-production/vdbs/mongodb/app_with_mongodb.py).

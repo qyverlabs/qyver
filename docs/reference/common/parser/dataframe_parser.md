@@ -1,4 +1,4 @@
-Module superlinked.framework.common.parser.dataframe_parser
+Module qyver.framework.common.parser.dataframe_parser
 ===========================================================
 
 Classes
@@ -23,13 +23,13 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.common.parser.data_parser.DataParser
+    * qyver.framework.common.parser.data_parser.DataParser
     * abc.ABC
     * typing.Generic
 
     ### Methods
 
-    `unmarshal(self, data: pd.DataFrame) ‑> list[superlinked.framework.common.parser.parsed_schema.ParsedSchema]`
+    `unmarshal(self, data: pd.DataFrame) ‑> list[qyver.framework.common.parser.parsed_schema.ParsedSchema]`
     :   Parses the given DataFrame into a list of ParsedSchema objects according to the defined schema and mapping.
         Args:
             data (pd.DataFrame): Pandas DataFrame input.

@@ -1,4 +1,4 @@
-from superlinked import framework as sl
+from qyver import framework as sl
 
 from .index import car_schema, index
 from .query import query
@@ -12,4 +12,4 @@ executor = sl.RestExecutor(
     vector_database=sl.InMemoryVectorDatabase(),
 )
 
-sl.SuperlinkedRegistry.register(executor)
+sl.qyverRegistry.register(executor)

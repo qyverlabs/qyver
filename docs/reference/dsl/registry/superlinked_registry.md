@@ -1,16 +1,16 @@
-Module superlinked.framework.dsl.registry.superlinked_registry
+Module qyver.framework.dsl.registry.qyver_registry
 ==============================================================
 
 Classes
 -------
 
-`SuperlinkedRegistry()`
+`qyverRegistry()`
 :   
 
     ### Static methods
 
-    `get_executors() ‑> frozenset[superlinked.framework.dsl.executor.executor.Executor]`
+    `get_executors() ‑> frozenset[qyver.framework.dsl.executor.executor.Executor]`
     :
 
-    `register(*items: superlinked.framework.dsl.executor.executor.Executor) ‑> None`
+    `register(*items: qyver.framework.dsl.executor.executor.Executor) ‑> None`
     :

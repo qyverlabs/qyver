@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,28 +20,28 @@ from functools import reduce
 from beartype.typing import Sequence, cast
 from typing_extensions import override
 
-from superlinked.framework.common.dag.concatenation_node import ConcatenationNode
-from superlinked.framework.common.dag.context import ExecutionContext
-from superlinked.framework.common.dag.node import Node
-from superlinked.framework.common.data_types import NodeDataTypes, Vector
-from superlinked.framework.common.interface.has_length import HasLength
-from superlinked.framework.common.interface.weighted import Weighted
-from superlinked.framework.common.space.config.normalization.normalization_config import (
+from qyver.framework.common.dag.concatenation_node import ConcatenationNode
+from qyver.framework.common.dag.context import ExecutionContext
+from qyver.framework.common.dag.node import Node
+from qyver.framework.common.data_types import NodeDataTypes, Vector
+from qyver.framework.common.interface.has_length import HasLength
+from qyver.framework.common.interface.weighted import Weighted
+from qyver.framework.common.space.config.normalization.normalization_config import (
     ConstantNormConfig,
 )
-from superlinked.framework.common.space.normalization.normalization import (
+from qyver.framework.common.space.normalization.normalization import (
     ConstantNorm,
     L2Norm,
 )
-from superlinked.framework.query.dag.exception import QueryEvaluationException
-from superlinked.framework.query.dag.invert_if_addressed_query_node import (
+from qyver.framework.query.dag.exception import QueryEvaluationException
+from qyver.framework.query.dag.invert_if_addressed_query_node import (
     InvertIfAddressedQueryNode,
 )
-from superlinked.framework.query.dag.query_evaluation_data_types import (
+from qyver.framework.query.dag.query_evaluation_data_types import (
     QueryEvaluationResult,
 )
-from superlinked.framework.query.dag.query_node import QueryNode
-from superlinked.framework.query.query_node_input import QueryNodeInput
+from qyver.framework.query.dag.query_node import QueryNode
+from qyver.framework.query.query_node_input import QueryNodeInput
 
 
 class QueryConcatenationNode(InvertIfAddressedQueryNode[ConcatenationNode, Vector]):

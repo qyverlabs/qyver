@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,13 +17,13 @@ from abc import ABC, abstractmethod
 from beartype.typing import Any, Generic, Sequence, TypeVar
 from typing_extensions import override
 
-from superlinked.framework.common.dag.context import ExecutionContext
-from superlinked.framework.common.data_types import Vector
-from superlinked.framework.common.exception import NotImplementedException
-from superlinked.framework.common.interface.has_default_vector import HasDefaultVector
-from superlinked.framework.common.interface.has_length import HasLength
-from superlinked.framework.common.space.config.embedding_config import EmbeddingConfig
-from superlinked.framework.common.space.normalization import Normalization
+from qyver.framework.common.dag.context import ExecutionContext
+from qyver.framework.common.data_types import Vector
+from qyver.framework.common.exception import NotImplementedException
+from qyver.framework.common.interface.has_default_vector import HasDefaultVector
+from qyver.framework.common.interface.has_length import HasLength
+from qyver.framework.common.space.config.embedding_config import EmbeddingConfig
+from qyver.framework.common.space.normalization import Normalization
 
 # EmbeddingInputType
 EmbeddingInputT = TypeVar("EmbeddingInputT")

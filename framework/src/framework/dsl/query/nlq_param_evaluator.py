@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,13 +19,13 @@ from beartype.typing import Any, Sequence
 from pydantic import BaseModel, Field
 from pydantic.fields import FieldInfo
 
-from superlinked.framework.common.exception import QueryException
-from superlinked.framework.common.nlq.open_ai import OpenAIClient, OpenAIClientConfig
-from superlinked.framework.dsl.query.nlq_pydantic_model_builder import (
+from qyver.framework.common.exception import QueryException
+from qyver.framework.common.nlq.open_ai import OpenAIClient, OpenAIClientConfig
+from qyver.framework.dsl.query.nlq_pydantic_model_builder import (
     NLQPydanticModelBuilder,
 )
-from superlinked.framework.dsl.query.query_param_information import ParamInfo
-from superlinked.framework.dsl.space.space import Space
+from qyver.framework.dsl.query.query_param_information import ParamInfo
+from qyver.framework.dsl.space.space import Space
 
 # Exclude from documentation.
 __pdoc__ = {}
@@ -212,7 +212,7 @@ class NLQParamEvaluator:
         self, model_class: type[BaseModel], system_prompt: str | None = None
     ) -> str:
         persona_description = """You are helping a user translate their natural language query to a structured
-        Superlinked query. A Superlinked query is a knn search using a query vector, ran against a knowledgebase of items using
+        qyver query. A qyver query is a knn search using a query vector, ran against a knowledgebase of items using
         cosine (dot-product) similarity.
         Steps to follow:\n
         1. Extract Key Elements: Identify important elements such as descriptions, recency, categorical, numerical

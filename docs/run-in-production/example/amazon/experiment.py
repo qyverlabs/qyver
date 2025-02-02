@@ -1,6 +1,6 @@
 from datetime import datetime, timezone
 
-from superlinked import framework as sl
+from qyver import framework as sl
 
 from .index import index, review
 from .query import query

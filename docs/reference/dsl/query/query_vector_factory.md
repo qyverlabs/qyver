@@ -1,2 +1,2 @@
-Module superlinked.framework.dsl.query.query_vector_factory
+Module qyver.framework.dsl.query.query_vector_factory
 ===========================================================

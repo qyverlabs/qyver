@@ -1,10 +1,10 @@
-Module superlinked.framework.dsl.space.image_space
+Module qyver.framework.dsl.space.image_space
 ==================================================
 
 Classes
 -------
 
-`ImageSpace(image: superlinked.framework.common.schema.schema_object.Blob | superlinked.framework.common.schema.schema_object.DescribedBlob | None | collections.abc.Sequence[superlinked.framework.common.schema.schema_object.Blob | superlinked.framework.common.schema.schema_object.DescribedBlob | None], model: str = 'clip-ViT-B-32', model_handler: superlinked.framework.common.space.config.embedding.image_embedding_config.ModelHandler = ModelHandler.SENTENCE_TRANSFORMERS, model_cache_dir: pathlib.Path | None = None)`
+`ImageSpace(image: qyver.framework.common.schema.schema_object.Blob | qyver.framework.common.schema.schema_object.DescribedBlob | None | collections.abc.Sequence[qyver.framework.common.schema.schema_object.Blob | qyver.framework.common.schema.schema_object.DescribedBlob | None], model: str = 'clip-ViT-B-32', model_handler: qyver.framework.common.space.config.embedding.image_embedding_config.ModelHandler = ModelHandler.SENTENCE_TRANSFORMERS, model_cache_dir: pathlib.Path | None = None)`
 :   Initialize the ImageSpace instance for generating vector representations
     from images, supporting models from the OpenCLIP project.
     
@@ -39,14 +39,14 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.dsl.space.space.Space
-    * superlinked.framework.common.space.interface.has_transformation_config.HasTransformationConfig
-    * superlinked.framework.common.interface.has_length.HasLength
+    * qyver.framework.dsl.space.space.Space
+    * qyver.framework.common.space.interface.has_transformation_config.HasTransformationConfig
+    * qyver.framework.common.interface.has_length.HasLength
     * typing.Generic
-    * superlinked.framework.common.interface.has_annotation.HasAnnotation
+    * qyver.framework.common.interface.has_annotation.HasAnnotation
     * abc.ABC
 
     ### Instance variables
 
-    `transformation_config: superlinked.framework.common.space.config.transformation_config.TransformationConfig[superlinked.framework.common.data_types.Vector, superlinked.framework.common.schema.image_data.ImageData]`
+    `transformation_config: qyver.framework.common.space.config.transformation_config.TransformationConfig[qyver.framework.common.data_types.Vector, qyver.framework.common.schema.image_data.ImageData]`
     :

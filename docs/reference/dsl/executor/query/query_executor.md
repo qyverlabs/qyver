@@ -1,10 +1,10 @@
-Module superlinked.framework.dsl.executor.query.query_executor
+Module qyver.framework.dsl.executor.query.query_executor
 ==============================================================
 
 Classes
 -------
 
-`QueryExecutor(app: superlinked.framework.dsl.app.app.App, query_descriptor: superlinked.framework.dsl.query.query_descriptor.QueryDescriptor, query_vector_factory: superlinked.framework.dsl.query.query_vector_factory.QueryVectorFactory)`
+`QueryExecutor(app: qyver.framework.dsl.app.app.App, query_descriptor: qyver.framework.dsl.query.query_descriptor.QueryDescriptor, query_vector_factory: qyver.framework.dsl.query.query_vector_factory.QueryVectorFactory)`
 :   QueryExecutor provides an interface to execute predefined queries with query time parameters.
     
     Initializes the QueryExecutor.
@@ -16,10 +16,10 @@ Classes
 
     ### Methods
 
-    `calculate_query_node_inputs_by_node_id(self, query_descriptor: superlinked.framework.dsl.query.query_descriptor.QueryDescriptor) ‑> dict[str, list[superlinked.framework.query.query_node_input.QueryNodeInput]]`
+    `calculate_query_node_inputs_by_node_id(self, query_descriptor: qyver.framework.dsl.query.query_descriptor.QueryDescriptor) ‑> dict[str, list[qyver.framework.query.query_node_input.QueryNodeInput]]`
     :
 
-    `query(self, **params: collections.abc.Sequence[str] | collections.abc.Sequence[float] | PIL.Image.Image | str | int | float | bool | None | tuple[str | None, str | None]) ‑> superlinked.framework.dsl.query.result.QueryResult`
+    `query(self, **params: collections.abc.Sequence[str] | collections.abc.Sequence[float] | PIL.Image.Image | str | int | float | bool | None | tuple[str | None, str | None]) ‑> qyver.framework.dsl.query.result.QueryResult`
     :   Execute a query with keyword parameters.
         
         Args:

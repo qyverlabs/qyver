@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,15 +16,15 @@ import numpy as np
 from beartype.typing import Any, Sequence, cast
 from scipy import linalg
 
-from superlinked.framework.common.data_types import NPArray, Vector
-from superlinked.framework.common.interface.has_length import HasLength
-from superlinked.framework.common.schema.id_schema_object import IdSchemaObject
-from superlinked.framework.common.schema.schema_object import SchemaObject
-from superlinked.framework.common.storage_manager.header import Header
-from superlinked.framework.dsl.executor.in_memory.in_memory_executor import InMemoryApp
-from superlinked.framework.dsl.index.index import Index
-from superlinked.framework.dsl.space.space import Space
-from superlinked.framework.storage.in_memory.in_memory_vdb import InMemoryVDB
+from qyver.framework.common.data_types import NPArray, Vector
+from qyver.framework.common.interface.has_length import HasLength
+from qyver.framework.common.schema.id_schema_object import IdSchemaObject
+from qyver.framework.common.schema.schema_object import SchemaObject
+from qyver.framework.common.storage_manager.header import Header
+from qyver.framework.dsl.executor.in_memory.in_memory_executor import InMemoryApp
+from qyver.framework.dsl.index.index import Index
+from qyver.framework.dsl.space.space import Space
+from qyver.framework.storage.in_memory.in_memory_vdb import InMemoryVDB
 
 
 class VectorNotFoundError(Exception):

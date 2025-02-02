@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,19 +18,19 @@ from qdrant_client import QdrantClient
 from qdrant_client.models import VectorParams
 from typing_extensions import override
 
-from superlinked.framework.common.storage.exception import (
+from qyver.framework.common.storage.exception import (
     IndexConfigNotFoundException,
     InvalidIndexConfigException,
     MismatchingConfigException,
 )
-from superlinked.framework.common.storage.index_config import IndexConfig
-from superlinked.framework.common.storage.search_index.manager.search_index_manager import (
+from qyver.framework.common.storage.index_config import IndexConfig
+from qyver.framework.common.storage.search_index.manager.search_index_manager import (
     SearchIndexManager,
 )
-from superlinked.framework.common.storage.search_index.search_algorithm import (
+from qyver.framework.common.storage.search_index.search_algorithm import (
     SearchAlgorithm,
 )
-from superlinked.framework.storage.qdrant.qdrant_field_descriptor_compiler import (
+from qyver.framework.storage.qdrant.qdrant_field_descriptor_compiler import (
     QdrantFieldDescriptorCompiler,
 )
 

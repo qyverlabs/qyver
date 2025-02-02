@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,23 +19,23 @@ import numpy as np
 import pandas as pd
 from beartype.typing import Mapping, cast
 
-from superlinked.framework.common.calculation.distance_metric import DistanceMetric
-from superlinked.framework.common.calculation.vector_similarity import (
+from qyver.framework.common.calculation.distance_metric import DistanceMetric
+from qyver.framework.common.calculation.vector_similarity import (
     VectorSimilarityCalculator,
 )
-from superlinked.framework.common.dag.context import (
+from qyver.framework.common.dag.context import (
     ContextValue,
     ExecutionContext,
     ExecutionEnvironment,
 )
-from superlinked.framework.common.data_types import Vector
-from superlinked.framework.common.space.config.embedding.recency_embedding_config import (
+from qyver.framework.common.data_types import Vector
+from qyver.framework.common.space.config.embedding.recency_embedding_config import (
     RecencyEmbeddingConfig,
 )
-from superlinked.framework.common.transform.transformation_factory import (
+from qyver.framework.common.transform.transformation_factory import (
     TransformationFactory,
 )
-from superlinked.framework.dsl.space.recency_space import RecencySpace
+from qyver.framework.dsl.space.recency_space import RecencySpace
 
 
 class RecencyPlotter:

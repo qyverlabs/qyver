@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,22 +16,22 @@ import inspect
 
 from beartype.typing import Sequence, get_args
 
-from superlinked.framework.common.schema.event_schema_object import (
+from qyver.framework.common.schema.event_schema_object import (
     CreatedAtField,
     SchemaReference,
 )
-from superlinked.framework.common.schema.exception import (
+from qyver.framework.common.schema.exception import (
     FieldException,
     InvalidAttributeException,
     InvalidMemberException,
 )
-from superlinked.framework.common.schema.general_type import T
-from superlinked.framework.common.schema.id_schema_object import IdField
-from superlinked.framework.common.schema.schema_field_descriptor import (
+from qyver.framework.common.schema.general_type import T
+from qyver.framework.common.schema.id_schema_object import IdField
+from qyver.framework.common.schema.schema_field_descriptor import (
     SchemaFieldDescriptor,
 )
-from superlinked.framework.common.schema.schema_object import ConcreteSchemaField
-from superlinked.framework.common.schema.schema_type import SchemaType
+from qyver.framework.common.schema.schema_object import ConcreteSchemaField
+from qyver.framework.common.schema.schema_type import SchemaType
 
 valid_schema_field_types = {
     SchemaType.SCHEMA: ConcreteSchemaField | IdField,

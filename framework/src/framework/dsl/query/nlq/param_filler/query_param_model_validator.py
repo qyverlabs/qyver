@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,14 +19,14 @@ from pydantic._internal._decorators import (
     PydanticDescriptorProxy,
 )
 
-from superlinked.framework.common.const import constants
-from superlinked.framework.common.util.type_validator import TypeValidator
-from superlinked.framework.dsl.query.nlq.nlq_clause_collector import NLQClauseCollector
-from superlinked.framework.dsl.query.nlq.param_filler.query_param_model_validator_info import (
+from qyver.framework.common.const import constants
+from qyver.framework.common.util.type_validator import TypeValidator
+from qyver.framework.dsl.query.nlq.nlq_clause_collector import NLQClauseCollector
+from qyver.framework.dsl.query.nlq.param_filler.query_param_model_validator_info import (
     QueryParamModelValidatorInfo,
 )
-from superlinked.framework.dsl.query.param import ParamInputType
-from superlinked.framework.dsl.space.space import Space
+from qyver.framework.dsl.query.param import ParamInputType
+from qyver.framework.dsl.space.space import Space
 
 UNAFFECTING_VALUES = [constants.DEFAULT_NOT_AFFECTING_WEIGHT, None]
 

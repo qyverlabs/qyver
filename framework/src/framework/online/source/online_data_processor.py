@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,20 +17,20 @@ from collections import defaultdict
 import structlog
 from beartype.typing import Mapping, Sequence, cast
 
-from superlinked.framework.common.dag.context import ExecutionContext
-from superlinked.framework.common.dag.dag_effect import DagEffect
-from superlinked.framework.common.exception import InvalidDagEffectException
-from superlinked.framework.common.observable import Subscriber
-from superlinked.framework.common.parser.exception import MissingFieldException
-from superlinked.framework.common.parser.parsed_schema import (
+from qyver.framework.common.dag.context import ExecutionContext
+from qyver.framework.common.dag.dag_effect import DagEffect
+from qyver.framework.common.exception import InvalidDagEffectException
+from qyver.framework.common.observable import Subscriber
+from qyver.framework.common.parser.exception import MissingFieldException
+from qyver.framework.common.parser.parsed_schema import (
     EventParsedSchema,
     ParsedSchema,
     ParsedSchemaWithEvent,
 )
-from superlinked.framework.common.schema.schema_object import SchemaObject
-from superlinked.framework.common.storage_manager.storage_manager import StorageManager
-from superlinked.framework.dsl.index.index import Index
-from superlinked.framework.online.online_dag_evaluator import OnlineDagEvaluator
+from qyver.framework.common.schema.schema_object import SchemaObject
+from qyver.framework.common.storage_manager.storage_manager import StorageManager
+from qyver.framework.dsl.index.index import Index
+from qyver.framework.online.online_dag_evaluator import OnlineDagEvaluator
 
 logger = structlog.get_logger()
 

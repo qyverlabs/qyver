@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,21 +15,21 @@
 
 from beartype.typing import Any, Sequence
 
-from superlinked.framework.common.data_types import NodeDataTypes, PythonTypes
-from superlinked.framework.common.parser.parsed_schema import (
+from qyver.framework.common.data_types import NodeDataTypes, PythonTypes
+from qyver.framework.common.parser.parsed_schema import (
     ParsedSchema,
     ParsedSchemaField,
 )
-from superlinked.framework.common.schema.id_schema_object import IdSchemaObject
-from superlinked.framework.common.schema.schema_object import SchemaField
-from superlinked.framework.common.storage.entity.entity import Entity
-from superlinked.framework.common.storage.entity.entity_data import EntityData
-from superlinked.framework.common.storage.entity.entity_id import EntityId
-from superlinked.framework.common.storage.field.field import Field
-from superlinked.framework.common.storage.field.field_data import FieldData
-from superlinked.framework.common.storage.field_type_converter import FieldTypeConverter
-from superlinked.framework.common.storage_manager.admin_fields import AdminFields
-from superlinked.framework.common.storage_manager.storage_naming import StorageNaming
+from qyver.framework.common.schema.id_schema_object import IdSchemaObject
+from qyver.framework.common.schema.schema_object import SchemaField
+from qyver.framework.common.storage.entity.entity import Entity
+from qyver.framework.common.storage.entity.entity_data import EntityData
+from qyver.framework.common.storage.entity.entity_id import EntityId
+from qyver.framework.common.storage.field.field import Field
+from qyver.framework.common.storage.field.field_data import FieldData
+from qyver.framework.common.storage.field_type_converter import FieldTypeConverter
+from qyver.framework.common.storage_manager.admin_fields import AdminFields
+from qyver.framework.common.storage_manager.storage_naming import StorageNaming
 
 
 class EntityBuilder:

@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,34 +16,34 @@
 from beartype.typing import cast
 from typing_extensions import override
 
-from superlinked.framework.common.dag.categorical_similarity_node import (
+from qyver.framework.common.dag.categorical_similarity_node import (
     CategoricalSimilarityNode,
 )
-from superlinked.framework.common.dag.embedding_node import EmbeddingNode
-from superlinked.framework.common.dag.schema_field_node import SchemaFieldNode
-from superlinked.framework.common.data_types import Vector
-from superlinked.framework.common.schema.schema_object import (
+from qyver.framework.common.dag.embedding_node import EmbeddingNode
+from qyver.framework.common.dag.schema_field_node import SchemaFieldNode
+from qyver.framework.common.data_types import Vector
+from qyver.framework.common.schema.schema_object import (
     SchemaField,
     SchemaObject,
     String,
     StringList,
 )
-from superlinked.framework.common.space.config.aggregation.aggregation_config import (
+from qyver.framework.common.space.config.aggregation.aggregation_config import (
     VectorAggregationConfig,
 )
-from superlinked.framework.common.space.config.embedding.categorical_similarity_embedding_config import (
+from qyver.framework.common.space.config.embedding.categorical_similarity_embedding_config import (
     CategoricalSimilarityEmbeddingConfig,
 )
-from superlinked.framework.common.space.config.normalization.normalization_config import (
+from qyver.framework.common.space.config.normalization.normalization_config import (
     L2NormConfig,
 )
-from superlinked.framework.common.space.config.transformation_config import (
+from qyver.framework.common.space.config.transformation_config import (
     TransformationConfig,
 )
-from superlinked.framework.common.util.type_validator import TypeValidator
-from superlinked.framework.dsl.space.has_space_field_set import HasSpaceFieldSet
-from superlinked.framework.dsl.space.space import Space
-from superlinked.framework.dsl.space.space_field_set import SpaceFieldSet
+from qyver.framework.common.util.type_validator import TypeValidator
+from qyver.framework.dsl.space.has_space_field_set import HasSpaceFieldSet
+from qyver.framework.dsl.space.space import Space
+from qyver.framework.dsl.space.space_field_set import SpaceFieldSet
 
 
 class CategoricalSimilaritySpace(Space[Vector, list[str]], HasSpaceFieldSet):

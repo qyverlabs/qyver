@@ -1,2 +1,2 @@
-Module superlinked.framework.dsl.source.types
+Module qyver.framework.dsl.source.types
 =============================================

@@ -1,4 +1,4 @@
-Module superlinked.framework.common.schema.schema_object
+Module qyver.framework.common.schema.schema_object
 ========================================================
 
 Classes
@@ -11,8 +11,8 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.common.schema.schema_object.SchemaField
-    * superlinked.framework.common.interface.comparison_operand.ComparisonOperand
+    * qyver.framework.common.schema.schema_object.SchemaField
+    * qyver.framework.common.interface.comparison_operand.ComparisonOperand
     * abc.ABC
     * typing.Generic
 
@@ -21,10 +21,10 @@ Classes
 
     ### Class variables
 
-    `blob: superlinked.framework.common.schema.schema_object.Blob`
+    `blob: qyver.framework.common.schema.schema_object.Blob`
     :
 
-    `description: superlinked.framework.common.schema.schema_object.String`
+    `description: qyver.framework.common.schema.schema_object.String`
     :
 
 `Float(name: str, schema_obj: SchemaObjectT, nullable: bool)`
@@ -32,9 +32,9 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.common.schema.schema_object.Number
-    * superlinked.framework.common.schema.schema_object.SchemaField
-    * superlinked.framework.common.interface.comparison_operand.ComparisonOperand
+    * qyver.framework.common.schema.schema_object.Number
+    * qyver.framework.common.schema.schema_object.SchemaField
+    * qyver.framework.common.interface.comparison_operand.ComparisonOperand
     * abc.ABC
     * typing.Generic
 
@@ -43,8 +43,8 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.common.schema.schema_object.SchemaField
-    * superlinked.framework.common.interface.comparison_operand.ComparisonOperand
+    * qyver.framework.common.schema.schema_object.SchemaField
+    * qyver.framework.common.interface.comparison_operand.ComparisonOperand
     * abc.ABC
     * typing.Generic
 
@@ -58,9 +58,9 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.common.schema.schema_object.Number
-    * superlinked.framework.common.schema.schema_object.SchemaField
-    * superlinked.framework.common.interface.comparison_operand.ComparisonOperand
+    * qyver.framework.common.schema.schema_object.Number
+    * qyver.framework.common.schema.schema_object.SchemaField
+    * qyver.framework.common.interface.comparison_operand.ComparisonOperand
     * abc.ABC
     * typing.Generic
 
@@ -71,15 +71,15 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.common.schema.schema_object.SchemaField
-    * superlinked.framework.common.interface.comparison_operand.ComparisonOperand
+    * qyver.framework.common.schema.schema_object.SchemaField
+    * qyver.framework.common.interface.comparison_operand.ComparisonOperand
     * abc.ABC
     * typing.Generic
 
     ### Descendants
 
-    * superlinked.framework.common.schema.schema_object.Float
-    * superlinked.framework.common.schema.schema_object.Integer
+    * qyver.framework.common.schema.schema_object.Float
+    * qyver.framework.common.schema.schema_object.Integer
 
 `SchemaField(name: str, schema_obj: SchemaObjectT, type_: type[SFT], nullable: bool)`
 :   A SchemaField is a generic field of your `@schema` decorated class.
@@ -90,21 +90,21 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.common.interface.comparison_operand.ComparisonOperand
+    * qyver.framework.common.interface.comparison_operand.ComparisonOperand
     * abc.ABC
     * typing.Generic
 
     ### Descendants
 
-    * superlinked.framework.common.schema.event_schema_object.CreatedAtField
-    * superlinked.framework.common.schema.event_schema_object.SchemaReference
-    * superlinked.framework.common.schema.id_schema_object.IdField
-    * superlinked.framework.common.schema.schema_object.Blob
-    * superlinked.framework.common.schema.schema_object.FloatList
-    * superlinked.framework.common.schema.schema_object.Number
-    * superlinked.framework.common.schema.schema_object.String
-    * superlinked.framework.common.schema.schema_object.StringList
-    * superlinked.framework.common.schema.schema_object.Timestamp
+    * qyver.framework.common.schema.event_schema_object.CreatedAtField
+    * qyver.framework.common.schema.event_schema_object.SchemaReference
+    * qyver.framework.common.schema.id_schema_object.IdField
+    * qyver.framework.common.schema.schema_object.Blob
+    * qyver.framework.common.schema.schema_object.FloatList
+    * qyver.framework.common.schema.schema_object.Number
+    * qyver.framework.common.schema.schema_object.String
+    * qyver.framework.common.schema.schema_object.StringList
+    * qyver.framework.common.schema.schema_object.Timestamp
 
     ### Methods
 
@@ -118,7 +118,7 @@ Classes
 
     ### Descendants
 
-    * superlinked.framework.common.schema.id_schema_object.IdSchemaObject
+    * qyver.framework.common.schema.id_schema_object.IdSchemaObject
 
     ### Instance variables
 
@@ -132,8 +132,8 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.common.schema.schema_object.SchemaField
-    * superlinked.framework.common.interface.comparison_operand.ComparisonOperand
+    * qyver.framework.common.schema.schema_object.SchemaField
+    * qyver.framework.common.interface.comparison_operand.ComparisonOperand
     * abc.ABC
     * typing.Generic
 
@@ -142,8 +142,8 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.common.schema.schema_object.SchemaField
-    * superlinked.framework.common.interface.comparison_operand.ComparisonOperand
+    * qyver.framework.common.schema.schema_object.SchemaField
+    * qyver.framework.common.interface.comparison_operand.ComparisonOperand
     * abc.ABC
     * typing.Generic
 
@@ -159,7 +159,7 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.common.schema.schema_object.SchemaField
-    * superlinked.framework.common.interface.comparison_operand.ComparisonOperand
+    * qyver.framework.common.schema.schema_object.SchemaField
+    * qyver.framework.common.interface.comparison_operand.ComparisonOperand
     * abc.ABC
     * typing.Generic

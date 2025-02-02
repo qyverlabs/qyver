@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,15 +17,15 @@ import math
 from beartype.typing import Any, Sequence, cast
 from typing_extensions import override
 
-from superlinked.framework.common.const import constants
-from superlinked.framework.common.dag.dag_effect import DagEffect
-from superlinked.framework.common.dag.exception import ParentCountException
-from superlinked.framework.common.dag.node import Node
-from superlinked.framework.common.dag.persistence_params import PersistenceParams
-from superlinked.framework.common.data_types import Vector
-from superlinked.framework.common.interface.has_length import HasLength
-from superlinked.framework.common.schema.schema_object import SchemaObject
-from superlinked.framework.common.space.config.normalization.normalization_config import (
+from qyver.framework.common.const import constants
+from qyver.framework.common.dag.dag_effect import DagEffect
+from qyver.framework.common.dag.exception import ParentCountException
+from qyver.framework.common.dag.node import Node
+from qyver.framework.common.dag.persistence_params import PersistenceParams
+from qyver.framework.common.data_types import Vector
+from qyver.framework.common.interface.has_length import HasLength
+from qyver.framework.common.schema.schema_object import SchemaObject
+from qyver.framework.common.space.config.normalization.normalization_config import (
     ConstantNormConfig,
 )
 

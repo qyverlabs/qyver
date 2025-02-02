@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,8 +16,8 @@ from dataclasses import dataclass
 
 from beartype.typing import Generic, TypeVar
 
-from superlinked.framework.common.data_types import NodeDataTypes
-from superlinked.framework.common.interface.weighted import Weighted
+from qyver.framework.common.data_types import NodeDataTypes
+from qyver.framework.common.interface.weighted import Weighted
 
 QueryEvaluationResultT = TypeVar("QueryEvaluationResultT", bound=NodeDataTypes)
 

@@ -1,10 +1,10 @@
-Module superlinked.framework.dsl.executor.executor
+Module qyver.framework.dsl.executor.executor
 ==================================================
 
 Classes
 -------
 
-`Executor(sources: ~SourceT | Sequence[~SourceT], indices: superlinked.framework.dsl.index.index.Index | typing.Annotated[Sequence[superlinked.framework.dsl.index.index.Index], beartype.vale.Is[TypeValidator.list_validator.validator]], vector_database: superlinked.framework.dsl.storage.vector_database.VectorDatabase, context: superlinked.framework.common.dag.context.ExecutionContext)`
+`Executor(sources: ~SourceT | Sequence[~SourceT], indices: qyver.framework.dsl.index.index.Index | typing.Annotated[Sequence[qyver.framework.dsl.index.index.Index], beartype.vale.Is[TypeValidator.list_validator.validator]], vector_database: qyver.framework.dsl.storage.vector_database.VectorDatabase, context: qyver.framework.common.dag.context.ExecutionContext)`
 :   Abstract base class for an executor.
     
     Initialize the Executor.
@@ -21,12 +21,12 @@ Classes
 
     ### Descendants
 
-    * superlinked.framework.dsl.executor.interactive.interactive_executor.InteractiveExecutor
-    * superlinked.framework.dsl.executor.rest.rest_executor.RestExecutor
+    * qyver.framework.dsl.executor.interactive.interactive_executor.InteractiveExecutor
+    * qyver.framework.dsl.executor.rest.rest_executor.RestExecutor
 
     ### Methods
 
-    `run(self) ‑> superlinked.framework.dsl.app.app.App`
+    `run(self) ‑> qyver.framework.dsl.app.app.App`
     :   Abstract method to run the executor.
         Returns:
             App: An instance of App.

@@ -1,10 +1,10 @@
-Module superlinked.framework.dsl.space.space_field_set
+Module qyver.framework.dsl.space.space_field_set
 ======================================================
 
 Classes
 -------
 
-`SpaceFieldSet(space: superlinked.framework.dsl.space.space.Space, fields: set[superlinked.framework.common.schema.schema_object.SchemaField])`
+`SpaceFieldSet(space: qyver.framework.dsl.space.space.Space, fields: set[qyver.framework.common.schema.schema_object.SchemaField])`
 :   A class representing a set of fields in a space.
     Attributes:
         space (Space): The space.
@@ -16,15 +16,15 @@ Classes
 
     ### Descendants
 
-    * superlinked.framework.dsl.space.image_space_field_set.ImageDescriptionSpaceFieldSet
-    * superlinked.framework.dsl.space.image_space_field_set.ImageSpaceFieldSet
+    * qyver.framework.dsl.space.image_space_field_set.ImageDescriptionSpaceFieldSet
+    * qyver.framework.dsl.space.image_space_field_set.ImageSpaceFieldSet
 
     ### Class variables
 
-    `fields: set[superlinked.framework.common.schema.schema_object.SchemaField]`
+    `fields: set[qyver.framework.common.schema.schema_object.SchemaField]`
     :
 
-    `space: superlinked.framework.dsl.space.space.Space`
+    `space: qyver.framework.dsl.space.space.Space`
     :
 
     ### Instance variables
@@ -40,5 +40,5 @@ Classes
 
     ### Methods
 
-    `get_field_for_schema(self, schema_: Any) ‑> superlinked.framework.common.schema.schema_object.SchemaField | None`
+    `get_field_for_schema(self, schema_: Any) ‑> qyver.framework.common.schema.schema_object.SchemaField | None`
     :

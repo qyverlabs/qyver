@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,12 +18,12 @@ import json
 import numpy as np
 from beartype.typing import Any, Callable, cast
 
-from superlinked.framework.common.data_types import Vector
-from superlinked.framework.common.schema.blob_information import BlobInformation
-from superlinked.framework.common.storage.exception import EncoderException
-from superlinked.framework.common.storage.field.field import Field
-from superlinked.framework.common.storage.field.field_data import FieldData
-from superlinked.framework.common.storage.field.field_data_type import FieldDataType
+from qyver.framework.common.data_types import Vector
+from qyver.framework.common.schema.blob_information import BlobInformation
+from qyver.framework.common.storage.exception import EncoderException
+from qyver.framework.common.storage.field.field import Field
+from qyver.framework.common.storage.field.field_data import FieldData
+from qyver.framework.common.storage.field.field_data_type import FieldDataType
 
 RedisEncodedTypes = str | float | int | list[float] | bytes
 

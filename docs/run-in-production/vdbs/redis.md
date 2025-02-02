@@ -1,10 +1,10 @@
 # Redis
 
-This document provides clear steps on how to use and integrate Redis with Superlinked.
+This document provides clear steps on how to use and integrate Redis with qyver.
 
 ## Configuring your existing managed Redis
 
-To use Superlinked with Redis, you will need several Redis modules. The simplest approach is to use the official Redis Stack, which includes all the necessary modules. Installation instructions for the Redis Stack can be found in the [Redis official documentation](https://redis.io/docs/latest/operate/oss_and_stack/install/install-stack/). Alternatively, you can start a managed instance provided by Redis (a free-tier is available). For detailed steps on initiating a managed instance, refer to the [Start a Managed Redis Instance](#start-a-managed-redis-instance) section below.
+To use qyver with Redis, you will need several Redis modules. The simplest approach is to use the official Redis Stack, which includes all the necessary modules. Installation instructions for the Redis Stack can be found in the [Redis official documentation](https://redis.io/docs/latest/operate/oss_and_stack/install/install-stack/). Alternatively, you can start a managed instance provided by Redis (a free-tier is available). For detailed steps on initiating a managed instance, refer to the [Start a Managed Redis Instance](#start-a-managed-redis-instance) section below.
 
 Once your Redis instance is up and running, ensure it is accessible from the server that will use it. Additionally, configure the necessary authentication settings as described below.
 
@@ -14,7 +14,7 @@ To integrate Redis, you need to add the `RedisVectorDatabase` class and include 
 
 To configure your Redis, the following code will help you:
 ```python
-from superlinked import framework as sl
+from qyver import framework as sl
 
 vector_database = sl.RedisVectorDatabase(
     "<your_redis_host>", # (Mandatory) This is your Redis' URL without any port or extra fields.
@@ -45,4 +45,4 @@ To initiate a managed Redis instance, navigate to [Redis Labs](https://app.redis
 
 ## Example app with Redis
 
-You can find an example that utilizes Redis [here](https://github.com/superlinked/superlinked/blob/main/docs/run-in-production/vdbs/redis/app_with_redis.py).
+You can find an example that utilizes Redis [here](https://github.com/qyver/qyver/blob/main/docs/run-in-production/vdbs/redis/app_with_redis.py).

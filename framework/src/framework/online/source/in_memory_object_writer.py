@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,10 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from superlinked.framework.common.observable import Subscriber
-from superlinked.framework.common.parser.json_parser import JsonParser
-from superlinked.framework.common.parser.parsed_schema import ParsedSchema
-from superlinked.framework.common.storage_manager.storage_manager import StorageManager
+from qyver.framework.common.observable import Subscriber
+from qyver.framework.common.parser.json_parser import JsonParser
+from qyver.framework.common.parser.parsed_schema import ParsedSchema
+from qyver.framework.common.storage_manager.storage_manager import StorageManager
 
 
 class InMemoryObjectWriter(Subscriber[ParsedSchema]):

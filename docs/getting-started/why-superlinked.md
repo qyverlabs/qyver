@@ -1,21 +1,21 @@
 ---
 # description: >-
 icon: eyes
-cover: ../.gitbook/assets/why-superlinked-cover.png
+cover: ../.gitbook/assets/why-qyver-cover.png
 coverY: 0
 ---
 
-# Why Superlinked?
+# Why qyver?
 
 **Table of Contents**
-- [Why Superlinked?](#why-superlinked)
+- [Why qyver?](#why-qyver)
     - [Your users expect better search](#your-users-expect-better-search)
-    - [Enter Superlinked](#enter-superlinked)
+    - [Enter qyver](#enter-qyver)
     - [But can't I put all my data in json, stringify it and embed using LLM?](#but-cant-i-put-all-my-data-in-json-stringify-it-and-embed-using-llm)
     - [Okay, But can't I  ...](#okay-but-cant-i--)
       - [1. Use different already existing storages per attribute, fire multiple searches and then reconcile results?](#1-use-different-already-existing-storages-per-attribute-fire-multiple-searches-and-then-reconcile-results)
       - [2. Use Metadata filters or Candidate re-ranking](#2-use-metadata-filters-or-candidate-re-ranking)
-    - [Okay, seems like Superlinked proposes a nice approach, but](#okay-seems-like-superlinked-proposes-a-nice-approach-but)
+    - [Okay, seems like qyver proposes a nice approach, but](#okay-seems-like-qyver-proposes-a-nice-approach-but)
     - [How does it fit in the big picture?](#how-does-it-fit-in-the-big-picture)
 
 ### Your users expect better search
@@ -35,14 +35,14 @@ Consider these examples:
 3. **Job search**: "Entry-level data science positions in tech startups with good work-life balance" requires understanding of text, categorical data (industry, job level), and even subjective metrics.
 
 
-![Example of queries needing other data than text](../.gitbook/assets/why-superlinked-image1.png)
+![Example of queries needing other data than text](../.gitbook/assets/why-qyver-image1.png)
 
-### Enter Superlinked
+### Enter qyver
 
-This is where Superlinked comes in, offering a powerful, flexible framework designed to handle the complexities of modern search and information retrieval challenges. Superlinked is a vector embedding solution for AI teams working with complicated data within their [RAG](../use-cases/rag-hr.md), [Search](../use-cases/semantic-search-news.md), [Recommendations](../use-cases/recsys-ecomm.md) and [Analytics](../use-cases/analytics-keyword-expansion.md) stack.
+This is where qyver comes in, offering a powerful, flexible framework designed to handle the complexities of modern search and information retrieval challenges. qyver is a vector embedding solution for AI teams working with complicated data within their [RAG](../use-cases/rag-hr.md), [Search](../use-cases/semantic-search-news.md), [Recommendations](../use-cases/recsys-ecomm.md) and [Analytics](../use-cases/analytics-keyword-expansion.md) stack.
 
 
-Let's quickly go through an example. Keep in mind that there are a ton of new concepts thrown at you, but this is just to illustrate how Superlinked 'looks'. We'll go over each concept in detail in the [following sections](basic-building-blocks.md).
+Let's quickly go through an example. Keep in mind that there are a ton of new concepts thrown at you, but this is just to illustrate how qyver 'looks'. We'll go over each concept in detail in the [following sections](basic-building-blocks.md).
 
 Imagine you are building a system that can deal with a query like `“recent news about crop yield”`. After collecting your data, you define your schema, ingest data and build index like this:
 
@@ -126,7 +126,7 @@ sl.RestExecutor(
     # vector_database = sl.QdrantVectorDatabase(...),
 )
 
-# SparkExecutor()   <-- Coming soon in Superlinked Cloud
+# SparkExecutor()   <-- Coming soon in qyver Cloud
 
 ```
 
@@ -171,7 +171,7 @@ curl -X POST \
 
 ```
 
-Discover the powerful capabilities Superlinked offers [here](../concepts/overview.md).
+Discover the powerful capabilities qyver offers [here](../concepts/overview.md).
 
 
 
@@ -200,9 +200,9 @@ scores = cosine_similarity(embeddings, embeddings)
 
 ```
 
-<figure><img style="width: 100%;" src="../.gitbook/assets/why-superlinked-stringify.svg"><figcaption><p>OpenAI embeddings result in noisy, non-monotonic cosine similarity scores. For example, CosSim(25, 50) equals to 0.69 when CosSim(32, 50) equals 0.42 meaning 25 is more similar to 50 than 32 which doesn't make sense. Superlinked number embeddings avoid such inconsistencies by design.</p></figcaption></figure>
+<figure><img style="width: 100%;" src="../.gitbook/assets/why-qyver-stringify.svg"><figcaption><p>OpenAI embeddings result in noisy, non-monotonic cosine similarity scores. For example, CosSim(25, 50) equals to 0.69 when CosSim(32, 50) equals 0.42 meaning 25 is more similar to 50 than 32 which doesn't make sense. qyver number embeddings avoid such inconsistencies by design.</p></figcaption></figure>
 
-<!-- ![](../.gitbook/assets/why-superlinked-stringify.svg) -->
+<!-- ![](../.gitbook/assets/why-qyver-stringify.svg) -->
 
 
 ### Okay, But can't I  ...
@@ -214,7 +214,7 @@ Our naive approach (above) - storing and searching attribute vectors separately,
 
 It's better to store all your attribute vectors in the same vector store and perform a single search, weighting your attributes at query time.
 
-Read more here: [Multi-attribute search with vector embeddings](https://superlinked.com/vectorhub/articles/multi-attribute-semantic-search)
+Read more here: [Multi-attribute search with vector embeddings](https://qyver.com/vectorhub/articles/multi-attribute-semantic-search)
 
 <!-- {% endhint %} -->
 
@@ -227,17 +227,17 @@ When you convert a fuzzy preference like “recent”, “risky” or “popular
 Semantic ranking & ColBERT only use text, learn2rank models need ML Engineers.
 Broad queries eg “popular pants” can’t be handled by re-ranking at all, due to poor candidate recall.
 
-![](../.gitbook/assets/why-superlinked-filterreranking.png)
+![](../.gitbook/assets/why-qyver-filterreranking.png)
 
 
 <!-- {% endhint %} -->
 
 
 
-### Okay, seems like Superlinked proposes a nice approach, but
+### Okay, seems like qyver proposes a nice approach, but
 
 1. How can I build with it at scale?
-    The [Superlinked Server](../run-in-production/overview.md) is a deployable component available as a [Python package on PyPI](https://pypi.org/project/superlinked-server/), designed to enhance the operation of Superlinked by providing a RESTful API for communicating with your application. This package streamlines the integration of Superlinked's sophisticated search functionalities into existing applications by offering REST endpoints and Vector Database connectivity. It enables developers to focus on leveraging Superlinked's capabilities without the burden of infrastructure management, from initial prototype to full-scale production.
+    The [qyver Server](../run-in-production/overview.md) is a deployable component available as a [Python package on PyPI](https://pypi.org/project/qyver-server/), designed to enhance the operation of qyver by providing a RESTful API for communicating with your application. This package streamlines the integration of qyver's sophisticated search functionalities into existing applications by offering REST endpoints and Vector Database connectivity. It enables developers to focus on leveraging qyver's capabilities without the burden of infrastructure management, from initial prototype to full-scale production.
 
 <!-- 2. Why should I trust this approach? are scores reliable?
    - how vectors are created
@@ -250,4 +250,4 @@ Broad queries eg “popular pants” can’t be handled by re-ranking at all, du
 
 ### How does it fit in the big picture?
 
-![Superlinked framework diagram](../.gitbook/assets/sl_diagram.png)
+![qyver framework diagram](../.gitbook/assets/sl_diagram.png)

@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
 
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
-from superlinked.framework.common.util.singleton_decorator import singleton
+from qyver.framework.common.util.singleton_decorator import singleton
 
 
 @singleton

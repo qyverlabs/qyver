@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,31 +19,31 @@ from collections.abc import Mapping
 import structlog
 from beartype.typing import Any, Sequence, Type, cast
 
-from superlinked.framework.common.const import constants
-from superlinked.framework.common.exception import (
+from qyver.framework.common.const import constants
+from qyver.framework.common.exception import (
     InvalidSchemaException,
     QueryException,
 )
-from superlinked.framework.common.interface.comparison_operand import (
+from qyver.framework.common.interface.comparison_operand import (
     ComparisonOperation,
     _Or,
 )
-from superlinked.framework.common.interface.evaluated import Evaluated
-from superlinked.framework.common.nlq.open_ai import OpenAIClientConfig
-from superlinked.framework.common.schema.id_schema_object import IdSchemaObject
-from superlinked.framework.common.schema.schema_object import (
+from qyver.framework.common.interface.evaluated import Evaluated
+from qyver.framework.common.nlq.open_ai import OpenAIClientConfig
+from qyver.framework.common.schema.id_schema_object import IdSchemaObject
+from qyver.framework.common.schema.schema_object import (
     SchemaField,
     String,
     StringList,
 )
-from superlinked.framework.common.util.generic_class_util import GenericClassUtil
-from superlinked.framework.common.util.type_validator import TypeValidator
-from superlinked.framework.dsl.index.index import Index
-from superlinked.framework.dsl.query.nlq.nlq_handler import NLQHandler
-from superlinked.framework.dsl.query.nlq.suggestion.query_suggestion_model import (
+from qyver.framework.common.util.generic_class_util import GenericClassUtil
+from qyver.framework.common.util.type_validator import TypeValidator
+from qyver.framework.dsl.index.index import Index
+from qyver.framework.dsl.query.nlq.nlq_handler import NLQHandler
+from qyver.framework.dsl.query.nlq.suggestion.query_suggestion_model import (
     QuerySuggestionsModel,
 )
-from superlinked.framework.dsl.query.param import (
+from qyver.framework.dsl.query.param import (
     IntParamType,
     NumericParamType,
     Param,
@@ -51,11 +51,11 @@ from superlinked.framework.dsl.query.param import (
     ParamType,
     StringParamType,
 )
-from superlinked.framework.dsl.query.predicate.binary_predicate import (
+from qyver.framework.dsl.query.predicate.binary_predicate import (
     EvaluatedBinaryPredicate,
     LooksLikePredicate,
 )
-from superlinked.framework.dsl.query.query_clause import (
+from qyver.framework.dsl.query.query_clause import (
     HardFilterClause,
     LimitClause,
     LooksLikeFilterClause,
@@ -70,13 +70,13 @@ from superlinked.framework.dsl.query.query_clause import (
     SpaceWeightClause,
     WeightedQueryClause,
 )
-from superlinked.framework.dsl.query.query_filter_validator import QueryFilterValidator
-from superlinked.framework.dsl.space.categorical_similarity_space import (
+from qyver.framework.dsl.query.query_filter_validator import QueryFilterValidator
+from qyver.framework.dsl.space.categorical_similarity_space import (
     CategoricalSimilaritySpace,
 )
-from superlinked.framework.dsl.space.has_space_field_set import HasSpaceFieldSet
-from superlinked.framework.dsl.space.space import Space
-from superlinked.framework.dsl.space.space_field_set import SpaceFieldSet
+from qyver.framework.dsl.space.has_space_field_set import HasSpaceFieldSet
+from qyver.framework.dsl.space.space import Space
+from qyver.framework.dsl.space.space_field_set import SpaceFieldSet
 
 logger = structlog.getLogger()
 

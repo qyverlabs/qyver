@@ -1,10 +1,10 @@
-Module superlinked.framework.dsl.index.index
+Module qyver.framework.dsl.index.index
 ============================================
 
 Classes
 -------
 
-`Index(spaces: superlinked.framework.dsl.space.space.Space | typing.Annotated[list[superlinked.framework.dsl.space.space.Space], beartype.vale.Is[TypeValidator.list_validator.validator]], fields: superlinked.framework.common.schema.schema_object.SchemaField | typing.Annotated[list[superlinked.framework.common.schema.schema_object.SchemaField], beartype.vale.Is[TypeValidator.list_validator.validator]] | None = None, effects: superlinked.framework.dsl.index.effect.Effect | typing.Annotated[list[superlinked.framework.dsl.index.effect.Effect], beartype.vale.Is[TypeValidator.list_validator.validator]] | None = None, max_age: datetime.timedelta | None = None, max_count: int | None = None, temperature: int | float = 0.5, event_influence: int | float = 0.5, time_decay_floor: int | float = 1.0)`
+`Index(spaces: qyver.framework.dsl.space.space.Space | typing.Annotated[list[qyver.framework.dsl.space.space.Space], beartype.vale.Is[TypeValidator.list_validator.validator]], fields: qyver.framework.common.schema.schema_object.SchemaField | typing.Annotated[list[qyver.framework.common.schema.schema_object.SchemaField], beartype.vale.Is[TypeValidator.list_validator.validator]] | None = None, effects: qyver.framework.dsl.index.effect.Effect | typing.Annotated[list[qyver.framework.dsl.index.effect.Effect], beartype.vale.Is[TypeValidator.list_validator.validator]] | None = None, max_age: datetime.timedelta | None = None, max_count: int | None = None, temperature: int | float = 0.5, event_influence: int | float = 0.5, time_decay_floor: int | float = 1.0)`
 :   An index is an abstraction which represents a collection of spaces that will enable us to query our data.
     
     Initialize the Index.
@@ -35,7 +35,7 @@ Classes
 
     ### Methods
 
-    `has_schema(self, schema: superlinked.framework.common.schema.schema_object.SchemaObject) ‑> bool`
+    `has_schema(self, schema: qyver.framework.common.schema.schema_object.SchemaObject) ‑> bool`
     :   Check, if the given schema is listed as an input to any of the spaces of the index.
         
         Args:
@@ -44,7 +44,7 @@ Classes
         Returns:
             bool: True if the index has the schema, False otherwise.
 
-    `has_space(self, space: superlinked.framework.dsl.space.space.Space) ‑> bool`
+    `has_space(self, space: qyver.framework.dsl.space.space.Space) ‑> bool`
     :   Check, if the given space is present in the index.
         
         Args:

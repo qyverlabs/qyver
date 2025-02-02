@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,16 +24,16 @@ from huggingface_hub.file_download import (  # type:ignore[import-untyped]
 from sentence_transformers import SentenceTransformer
 from typing_extensions import override
 
-from superlinked.framework.common.dag.context import ExecutionContext
-from superlinked.framework.common.data_types import Vector
-from superlinked.framework.common.embedding.embedding import Embedding
-from superlinked.framework.common.embedding.embedding_cache import EmbeddingCache
-from superlinked.framework.common.settings import Settings
-from superlinked.framework.common.space.config.text_similarity_embedding_config import (
+from qyver.framework.common.dag.context import ExecutionContext
+from qyver.framework.common.data_types import Vector
+from qyver.framework.common.embedding.embedding import Embedding
+from qyver.framework.common.embedding.embedding_cache import EmbeddingCache
+from qyver.framework.common.settings import Settings
+from qyver.framework.common.space.config.text_similarity_embedding_config import (
     TextSimilarityEmbeddingConfig,
 )
-from superlinked.framework.common.space.normalization import L2Norm
-from superlinked.framework.common.util.gpu_embedding_util import GpuEmbeddingUtil
+from qyver.framework.common.space.normalization import L2Norm
+from qyver.framework.common.util.gpu_embedding_util import GpuEmbeddingUtil
 
 SENTENCE_TRANSFORMERS_ORG_NAME = "sentence-transformers"
 SENTENCE_TRANSFORMERS_MODEL_DIR: Path = (

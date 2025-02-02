@@ -1,19 +1,19 @@
-Module superlinked.framework.dsl.space
+Module qyver.framework.dsl.space
 ======================================
 Space module contains components that let you describe how you want to embed your data.
 It encapsulated the vector creation logic to be reused at ingestion and at query time.
 
 Sub-modules
 -----------
-* superlinked.framework.dsl.space.categorical_similarity_space
-* superlinked.framework.dsl.space.custom_space
-* superlinked.framework.dsl.space.exception
-* superlinked.framework.dsl.space.has_space_field_set
-* superlinked.framework.dsl.space.image_space
-* superlinked.framework.dsl.space.image_space_field_set
-* superlinked.framework.dsl.space.input_aggregation_mode
-* superlinked.framework.dsl.space.number_space
-* superlinked.framework.dsl.space.recency_space
-* superlinked.framework.dsl.space.space
-* superlinked.framework.dsl.space.space_field_set
-* superlinked.framework.dsl.space.text_similarity_space
+* qyver.framework.dsl.space.categorical_similarity_space
+* qyver.framework.dsl.space.custom_space
+* qyver.framework.dsl.space.exception
+* qyver.framework.dsl.space.has_space_field_set
+* qyver.framework.dsl.space.image_space
+* qyver.framework.dsl.space.image_space_field_set
+* qyver.framework.dsl.space.input_aggregation_mode
+* qyver.framework.dsl.space.number_space
+* qyver.framework.dsl.space.recency_space
+* qyver.framework.dsl.space.space
+* qyver.framework.dsl.space.space_field_set
+* qyver.framework.dsl.space.text_similarity_space

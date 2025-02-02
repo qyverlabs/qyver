@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,15 +17,15 @@ from abc import ABC, abstractmethod
 from beartype.typing import Generic, Mapping, Sequence
 from typing_extensions import override
 
-from superlinked.framework.common.dag.context import ExecutionContext
-from superlinked.framework.common.dag.node import NT
-from superlinked.framework.common.data_types import NodeDataTypes
-from superlinked.framework.common.interface.weighted import Weighted
-from superlinked.framework.query.dag.query_evaluation_data_types import (
+from qyver.framework.common.dag.context import ExecutionContext
+from qyver.framework.common.dag.node import NT
+from qyver.framework.common.data_types import NodeDataTypes
+from qyver.framework.common.interface.weighted import Weighted
+from qyver.framework.query.dag.query_evaluation_data_types import (
     QueryEvaluationResultT,
 )
-from superlinked.framework.query.dag.query_node_with_parent import QueryNodeWithParent
-from superlinked.framework.query.query_node_input import QueryNodeInput
+from qyver.framework.query.dag.query_node_with_parent import QueryNodeWithParent
+from qyver.framework.query.query_node_input import QueryNodeInput
 
 
 class InvertIfAddressedQueryNode(

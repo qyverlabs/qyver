@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@ from beartype.typing import Any
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from typing_extensions import override
 
-from superlinked.framework.common.util.singleton_decorator import singleton
+from qyver.framework.common.util.singleton_decorator import singleton
 
 logger = structlog.getLogger()
 
@@ -34,10 +34,10 @@ class Settings(BaseSettings):
     SENTENCE_TRANSFORMERS_MODEL_LOCK_RETRY_DELAY: int = 1
     GPU_EMBEDDING_THRESHOLD: int = 0
     DISABLE_RICH_TRACEBACK: bool = False
-    SUPERLINKED_LOG_LEVEL: int | str | None = None
-    SUPERLINKED_LOG_AS_JSON: bool = False
-    SUPERLINKED_LOG_FILE_PATH: str | None = None
-    SUPERLINKED_EXPOSE_PII: bool = False
+    qyver_LOG_LEVEL: int | str | None = None
+    qyver_LOG_AS_JSON: bool = False
+    qyver_LOG_FILE_PATH: str | None = None
+    qyver_EXPOSE_PII: bool = False
     # QUEUE specific params
     QUEUE_MODULE_PATH: str | None = None
     QUEUE_CLASS_NAME: str | None = None

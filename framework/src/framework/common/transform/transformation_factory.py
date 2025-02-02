@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,51 +18,51 @@ from dataclasses import dataclass
 
 from beartype.typing import Any, Generic, Sequence, cast
 
-from superlinked.framework.common.data_types import Vector
-from superlinked.framework.common.interface.weighted import Weighted
-from superlinked.framework.common.space.aggregation.aggregation import Aggregation
-from superlinked.framework.common.space.aggregation.aggregation_factory import (
+from qyver.framework.common.data_types import Vector
+from qyver.framework.common.interface.weighted import Weighted
+from qyver.framework.common.space.aggregation.aggregation import Aggregation
+from qyver.framework.common.space.aggregation.aggregation_factory import (
     AggregationFactory,
 )
-from superlinked.framework.common.space.aggregation.aggregation_step import (
+from qyver.framework.common.space.aggregation.aggregation_step import (
     AggregationStep,
 )
-from superlinked.framework.common.space.config.aggregation.aggregation_config import (
+from qyver.framework.common.space.config.aggregation.aggregation_config import (
     AggregationInputT,
 )
-from superlinked.framework.common.space.config.embedding.embedding_config import (
+from qyver.framework.common.space.config.embedding.embedding_config import (
     EmbeddingInputT,
 )
-from superlinked.framework.common.space.config.transformation_config import (
+from qyver.framework.common.space.config.transformation_config import (
     TransformationConfig,
 )
-from superlinked.framework.common.space.embedding.embedding import (
+from qyver.framework.common.space.embedding.embedding import (
     Embedding,
     InvertibleEmbedding,
 )
-from superlinked.framework.common.space.embedding.embedding_factory import (
+from qyver.framework.common.space.embedding.embedding_factory import (
     EmbeddingFactory,
 )
-from superlinked.framework.common.space.embedding.embedding_step import (
+from qyver.framework.common.space.embedding.embedding_step import (
     EmbeddingStep,
     InverseMultiEmbeddingStep,
     MultiEmbeddingStep,
 )
-from superlinked.framework.common.space.normalization.normalization import Normalization
-from superlinked.framework.common.space.normalization.normalization_factory import (
+from qyver.framework.common.space.normalization.normalization import Normalization
+from qyver.framework.common.space.normalization.normalization_factory import (
     NormalizationFactory,
 )
-from superlinked.framework.common.space.normalization.normalization_step import (
+from qyver.framework.common.space.normalization.normalization_step import (
     MultiNormalizationStep,
     NormalizationStep,
 )
-from superlinked.framework.common.transform.exception import (
+from qyver.framework.common.transform.exception import (
     TransformationConfigurationException,
 )
-from superlinked.framework.common.transform.temp_lift_weighting_wrapper import (
+from qyver.framework.common.transform.temp_lift_weighting_wrapper import (
     TempLiftWeightingWrapper,
 )
-from superlinked.framework.common.transform.transform import Step, Transform
+from qyver.framework.common.transform.transform import Step, Transform
 
 
 @dataclass(frozen=True)

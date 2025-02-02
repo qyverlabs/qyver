@@ -1,4 +1,4 @@
-Module superlinked.framework.dsl.space.space
+Module qyver.framework.dsl.space.space
 ============================================
 
 Classes
@@ -11,20 +11,20 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.common.space.interface.has_transformation_config.HasTransformationConfig
-    * superlinked.framework.common.interface.has_length.HasLength
+    * qyver.framework.common.space.interface.has_transformation_config.HasTransformationConfig
+    * qyver.framework.common.interface.has_length.HasLength
     * typing.Generic
-    * superlinked.framework.common.interface.has_annotation.HasAnnotation
+    * qyver.framework.common.interface.has_annotation.HasAnnotation
     * abc.ABC
 
     ### Descendants
 
-    * superlinked.framework.dsl.space.categorical_similarity_space.CategoricalSimilaritySpace
-    * superlinked.framework.dsl.space.custom_space.CustomSpace
-    * superlinked.framework.dsl.space.image_space.ImageSpace
-    * superlinked.framework.dsl.space.number_space.NumberSpace
-    * superlinked.framework.dsl.space.recency_space.RecencySpace
-    * superlinked.framework.dsl.space.text_similarity_space.TextSimilaritySpace
+    * qyver.framework.dsl.space.categorical_similarity_space.CategoricalSimilaritySpace
+    * qyver.framework.dsl.space.custom_space.CustomSpace
+    * qyver.framework.dsl.space.image_space.ImageSpace
+    * qyver.framework.dsl.space.number_space.NumberSpace
+    * qyver.framework.dsl.space.recency_space.RecencySpace
+    * qyver.framework.dsl.space.text_similarity_space.TextSimilaritySpace
 
     ### Instance variables
 

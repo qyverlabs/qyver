@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,40 +18,40 @@ import structlog
 from beartype.typing import Sequence
 from typing_extensions import Annotated
 
-from superlinked.framework.common.const import constants
-from superlinked.framework.common.dag.concatenation_node import ConcatenationNode
-from superlinked.framework.common.dag.dag import Dag
-from superlinked.framework.common.dag.dag_effect import DagEffect
-from superlinked.framework.common.dag.effect_modifier import EffectModifier
-from superlinked.framework.common.dag.index_node import IndexNode
-from superlinked.framework.common.dag.node import Node
-from superlinked.framework.common.data_types import Vector
-from superlinked.framework.common.exception import (
+from qyver.framework.common.const import constants
+from qyver.framework.common.dag.concatenation_node import ConcatenationNode
+from qyver.framework.common.dag.dag import Dag
+from qyver.framework.common.dag.dag_effect import DagEffect
+from qyver.framework.common.dag.effect_modifier import EffectModifier
+from qyver.framework.common.dag.index_node import IndexNode
+from qyver.framework.common.dag.node import Node
+from qyver.framework.common.data_types import Vector
+from qyver.framework.common.exception import (
     InitializationException,
     RecursionException,
     ValidationException,
 )
-from superlinked.framework.common.schema.event_schema_object import EventSchemaObject
-from superlinked.framework.common.schema.id_schema_object import IdSchemaObject
-from superlinked.framework.common.schema.schema_object import SchemaField, SchemaObject
-from superlinked.framework.common.space.config.aggregation.aggregation_config import (
+from qyver.framework.common.schema.event_schema_object import EventSchemaObject
+from qyver.framework.common.schema.id_schema_object import IdSchemaObject
+from qyver.framework.common.schema.schema_object import SchemaField, SchemaObject
+from qyver.framework.common.space.config.aggregation.aggregation_config import (
     AggregationInputT,
 )
-from superlinked.framework.common.space.config.embedding.embedding_config import (
+from qyver.framework.common.space.config.embedding.embedding_config import (
     EmbeddingInputT,
 )
-from superlinked.framework.common.util.type_validator import TypeValidator
-from superlinked.framework.dsl.index.effect import Effect
-from superlinked.framework.dsl.index.util.aggregation_effect_group import (
+from qyver.framework.common.util.type_validator import TypeValidator
+from qyver.framework.dsl.index.effect import Effect
+from qyver.framework.dsl.index.util.aggregation_effect_group import (
     AggregationEffectGroup,
 )
-from superlinked.framework.dsl.index.util.aggregation_node_util import (
+from qyver.framework.dsl.index.util.aggregation_node_util import (
     AggregationNodeUtil,
 )
-from superlinked.framework.dsl.index.util.effect_with_referenced_schema_object import (
+from qyver.framework.dsl.index.util.effect_with_referenced_schema_object import (
     EffectWithReferencedSchemaObject,
 )
-from superlinked.framework.dsl.space.space import Space
+from qyver.framework.dsl.space.space import Space
 
 logger = structlog.getLogger()
 

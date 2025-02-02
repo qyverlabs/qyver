@@ -1,2 +1,2 @@
-Module superlinked.framework.dsl.query.predicate.binary_op
+Module qyver.framework.dsl.query.predicate.binary_op
 ==========================================================

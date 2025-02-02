@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,47 +16,47 @@ from dataclasses import dataclass
 
 from beartype.typing import Any, Sequence, TypeVar, cast
 
-from superlinked.framework.common.dag.index_node import IndexNode
-from superlinked.framework.common.data_types import NodeDataTypes, PythonTypes
-from superlinked.framework.common.exception import InvalidSchemaException
-from superlinked.framework.common.interface.comparison_operand import (
+from qyver.framework.common.dag.index_node import IndexNode
+from qyver.framework.common.data_types import NodeDataTypes, PythonTypes
+from qyver.framework.common.exception import InvalidSchemaException
+from qyver.framework.common.interface.comparison_operand import (
     ComparisonOperation,
 )
-from superlinked.framework.common.parser.parsed_schema import ParsedSchema
-from superlinked.framework.common.schema.id_schema_object import IdSchemaObject
-from superlinked.framework.common.schema.schema_object import (
+from qyver.framework.common.parser.parsed_schema import ParsedSchema
+from qyver.framework.common.schema.id_schema_object import IdSchemaObject
+from qyver.framework.common.schema.schema_object import (
     ConcreteSchemaField,
     SchemaField,
     SchemaObject,
 )
-from superlinked.framework.common.storage.entity.entity_data import EntityData
-from superlinked.framework.common.storage.field.field import Field
-from superlinked.framework.common.storage.field.field_data import (
+from qyver.framework.common.storage.entity.entity_data import EntityData
+from qyver.framework.common.storage.field.field import Field
+from qyver.framework.common.storage.field.field_data import (
     FieldData,
     VectorFieldData,
 )
-from superlinked.framework.common.storage.field.field_data_type import FieldDataType
-from superlinked.framework.common.storage.field_type_converter import (
+from qyver.framework.common.storage.field.field_data_type import FieldDataType
+from qyver.framework.common.storage.field_type_converter import (
     FIELD_DATA_TYPE_BY_SCHEMA_FIELD_TYPE,
 )
-from superlinked.framework.common.storage.index_config import IndexConfig
-from superlinked.framework.common.storage.query.vdb_knn_search_params import (
+from qyver.framework.common.storage.index_config import IndexConfig
+from qyver.framework.common.storage.query.vdb_knn_search_params import (
     VDBKNNSearchParams,
 )
-from superlinked.framework.common.storage.result_entity_data import ResultEntityData
-from superlinked.framework.common.storage.search_index.index_field_descriptor import (
+from qyver.framework.common.storage.result_entity_data import ResultEntityData
+from qyver.framework.common.storage.search_index.index_field_descriptor import (
     IndexFieldDescriptor,
     VectorIndexFieldDescriptor,
 )
-from superlinked.framework.common.storage.vdb_connector import VDBConnector
-from superlinked.framework.common.storage_manager.entity_builder import EntityBuilder
-from superlinked.framework.common.storage_manager.knn_search_params import (
+from qyver.framework.common.storage.vdb_connector import VDBConnector
+from qyver.framework.common.storage_manager.entity_builder import EntityBuilder
+from qyver.framework.common.storage_manager.knn_search_params import (
     KNNSearchParams,
 )
-from superlinked.framework.common.storage_manager.search_result_item import (
+from qyver.framework.common.storage_manager.search_result_item import (
     SearchResultItem,
 )
-from superlinked.framework.common.storage_manager.storage_naming import StorageNaming
+from qyver.framework.common.storage_manager.storage_naming import StorageNaming
 
 ResultTypeT = TypeVar("ResultTypeT")
 # NodeDataValueType

@@ -1,4 +1,4 @@
-Module superlinked.framework.dsl.query.result
+Module qyver.framework.dsl.query.result
 =============================================
 
 Classes
@@ -44,15 +44,15 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.common.util.immutable_model.ImmutableBaseModel
+    * qyver.framework.common.util.immutable_model.ImmutableBaseModel
     * pydantic.main.BaseModel
 
     ### Class variables
 
-    `entries: Sequence[superlinked.framework.dsl.query.result.ResultEntry]`
+    `entries: Sequence[qyver.framework.dsl.query.result.ResultEntry]`
     :
 
-    `metadata: superlinked.framework.dsl.query.result.ResultMetadata`
+    `metadata: qyver.framework.dsl.query.result.ResultMetadata`
     :
 
     `model_config`
@@ -98,7 +98,7 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.common.util.immutable_model.ImmutableBaseModel
+    * qyver.framework.common.util.immutable_model.ImmutableBaseModel
     * pydantic.main.BaseModel
 
     ### Class variables
@@ -109,7 +109,7 @@ Classes
     `id: str`
     :
 
-    `metadata: superlinked.framework.dsl.query.result.ResultEntryMetadata`
+    `metadata: qyver.framework.dsl.query.result.ResultEntryMetadata`
     :
 
     `model_config`
@@ -155,7 +155,7 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.common.util.immutable_model.ImmutableBaseModel
+    * qyver.framework.common.util.immutable_model.ImmutableBaseModel
     * pydantic.main.BaseModel
 
     ### Class variables
@@ -206,7 +206,7 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.common.util.immutable_model.ImmutableBaseModel
+    * qyver.framework.common.util.immutable_model.ImmutableBaseModel
     * pydantic.main.BaseModel
 
     ### Class variables

@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,11 +17,11 @@ from __future__ import annotations
 
 from beartype.typing import Any, Generic, Sequence, TypeVar, get_args
 
-from superlinked.framework.common.data_types import Vector
-from superlinked.framework.common.schema.image_data import ImageData
-from superlinked.framework.common.storage.field.field import Field
-from superlinked.framework.common.storage.field.field_data_type import FieldDataType
-from superlinked.framework.common.storage.field_type_converter import (
+from qyver.framework.common.data_types import Vector
+from qyver.framework.common.schema.image_data import ImageData
+from qyver.framework.common.storage.field.field import Field
+from qyver.framework.common.storage.field.field_data_type import FieldDataType
+from qyver.framework.common.storage.field_type_converter import (
     VALID_TYPE_BY_FIELD_DATA_TYPE,
     FieldTypeConverter,
 )

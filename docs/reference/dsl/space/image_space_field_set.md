@@ -1,15 +1,15 @@
-Module superlinked.framework.dsl.space.image_space_field_set
+Module qyver.framework.dsl.space.image_space_field_set
 ============================================================
 
 Classes
 -------
 
-`ImageDescriptionSpaceFieldSet(space: superlinked.framework.dsl.space.space.Space, fields: set[superlinked.framework.common.schema.schema_object.SchemaField])`
-:   ImageDescriptionSpaceFieldSet(space: superlinked.framework.dsl.space.space.Space, fields: set[superlinked.framework.common.schema.schema_object.SchemaField])
+`ImageDescriptionSpaceFieldSet(space: qyver.framework.dsl.space.space.Space, fields: set[qyver.framework.common.schema.schema_object.SchemaField])`
+:   ImageDescriptionSpaceFieldSet(space: qyver.framework.dsl.space.space.Space, fields: set[qyver.framework.common.schema.schema_object.SchemaField])
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.dsl.space.space_field_set.SpaceFieldSet
+    * qyver.framework.dsl.space.space_field_set.SpaceFieldSet
     * typing.Generic
 
     ### Instance variables
@@ -17,12 +17,12 @@ Classes
     `input_type: type`
     :
 
-`ImageSpaceFieldSet(space: superlinked.framework.dsl.space.space.Space, fields: set[superlinked.framework.common.schema.schema_object.SchemaField])`
-:   ImageSpaceFieldSet(space: superlinked.framework.dsl.space.space.Space, fields: set[superlinked.framework.common.schema.schema_object.SchemaField])
+`ImageSpaceFieldSet(space: qyver.framework.dsl.space.space.Space, fields: set[qyver.framework.common.schema.schema_object.SchemaField])`
+:   ImageSpaceFieldSet(space: qyver.framework.dsl.space.space.Space, fields: set[qyver.framework.common.schema.schema_object.SchemaField])
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.dsl.space.space_field_set.SpaceFieldSet
+    * qyver.framework.dsl.space.space_field_set.SpaceFieldSet
     * typing.Generic
 
     ### Instance variables

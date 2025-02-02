@@ -1,10 +1,10 @@
-Module superlinked.framework.dsl.app.in_memory.in_memory_app
+Module qyver.framework.dsl.app.in_memory.in_memory_app
 ============================================================
 
 Classes
 -------
 
-`InMemoryApp(sources: Sequence[superlinked.framework.dsl.source.in_memory_source.InMemorySource], indices: Sequence[superlinked.framework.dsl.index.index.Index], vector_database: superlinked.framework.dsl.storage.vector_database.VectorDatabase | None, context: superlinked.framework.common.dag.context.ExecutionContext)`
+`InMemoryApp(sources: Sequence[qyver.framework.dsl.source.in_memory_source.InMemorySource], indices: Sequence[qyver.framework.dsl.index.index.Index], vector_database: qyver.framework.dsl.storage.vector_database.VectorDatabase | None, context: qyver.framework.common.dag.context.ExecutionContext)`
 :   In-memory implementation of the App class.
     
     Initialize the InMemoryApp from an InMemoryExecutor.
@@ -16,9 +16,9 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.dsl.app.interactive.interactive_app.InteractiveApp
-    * superlinked.framework.dsl.app.online.online_app.OnlineApp
-    * superlinked.framework.dsl.app.app.App
+    * qyver.framework.dsl.app.interactive.interactive_app.InteractiveApp
+    * qyver.framework.dsl.app.online.online_app.OnlineApp
+    * qyver.framework.dsl.app.app.App
     * abc.ABC
     * typing.Generic
-    * superlinked.framework.dsl.query.query_mixin.QueryMixin
+    * qyver.framework.dsl.query.query_mixin.QueryMixin

@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,18 +16,18 @@ import inspect
 
 from beartype.typing import Any, Sequence, TypeAlias, cast
 
-from superlinked.framework.common.schema.event_schema_object import (
+from qyver.framework.common.schema.event_schema_object import (
     CreatedAtField,
     EventSchemaObject,
 )
-from superlinked.framework.common.schema.general_type import T
-from superlinked.framework.common.schema.id_schema_object import IdField, IdSchemaObject
-from superlinked.framework.common.schema.schema_object import (
+from qyver.framework.common.schema.general_type import T
+from qyver.framework.common.schema.id_schema_object import IdField, IdSchemaObject
+from qyver.framework.common.schema.schema_object import (
     SchemaField,
     SchemaFieldDescriptor,
 )
-from superlinked.framework.common.schema.schema_type import SchemaType
-from superlinked.framework.common.schema.schema_validator import SchemaValidator
+from qyver.framework.common.schema.schema_type import SchemaType
+from qyver.framework.common.schema.schema_validator import SchemaValidator
 
 DEFAULT_ID_FIELD_NAME = "id"
 DEFAULT_CREATED_AT_FIELD_NAME = "created_at"

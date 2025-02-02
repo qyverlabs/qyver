@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,16 +22,16 @@ from PIL import Image
 from PIL.ImageFile import ImageFile
 from typing_extensions import override
 
-from superlinked.framework.common.dag.context import ExecutionContext
-from superlinked.framework.common.dag.image_information_node import ImageInformationNode
-from superlinked.framework.common.interface.weighted import Weighted
-from superlinked.framework.common.parser.blob_loader import BlobLoader
-from superlinked.framework.common.schema.image_data import ImageData
-from superlinked.framework.query.dag.query_evaluation_data_types import (
+from qyver.framework.common.dag.context import ExecutionContext
+from qyver.framework.common.dag.image_information_node import ImageInformationNode
+from qyver.framework.common.interface.weighted import Weighted
+from qyver.framework.common.parser.blob_loader import BlobLoader
+from qyver.framework.common.schema.image_data import ImageData
+from qyver.framework.query.dag.query_evaluation_data_types import (
     QueryEvaluationResult,
 )
-from superlinked.framework.query.dag.query_node import QueryNode
-from superlinked.framework.query.query_node_input import QueryNodeInput
+from qyver.framework.query.dag.query_node import QueryNode
+from qyver.framework.query.query_node_input import QueryNodeInput
 
 
 class QueryImageInformationNode(QueryNode[ImageInformationNode, ImageData]):

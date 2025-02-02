@@ -1,2 +1,2 @@
-Module superlinked.framework.dsl.query.query_param_information
+Module qyver.framework.dsl.query.query_param_information
 ==============================================================

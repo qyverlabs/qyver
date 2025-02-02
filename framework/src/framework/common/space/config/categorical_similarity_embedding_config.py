@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@ from dataclasses import dataclass
 from beartype.typing import Sequence
 from typing_extensions import override
 
-from superlinked.framework.common.space.config.embedding_config import EmbeddingConfig
+from qyver.framework.common.space.config.embedding_config import EmbeddingConfig
 
 
 @dataclass(frozen=True)

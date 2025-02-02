@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,9 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from superlinked.framework.dsl.storage.vector_database import VectorDatabase
-from superlinked.framework.storage.common.vdb_settings import VDBSettings
-from superlinked.framework.storage.in_memory.in_memory_vdb import InMemoryVDB
+from qyver.framework.dsl.storage.vector_database import VectorDatabase
+from qyver.framework.storage.common.vdb_settings import VDBSettings
+from qyver.framework.storage.in_memory.in_memory_vdb import InMemoryVDB
 
 
 class InMemoryVectorDatabase(VectorDatabase[InMemoryVDB]):

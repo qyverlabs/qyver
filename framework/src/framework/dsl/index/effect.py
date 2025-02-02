@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,22 +16,22 @@ from dataclasses import dataclass
 
 from beartype.typing import Generic
 
-from superlinked.framework.common.interface.comparison_operand import (
+from qyver.framework.common.interface.comparison_operand import (
     ComparisonOperation,
 )
-from superlinked.framework.common.schema.event_schema_object import (
+from qyver.framework.common.schema.event_schema_object import (
     MultipliedSchemaReference,
     SchemaReference,
 )
-from superlinked.framework.common.schema.schema_object import SchemaField
-from superlinked.framework.common.space.config.aggregation.aggregation_config import (
+from qyver.framework.common.schema.schema_object import SchemaField
+from qyver.framework.common.space.config.aggregation.aggregation_config import (
     AggregationInputT,
 )
-from superlinked.framework.common.space.config.embedding.embedding_config import (
+from qyver.framework.common.space.config.embedding.embedding_config import (
     EmbeddingInputT,
 )
-from superlinked.framework.common.util.type_validator import TypeValidator
-from superlinked.framework.dsl.space.space import Space
+from qyver.framework.common.util.type_validator import TypeValidator
+from qyver.framework.dsl.space.space import Space
 
 # Exclude from documentation.
 __pdoc__ = {}

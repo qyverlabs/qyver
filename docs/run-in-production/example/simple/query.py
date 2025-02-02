@@ -1,4 +1,4 @@
-from superlinked import framework as sl
+from qyver import framework as sl
 
 from .index import car_make_text_space, car_model_text_space, car_schema, index
 

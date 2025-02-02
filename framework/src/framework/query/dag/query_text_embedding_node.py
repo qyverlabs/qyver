@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,12 +16,12 @@ from __future__ import annotations
 
 from beartype.typing import Sequence
 
-from superlinked.framework.common.dag.text_embedding_node import TextEmbeddingNode
-from superlinked.framework.common.data_types import Vector
-from superlinked.framework.query.dag.query_embedding_orphan_node import (
+from qyver.framework.common.dag.text_embedding_node import TextEmbeddingNode
+from qyver.framework.common.data_types import Vector
+from qyver.framework.query.dag.query_embedding_orphan_node import (
     QueryEmbeddingOrphanNode,
 )
-from superlinked.framework.query.dag.query_node import QueryNode
+from qyver.framework.query.dag.query_node import QueryNode
 
 
 class QueryTextEmbeddingNode(QueryEmbeddingOrphanNode[Vector, TextEmbeddingNode, str]):

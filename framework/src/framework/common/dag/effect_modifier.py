@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
 import datetime
 from dataclasses import dataclass
 
-from superlinked.framework.common.util.type_validator import TypeValidator
+from qyver.framework.common.util.type_validator import TypeValidator
 
 
 @TypeValidator.wrap

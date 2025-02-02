@@ -1,5 +1,5 @@
 ---
-description: Learn about fundamental concepts of Superlinked.
+description: Learn about fundamental concepts of qyver.
 icon: magnifying-glass
 ---
 
@@ -23,5 +23,5 @@ we will show that multi-modal search in the text embedding AND the image embeddi
 
 ### Follow along in this Colab
 
-{% embed url="https://colab.research.google.com/github/superlinked/superlinked/blob/main/notebook/image_search_e_commerce.ipynb" %}
+{% embed url="https://colab.research.google.com/github/qyver/qyver/blob/main/notebook/image_search_e_commerce.ipynb" %}
 {% endembed %}

@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,8 +24,8 @@ from google.api_core import retry as retries
 from google.cloud import pubsub_v1  # type: ignore
 from typing_extensions import override
 
-from superlinked.framework.queue.interface.queue import Queue
-from superlinked.framework.queue.interface.queue_message import MessageT, QueueMessage
+from qyver.framework.queue.interface.queue import Queue
+from qyver.framework.queue.interface.queue_message import MessageT, QueueMessage
 
 # The metaclass of these are overwritten that's the reason behind the use of Any.
 EXCEPTIONS_TO_RETRY: Sequence[Any] = [

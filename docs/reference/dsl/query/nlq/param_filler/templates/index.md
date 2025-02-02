@@ -1,2 +1,2 @@
-Module superlinked.framework.dsl.query.nlq.param_filler.templates
+Module qyver.framework.dsl.query.nlq.param_filler.templates
 =================================================================

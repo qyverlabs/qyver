@@ -1,10 +1,10 @@
-Module superlinked.framework.dsl.space.recency_space
+Module qyver.framework.dsl.space.recency_space
 ====================================================
 
 Classes
 -------
 
-`RecencySpace(timestamp: superlinked.framework.common.schema.schema_object.Timestamp | None | collections.abc.Sequence[superlinked.framework.common.schema.schema_object.Timestamp | None], time_period_hour_offset: datetime.timedelta = datetime.timedelta(0), period_time_list: list[superlinked.framework.common.dag.period_time.PeriodTime] | superlinked.framework.common.dag.period_time.PeriodTime | None = None, aggregation_mode: superlinked.framework.dsl.space.input_aggregation_mode.InputAggregationMode = InputAggregationMode.INPUT_AVERAGE, negative_filter: float = 0.0)`
+`RecencySpace(timestamp: qyver.framework.common.schema.schema_object.Timestamp | None | collections.abc.Sequence[qyver.framework.common.schema.schema_object.Timestamp | None], time_period_hour_offset: datetime.timedelta = datetime.timedelta(0), period_time_list: list[qyver.framework.common.dag.period_time.PeriodTime] | qyver.framework.common.dag.period_time.PeriodTime | None = None, aggregation_mode: qyver.framework.dsl.space.input_aggregation_mode.InputAggregationMode = InputAggregationMode.INPUT_AVERAGE, negative_filter: float = 0.0)`
 :   Recency space encodes timestamp type data measured in seconds and in unix timestamp format.
     Recency space is utilized to encode how recent items are. Use period_time_list
     to mark the time periods of interest.
@@ -49,12 +49,12 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.dsl.space.space.Space
-    * superlinked.framework.common.space.interface.has_transformation_config.HasTransformationConfig
-    * superlinked.framework.common.interface.has_length.HasLength
+    * qyver.framework.dsl.space.space.Space
+    * qyver.framework.common.space.interface.has_transformation_config.HasTransformationConfig
+    * qyver.framework.common.interface.has_length.HasLength
     * typing.Generic
-    * superlinked.framework.common.interface.has_annotation.HasAnnotation
-    * superlinked.framework.dsl.space.has_space_field_set.HasSpaceFieldSet
+    * qyver.framework.common.interface.has_annotation.HasAnnotation
+    * qyver.framework.dsl.space.has_space_field_set.HasSpaceFieldSet
     * abc.ABC
 
     ### Instance variables
@@ -62,8 +62,8 @@ Classes
     `allow_similar_clause: bool`
     :
 
-    `space_field_set: superlinked.framework.dsl.space.space_field_set.SpaceFieldSet`
+    `space_field_set: qyver.framework.dsl.space.space_field_set.SpaceFieldSet`
     :
 
-    `transformation_config: superlinked.framework.common.space.config.transformation_config.TransformationConfig[int, int]`
+    `transformation_config: qyver.framework.common.space.config.transformation_config.TransformationConfig[int, int]`
     :

@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,10 +16,10 @@ from dataclasses import dataclass
 
 from beartype.typing import Any, Generic, Sequence, cast
 
-from superlinked.framework.common.data_types import PythonTypes
-from superlinked.framework.common.schema.schema_object import SchemaField
-from superlinked.framework.common.util.generic_class_util import GenericClassUtil
-from superlinked.framework.dsl.space.space import SIT, Space
+from qyver.framework.common.data_types import PythonTypes
+from qyver.framework.common.schema.schema_object import SchemaField
+from qyver.framework.common.util.generic_class_util import GenericClassUtil
+from qyver.framework.dsl.space.space import SIT, Space
 
 
 @dataclass

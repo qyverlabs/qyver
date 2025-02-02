@@ -1,4 +1,4 @@
-Module superlinked.framework.dsl.query.query_result_converter.query_result_converter
+Module qyver.framework.dsl.query.query_result_converter.query_result_converter
 ====================================================================================
 
 Classes
@@ -14,10 +14,10 @@ Classes
 
     ### Descendants
 
-    * superlinked.framework.dsl.query.query_result_converter.default_query_result_converter.DefaultQueryResultConverter
-    * superlinked.framework.dsl.query.query_result_converter.serializable_query_result_converter.SerializableQueryResultConverter
+    * qyver.framework.dsl.query.query_result_converter.default_query_result_converter.DefaultQueryResultConverter
+    * qyver.framework.dsl.query.query_result_converter.serializable_query_result_converter.SerializableQueryResultConverter
 
     ### Methods
 
-    `convert(self, query_result: superlinked.framework.dsl.query.result.QueryResult) ‑> superlinked.framework.dsl.query.result.QueryResult`
+    `convert(self, query_result: qyver.framework.dsl.query.result.QueryResult) ‑> qyver.framework.dsl.query.result.QueryResult`
     :

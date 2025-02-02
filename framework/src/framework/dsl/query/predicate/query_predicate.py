@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,8 +18,8 @@ from enum import Enum
 from beartype.typing import Generic, Sequence, TypeVar
 from PIL.Image import Image
 
-from superlinked.framework.common.schema.schema_object import SchemaField
-from superlinked.framework.dsl.query.param import NumericParamType, Param
+from qyver.framework.common.schema.schema_object import SchemaField
+from qyver.framework.dsl.query.param import NumericParamType, Param
 
 # Exclude from documentation.
 __pdoc__ = {}

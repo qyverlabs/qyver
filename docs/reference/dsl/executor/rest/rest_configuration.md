@@ -1,4 +1,4 @@
-Module superlinked.framework.dsl.executor.rest.rest_configuration
+Module qyver.framework.dsl.executor.rest.rest_configuration
 =================================================================
 
 Classes
@@ -44,7 +44,7 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.common.util.immutable_model.ImmutableBaseModel
+    * qyver.framework.common.util.immutable_model.ImmutableBaseModel
     * pydantic.main.BaseModel
 
     ### Class variables
@@ -66,15 +66,15 @@ Classes
     `add_slash_to_api_root_path(values: dict) ‑> dict`
     :
 
-`RestQuery(rest_descriptor: superlinked.framework.dsl.executor.rest.rest_descriptor.RestDescriptor, query_descriptor: superlinked.framework.dsl.query.query_descriptor.QueryDescriptor)`
-:   RestQuery(rest_descriptor: superlinked.framework.dsl.executor.rest.rest_descriptor.RestDescriptor, query_descriptor: superlinked.framework.dsl.query.query_descriptor.QueryDescriptor)
+`RestQuery(rest_descriptor: qyver.framework.dsl.executor.rest.rest_descriptor.RestDescriptor, query_descriptor: qyver.framework.dsl.query.query_descriptor.QueryDescriptor)`
+:   RestQuery(rest_descriptor: qyver.framework.dsl.executor.rest.rest_descriptor.RestDescriptor, query_descriptor: qyver.framework.dsl.query.query_descriptor.QueryDescriptor)
 
     ### Class variables
 
-    `query_descriptor: superlinked.framework.dsl.query.query_descriptor.QueryDescriptor`
+    `query_descriptor: qyver.framework.dsl.query.query_descriptor.QueryDescriptor`
     :
 
-    `rest_descriptor: superlinked.framework.dsl.executor.rest.rest_descriptor.RestDescriptor`
+    `rest_descriptor: qyver.framework.dsl.executor.rest.rest_descriptor.RestDescriptor`
     :
 
     ### Instance variables

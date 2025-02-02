@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,22 +16,22 @@
 from beartype.typing import Any, Sequence
 from pydantic import BaseModel
 
-from superlinked.framework.common.exception import QueryException
-from superlinked.framework.common.nlq.open_ai import OpenAIClient, OpenAIClientConfig
-from superlinked.framework.dsl.query.nlq.nlq_clause_collector import NLQClauseCollector
-from superlinked.framework.dsl.query.nlq.param_filler.query_param_model_builder import (
+from qyver.framework.common.exception import QueryException
+from qyver.framework.common.nlq.open_ai import OpenAIClient, OpenAIClientConfig
+from qyver.framework.dsl.query.nlq.nlq_clause_collector import NLQClauseCollector
+from qyver.framework.dsl.query.nlq.param_filler.query_param_model_builder import (
     QueryParamModelBuilder,
 )
-from superlinked.framework.dsl.query.nlq.param_filler.query_param_prompt_builder import (
+from qyver.framework.dsl.query.nlq.param_filler.query_param_prompt_builder import (
     QueryParamPromptBuilder,
 )
-from superlinked.framework.dsl.query.nlq.suggestion.query_suggestion_model import (
+from qyver.framework.dsl.query.nlq.suggestion.query_suggestion_model import (
     QuerySuggestionsModel,
 )
-from superlinked.framework.dsl.query.nlq.suggestion.query_suggestions_prompt_builder import (
+from qyver.framework.dsl.query.nlq.suggestion.query_suggestions_prompt_builder import (
     QuerySuggestionsPromptBuilder,
 )
-from superlinked.framework.dsl.query.query_clause import QueryClause
+from qyver.framework.dsl.query.query_clause import QueryClause
 
 
 class NLQHandler:

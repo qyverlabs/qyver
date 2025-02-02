@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,12 +15,12 @@
 from beartype.typing import Any, cast
 from typing_extensions import override
 
-from superlinked.framework.common.dag.exception import ParentCountException
-from superlinked.framework.common.dag.node import Node
-from superlinked.framework.common.dag.persistence_params import PersistenceParams
-from superlinked.framework.common.data_types import Vector
-from superlinked.framework.common.interface.has_length import HasLength
-from superlinked.framework.common.storage.persistence_type import PersistenceType
+from qyver.framework.common.dag.exception import ParentCountException
+from qyver.framework.common.dag.node import Node
+from qyver.framework.common.dag.persistence_params import PersistenceParams
+from qyver.framework.common.data_types import Vector
+from qyver.framework.common.interface.has_length import HasLength
+from qyver.framework.common.storage.persistence_type import PersistenceType
 
 
 class IndexNode(Node[Vector], HasLength):

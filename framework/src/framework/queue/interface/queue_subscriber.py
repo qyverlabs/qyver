@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,11 +17,11 @@ from dataclasses import dataclass
 from beartype.typing import Generic, Sequence, cast
 from typing_extensions import override
 
-from superlinked.framework.common.observable import Subscriber
-from superlinked.framework.common.settings import Settings
-from superlinked.framework.common.util import time_util
-from superlinked.framework.queue.interface.queue import Queue
-from superlinked.framework.queue.interface.queue_message import (
+from qyver.framework.common.observable import Subscriber
+from qyver.framework.common.settings import Settings
+from qyver.framework.common.util import time_util
+from qyver.framework.queue.interface.queue import Queue
+from qyver.framework.queue.interface.queue_message import (
     MessageBody,
     PayloadT,
     QueueMessage,

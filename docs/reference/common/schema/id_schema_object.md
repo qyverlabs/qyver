@@ -1,4 +1,4 @@
-Module superlinked.framework.common.schema.id_schema_object
+Module qyver.framework.common.schema.id_schema_object
 ===========================================================
 
 Classes
@@ -9,8 +9,8 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.common.schema.schema_object.SchemaField
-    * superlinked.framework.common.interface.comparison_operand.ComparisonOperand
+    * qyver.framework.common.schema.schema_object.SchemaField
+    * qyver.framework.common.interface.comparison_operand.ComparisonOperand
     * abc.ABC
     * typing.Generic
 
@@ -19,13 +19,13 @@ Classes
 
     ### Ancestors (in MRO)
 
-    * superlinked.framework.common.schema.schema_object.SchemaObject
+    * qyver.framework.common.schema.schema_object.SchemaObject
     * abc.ABC
 
     ### Descendants
 
-    * superlinked.framework.common.schema.event_schema_object.EventSchemaObject
-    * superlinked.framework.common.schema.schema.Schema
+    * qyver.framework.common.schema.event_schema_object.EventSchemaObject
+    * qyver.framework.common.schema.schema.Schema
 
     ### Static methods
 
@@ -34,5 +34,5 @@ Classes
 
     ### Instance variables
 
-    `id: superlinked.framework.common.schema.id_schema_object.IdField`
+    `id: qyver.framework.common.schema.id_schema_object.IdField`
     :

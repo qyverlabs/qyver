@@ -1,4 +1,4 @@
-# Copyright 2024 Superlinked, Inc.
+# Copyright 2024 qyver, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,8 +14,8 @@
 
 from dataclasses import dataclass
 
-from superlinked.framework.common.storage.entity.entity_id import EntityId
-from superlinked.framework.common.storage.field.field import Field
+from qyver.framework.common.storage.entity.entity_id import EntityId
+from qyver.framework.common.storage.field.field import Field
 
 
 @dataclass

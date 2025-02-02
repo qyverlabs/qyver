@@ -1,26 +1,26 @@
 ---
-description: Learn the Superlinked lingo.
+description: Learn the qyver lingo.
 icon: shapes
 ---
 
 
-# Superlinked’s basic building blocks approach - a [notebook](https://github.com/superlinked/superlinked/blob/main/notebook/feature/basic_building_blocks.ipynb) article
+# qyver’s basic building blocks approach - a [notebook](https://github.com/qyver/qyver/blob/main/notebook/feature/basic_building_blocks.ipynb) article
 
 ## Intro
 
-Superlinked's framework is built on key components: [@schema](../reference/common/schema/schema.md), [Source](../reference/dsl/source/index.md), [Spaces](../reference/dsl/space/index.md), [Index](../reference/dsl/index/index.md), [Query](../reference/dsl/query/index.md), and [Executor](../reference/dsl/executor/index.md). These building blocks allow you to create a modular system tailored to your specific use cases.
+qyver's framework is built on key components: [@schema](../reference/common/schema/schema.md), [Source](../reference/dsl/source/index.md), [Spaces](../reference/dsl/space/index.md), [Index](../reference/dsl/index/index.md), [Query](../reference/dsl/query/index.md), and [Executor](../reference/dsl/executor/index.md). These building blocks allow you to create a modular system tailored to your specific use cases.
 
 You begin by defining your desired endpoints - how you want your embeddings to represent your data. This guides your system setup, allowing you to **customize your modules before running queries**. You can adjust query weights for different scenarios, such as a user's interests or recent items.
 
 This modular approach **separates query description from execution**, enabling you to run the same query across different environments without reimplementation. You build your Query using descriptive elements like @schema, Source, Spaces, Index, or Event, which can be **reused with different Executors**.
 
-Superlinked's focus on connectors facilitates easy transitions between deployments, from in-memory to batch or real-time data pipelines. This flexibility allows for rapid experimentation in embedding and retrieval while maximizing control over index creation.
+qyver's focus on connectors facilitates easy transitions between deployments, from in-memory to batch or real-time data pipelines. This flexibility allows for rapid experimentation in embedding and retrieval while maximizing control over index creation.
 
 Let's explore these building blocks in more detail.
 
 
 **Follow along in this Colab.**
-{% embed url="https://colab.research.google.com/github/superlinked/superlinked/blob/main/notebook/feature/basic_building_blocks.ipynb" %}
+{% embed url="https://colab.research.google.com/github/qyver/qyver/blob/main/notebook/feature/basic_building_blocks.ipynb" %}
 {% endembed %}
 
 
@@ -36,7 +36,7 @@ class ParagraphSchema(sl.Schema):
     id: sl.IdField
 ```
 
-With your Schemas created, you are ready to move on to embedding and querying, which is where Superlinked’s building blocks approach really empowers you. The Superlinked framework is based on the intuition that people doing semantic search can better satisfy the requirements of their use case/s if they can customize how their system handles data and queries. 
+With your Schemas created, you are ready to move on to embedding and querying, which is where qyver’s building blocks approach really empowers you. The qyver framework is based on the intuition that people doing semantic search can better satisfy the requirements of their use case/s if they can customize how their system handles data and queries. 
 
 ## Declaring how to embed your data using Spaces
 **Spaces** is a declarative class developed with this in mind. The Space module encapsulates the vector creation logic that will be used at ingestion time, and again at query time.
@@ -45,7 +45,7 @@ Spaces lets you tailor how you embed different attributes of your data and can b
 1. what input types the Space permits - e.g., text, timestamp, numeric, categorical
 2. whether the Space represents similarity (e.g, TextSimilaritySpace) or scale (e.g., numeric space)
 
-Which Space/s fit your use case depends on both these dimensions - your input type and what you need to represent about your data. You can find a list of spaces in Superlinked [here](../reference/dsl/space/index.md).
+Which Space/s fit your use case depends on both these dimensions - your input type and what you need to represent about your data. You can find a list of spaces in qyver [here](../reference/dsl/space/index.md).
 
 You use different Spaces for different data types. For example, [TextSimilaritySpace](../reference/dsl/space/text_similarity_space.md) and [CategoricalSimilaritySpace](../reference/dsl/space/categorical_similarity_space.md) can take String as an input, [RecencySpace](../reference/dsl/space/recency_space.md) can take Timestamp, [NumberSpace](../reference/dsl/space/number_space.md) can take Int/Float, and so on. Each Space captures a different, relevant piece of information (e.g., title, review count, etc.) about an entity. This lets you weight each Space according to which attributes are relevant to your use case - before you concatenate all your Spaces into a single multimodal vector among others in the queryable vector space.
 
@@ -57,7 +57,7 @@ relevance_space = sl.TextSimilaritySpace(text=paragraph.body, model="Snowflake/s
 
 ## Indexing
 
-Superlinked’s Index module components enable you to group Spaces into indices that make your queries more efficient.
+qyver’s Index module components enable you to group Spaces into indices that make your queries more efficient.
 
 ```python
 paragraph_index = sl.Index(relevance_space)
@@ -66,12 +66,12 @@ paragraph_index = sl.Index(relevance_space)
 ## Executing your query to your chosen endpoints
 
 Before running your code, you need to structure your query using the following arguments:
-- `Query`: defines the index you want it to search, and you can add Params here (details in our [nothebook](https://github.com/superlinked/superlinked/blob/main/notebook/feature/dynamic_parameters.ipynb))
+- `Query`: defines the index you want it to search, and you can add Params here (details in our [nothebook](https://github.com/qyver/qyver/blob/main/notebook/feature/dynamic_parameters.ipynb))
 - `.find`: tells it what to look for
-- `.similar`: tells it how to identify relevant results (details in [notebook](https://github.com/superlinked/superlinked/blob/main/notebook/feature/basic_building_blocks.ipynb))
-- `.select_all`: returns all the stored fields, without this clause, it will only return the id(s) (details in [notebook]https://github.com/superlinked/superlinked/blob/main/notebook/feature/query_result.ipynb))
+- `.similar`: tells it how to identify relevant results (details in [notebook](https://github.com/qyver/qyver/blob/main/notebook/feature/basic_building_blocks.ipynb))
+- `.select_all`: returns all the stored fields, without this clause, it will only return the id(s) (details in [notebook]https://github.com/qyver/qyver/blob/main/notebook/feature/query_result.ipynb))
 
-Note that you can wait to fill out the specific Params until later. (You can also add a `.with_vector` to search with an embedded vector of a specific element of your data (see details in [notebook](https://github.com/superlinked/superlinked/blob/main/notebook/feature/query_by_object.ipynb))).
+Note that you can wait to fill out the specific Params until later. (You can also add a `.with_vector` to search with an embedded vector of a specific element of your data (see details in [notebook](https://github.com/qyver/qyver/blob/main/notebook/feature/query_by_object.ipynb))).
 
 ```python
 query = (
@@ -141,6 +141,6 @@ sl.PandasConverter.to_pandas(result)
 
 ## In sum
 
-In sum, the Superlinked framework empowers you to create and tailor a modular system that fits your use case/s, repurposable for different deployments, saving you from resource- and time-consuming reimplementation, reranking, and postprocessing.
+In sum, the qyver framework empowers you to create and tailor a modular system that fits your use case/s, repurposable for different deployments, saving you from resource- and time-consuming reimplementation, reranking, and postprocessing.
 
-Now for the fun part - try it out yourself! The notebook is [here](https://github.com/superlinked/superlinked/blob/main/notebook/feature/basic_building_blocks.ipynb). Experiment with your own sample data and query inputs, and give us a star!
+Now for the fun part - try it out yourself! The notebook is [here](https://github.com/qyver/qyver/blob/main/notebook/feature/basic_building_blocks.ipynb). Experiment with your own sample data and query inputs, and give us a star!
