@@ -1,14 +1,14 @@
 <div align="center">
 <picture>
   <source
-    srcset="https://cdn.prod.website-files.com/65dce6831bf9f730421e2915/66ef0317ed8616151ee1d451_qyver_logo_white.png"
+    srcset="https://ibb.co/VYZx2R8H"
     media="(prefers-color-scheme: dark)"
   />
   <source
-    srcset="https://cdn.prod.website-files.com/65dce6831bf9f730421e2915/65dce6831bf9f730421e2929_qyver_logo.svg"
+    srcset="https://ibb.co/rRd6mMxk"
     media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
   />
-  <img width=400 src="https://cdn.prod.website-files.com/65dce6831bf9f730421e2915/66ef0317ed8616151ee1d451_qyver_logo_white.png" />
+  <img width=400 src="https://ibb.co/VYZx2R8H" />
 </picture>
 
 </div>  &nbsp;
@@ -25,7 +25,7 @@
 </div>
 
 <p align="center">
-  <em>qyver is a Python framework for AI Engineers building <b>high-performance search & recommendation applications</b> that combine <b>structured</b> and <b>unstructured</b> data. <a href="https://docs.qyver.com">Check documentation</a> to get started.</em>
+  <em>Qyver is an AI-powered Python framework for building advanced <b>search</b> and <b>recommendation systems</b> that integrate <b>structured</b> and <b>unstructured</b> data. <a href="https://docs.qyver.com">Explore the documentation</a> to get started.</em>
 </p>
 
 ## Table of Contents
